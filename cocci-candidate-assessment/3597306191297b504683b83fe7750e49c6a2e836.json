@@ -1,0 +1,14 @@
+{
+  "commit": "3597306191297b504683b83fe7750e49c6a2e836",
+  "short_commit": "3597306191",
+  "subject": "BaseTools/StringFuncs: fix gcc 16 warning",
+  "suitable": false,
+  "reasons": [
+    "This is a one-off warning cleanup in a single function: remove an unused loop counter and simplify the loop header.",
+    "The change appears only once and does not repeat across files or multiple call sites.",
+    "There is no reusable before/after structural pattern beyond this local warning fix.",
+    "The edit is context-specific maintenance, not API migration or collateral evolution."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

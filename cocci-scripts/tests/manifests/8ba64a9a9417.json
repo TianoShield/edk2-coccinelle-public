@@ -1,0 +1,107 @@
+{
+  "id": "8ba64a9a9417",
+  "cocciFile": "cocci-scripts/8ba64a9a9417-pci-io-width-enum.cocci",
+  "cases": [
+    {
+      "name": "replay-pciplatformdxe-full-file",
+      "beforeSource": {
+        "gitRevision": "8ba64a9a9417b45b033cf1307a9e96f3df2530f2^:UefiPayloadPkg/PciPlatformDxe/PciPlatformDxe.c"
+      },
+      "afterSource": {
+        "gitRevision": "8ba64a9a9417b45b033cf1307a9e96f3df2530f2:UefiPayloadPkg/PciPlatformDxe/PciPlatformDxe.c"
+      }
+    },
+    {
+      "name": "normalize-pcioptionromsupport-casted-literals",
+      "beforeSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:MdeModulePkg/Bus/Pci/PciBusDxe/PciOptionRomSupport.c",
+        "ranges": [
+          {
+            "startLine": 581,
+            "endLine": 639
+          }
+        ]
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/8ba64a9a9417/PciOptionRomSupport.RomDecode.after.c"
+      }
+    },
+    {
+      "name": "normalize-buildfdtlib-casted-literals",
+      "beforeSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:UefiPayloadPkg/Library/BuildFdtLib/X86_BuildFdtLib.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/8ba64a9a9417/BuildFdtLib.GmaReads.after.c"
+      }
+    },
+    {
+      "name": "noop-root-bridge-calls",
+      "beforeSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:MdeModulePkg/Bus/Pci/PciBusDxe/PciOptionRomSupport.c",
+        "ranges": [
+          {
+            "startLine": 232,
+            "endLine": 307
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:MdeModulePkg/Bus/Pci/PciBusDxe/PciOptionRomSupport.c",
+        "ranges": [
+          {
+            "startLine": 232,
+            "endLine": 307
+          }
+        ]
+      }
+    },
+    {
+      "name": "noop-variable-cast",
+      "beforeSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:MdeModulePkg/Bus/Pci/UfsPciHcDxe/UfsPciHcDxe.c",
+        "ranges": [
+          {
+            "startLine": 296,
+            "endLine": 318
+          },
+          {
+            "startLine": 338,
+            "endLine": 360
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:MdeModulePkg/Bus/Pci/UfsPciHcDxe/UfsPciHcDxe.c",
+        "ranges": [
+          {
+            "startLine": 296,
+            "endLine": 318
+          },
+          {
+            "startLine": 338,
+            "endLine": 360
+          }
+        ]
+      }
+    },
+    {
+      "name": "fixture-generalize-typed-pci-io",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/8ba64a9a9417/TypedPciIo.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/8ba64a9a9417/TypedPciIo.after.c"
+      }
+    },
+    {
+      "name": "fixture-generalize-all-enum-families",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/8ba64a9a9417/AllEnumFamilies.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/8ba64a9a9417/AllEnumFamilies.after.c"
+      }
+    }
+  ]
+}

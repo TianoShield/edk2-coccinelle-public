@@ -1,0 +1,13 @@
+{
+  "commit": "4512733ac8b3612816675a7f717dab9101f0e7a6",
+  "short_commit": "4512733ac8",
+  "subject": "MdeModulePkg: DxeIpl IA32: Use 256 IDT Entries",
+  "suitable": true,
+  "reasons": [
+    "Part of a series (with 3454d7ab41, 3bfe4fadff) replacing local IDT_ENTRY_COUNT=32 magic-number constants with X86_CPU_INTERRUPT_NUM across multiple packages",
+    "Well-defined pattern: remove #define IDT_ENTRY_COUNT 32, replace all uses with X86_CPU_INTERRUPT_NUM in array sizes, sizeof expressions, loop bounds, and PeiServicesAllocatePages size computations",
+    "Four mechanical substitutions in a single file; as 1-of-N in the series the repetitiveness is high"
+  ],
+  "candidate_pattern": "Replace local IDT_ENTRY_COUNT constant with X86_CPU_INTERRUPT_NUM in array declarations, sizeof expressions, loop bounds, and allocation size calculations",
+  "confidence": "medium"
+}

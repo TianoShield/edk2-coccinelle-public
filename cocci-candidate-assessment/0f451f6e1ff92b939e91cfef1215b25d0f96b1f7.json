@@ -1,0 +1,14 @@
+{
+  "commit": "0f451f6e1ff92b939e91cfef1215b25d0f96b1f7",
+  "short_commit": "0f451f6e1f",
+  "subject": "MdeModulePkg/CustomizedDisplayLib: fix gcc 16 warning",
+  "suitable": false,
+  "reasons": [
+    "The change removes one unused local variable and one loop counter from a single function.",
+    "There is no repeated structural before/after pattern across multiple call sites or files.",
+    "This is a one-off warning cleanup, not an API migration or collateral evolution.",
+    "The commit is specific to one function, so it does not fit Coccinelle's repetitive match-and-replace use case."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

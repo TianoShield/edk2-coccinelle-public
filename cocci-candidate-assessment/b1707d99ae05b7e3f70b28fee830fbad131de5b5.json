@@ -1,0 +1,13 @@
+{
+  "commit": "b1707d99ae05b7e3f70b28fee830fbad131de5b5",
+  "short_commit": "b1707d99ae",
+  "subject": "DynamicTablesPkg: add SSDT DMC620 PMU table generator",
+  "suitable": false,
+  "reasons": [
+    "This is a new feature implementation with several new files, not a code transformation of existing call sites.",
+    "The commit adds a generator rather than applying a systematic source-to-source rewrite.",
+    "Coccinelle is not a good fit for large feature additions that are not repetitive transformations."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

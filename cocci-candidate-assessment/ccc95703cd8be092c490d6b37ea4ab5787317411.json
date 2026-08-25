@@ -1,0 +1,13 @@
+{
+  "commit": "ccc95703cd8be092c490d6b37ea4ab5787317411",
+  "short_commit": "ccc95703cd",
+  "subject": "NetworkPkg/Ip4Dxe: Fix missing Status check on Ip4Cfg2->SetData call",
+  "suitable": false,
+  "reasons": [
+    "Single-line fix in one file: changes 'return EFI_SUCCESS;' to 'return Status;' after a specific SetData call",
+    "One-off bug fix requiring contextual reasoning about which return value was incorrect — not a systematic pattern",
+    "No repetition across files or functions"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

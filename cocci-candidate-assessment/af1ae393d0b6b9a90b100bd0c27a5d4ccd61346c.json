@@ -1,0 +1,14 @@
+{
+  "commit": "af1ae393d0b6b9a90b100bd0c27a5d4ccd61346c",
+  "short_commit": "af1ae393d0",
+  "subject": "UefiCpuPkg/MpLib: Change print level for \"5-Level Paging =\"",
+  "suitable": true,
+  "reasons": [
+    "Mechanical substitution of DEBUG_INFO with DEBUG_PAGING inside DEBUG() macro calls",
+    "Part of a larger series: neighbors include UefiCpuPkg/ArmMmuLib (e7ffbde9ad), UefiCpuPkg/CpuDxe (5dc31efc42), and OvmfPkg/BaseMemEncryptSevLib (3d6453f515) performing the identical DEBUG_VERBOSE->DEBUG_PAGING substitution across multiple packages",
+    "This commit substitutes DEBUG_INFO->DEBUG_PAGING for paging-related debug messages, same structural pattern as the series",
+    "The pattern is well-defined: replace the debug level argument in DEBUG() macro calls that relate to paging operations"
+  ],
+  "candidate_pattern": "@@\nexpression msg;\n@@\n- DEBUG((DEBUG_INFO, msg, ...))\n+ DEBUG((DEBUG_PAGING, msg, ...))",
+  "confidence": "medium"
+}

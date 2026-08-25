@@ -1,0 +1,13 @@
+{
+  "commit": "b980aa07196a5534581b16563cd78cfc67a74074",
+  "short_commit": "b980aa0719",
+  "subject": "SecurityPkg: AuthVariableLib: Handle empty signature lists",
+  "suitable": false,
+  "reasons": [
+    "Single-location bug fix: adds a (CertLen > 0) guard to one conditional expression in one file",
+    "Case-by-case defensive check specific to this code path's semantics; not a repeated pattern across the codebase",
+    "No evidence of the same missing guard pattern appearing in multiple places"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

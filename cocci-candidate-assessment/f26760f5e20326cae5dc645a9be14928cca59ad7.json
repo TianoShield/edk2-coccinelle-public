@@ -1,0 +1,13 @@
+{
+  "commit": "f26760f5e20326cae5dc645a9be14928cca59ad7",
+  "short_commit": "f26760f5e2",
+  "subject": "BaseTools/Source/C/Makefiles: Detect cycle in pids",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

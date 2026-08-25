@@ -1,0 +1,14 @@
+{
+  "commit": "f1f89f454cd8c9aabae7ce5e690f612bd969f5ff",
+  "short_commit": "f1f89f454c",
+  "subject": "ShellPkg/UefiShellLevel3: Lower indentation level in MainCmdXXX()",
+  "suitable": false,
+  "reasons": [
+    "Pure code restructuring / indentation reduction across 8 files — the change inverts conditional nesting to reduce indentation depth",
+    "While it touches multiple files, the transformation is not a mechanical pattern match-and-replace; it requires understanding the control flow inversion for each function individually",
+    "Coccinelle cannot express 'invert an if-else to reduce nesting' as a reliable SmPL rule without deep context-specific knowledge of each function's semantics",
+    "Explicitly described as 'no functional change' style/structure improvement"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

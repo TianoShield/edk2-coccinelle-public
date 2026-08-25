@@ -1,0 +1,14 @@
+{
+  "commit": "abf4467708ab32d4b2cb159d9c9b3b1c51257742",
+  "short_commit": "abf4467708",
+  "subject": "TcgTpmPkg: openssl layer for TCG TPM v2.0 implementation",
+  "suitable": false,
+  "reasons": [
+    "Entirely new files added (1172 insertions, 0 deletions) as part of TcgTpmPkg introduction series",
+    "New OpenSSL adaptation layer for TCG TPM - no transformation of existing code",
+    "Part of a multi-commit new package introduction series; no before/after pattern to match",
+    "Coccinelle operates on transforming existing code, not on new additions"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

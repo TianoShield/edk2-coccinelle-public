@@ -1,0 +1,13 @@
+{
+  "commit": "a55b79426912b948d00224ca21f53dfa8a2b4453",
+  "short_commit": "a55b794269",
+  "subject": "MdePkg: Add FFA_NS_RES_INFO_GET to Arm header",
+  "suitable": false,
+  "reasons": [
+    "Pure header addition: adds a single new #define ARM_FID_FFA_NS_RES_INFO_GET 0xC400008F to ArmFfaSvc.h",
+    "No before/after transformation pattern; one-off addition of a new constant",
+    "Not a structural code transformation suitable for Coccinelle"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

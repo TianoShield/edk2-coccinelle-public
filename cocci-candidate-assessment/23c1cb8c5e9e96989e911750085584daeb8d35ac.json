@@ -1,0 +1,13 @@
+{
+  "commit": "23c1cb8c5e9e96989e911750085584daeb8d35ac",
+  "short_commit": "23c1cb8c5e",
+  "subject": "OvmfPkg/IntelTdx: Update README.md with missing build command",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

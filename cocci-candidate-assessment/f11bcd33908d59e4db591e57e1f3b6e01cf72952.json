@@ -1,0 +1,13 @@
+{
+  "commit": "f11bcd33908d59e4db591e57e1f3b6e01cf72952",
+  "short_commit": "f11bcd3390",
+  "subject": "DynamicTablesPkg: Remove GCC5 from Readme.md",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

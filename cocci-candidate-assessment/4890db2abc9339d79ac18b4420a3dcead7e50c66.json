@@ -1,0 +1,13 @@
+{
+  "commit": "4890db2abc9339d79ac18b4420a3dcead7e50c66",
+  "short_commit": "4890db2abc",
+  "subject": "NetworkPkg/UefiPxeBcDxe: Fix typo in Buffer parameter description",
+  "suitable": false,
+  "reasons": [
+    "The diff is documentation-only.",
+    "It corrects a typo in a parameter description without changing code behavior.",
+    "This is pure comment cleanup, not a semantic patch candidate."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

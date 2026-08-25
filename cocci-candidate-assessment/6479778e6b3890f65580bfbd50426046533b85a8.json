@@ -1,0 +1,13 @@
+{
+  "commit": "6479778e6b3890f65580bfbd50426046533b85a8",
+  "short_commit": "6479778e6b",
+  "subject": "MdePkg,MdeModulePkg: Add FFA_YIELD command",
+  "suitable": false,
+  "reasons": [
+    "Adds a new FFA_YIELD function implementation in ArmFfaCommon.c and corresponding prototype in ArmFfaLib.h",
+    "Pure feature addition: new function and header declaration; no transformation of existing code",
+    "Coccinelle is not suitable for adding new API implementations"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

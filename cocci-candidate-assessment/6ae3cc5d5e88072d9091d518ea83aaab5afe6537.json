@@ -1,0 +1,13 @@
+{
+  "commit": "6ae3cc5d5e88072d9091d518ea83aaab5afe6537",
+  "short_commit": "6ae3cc5d5e",
+  "subject": "UefiCpuPkg: Consume Public Page Table Definitions",
+  "suitable": false,
+  "reasons": [
+    "This is the consumer side of a header move refactor (paired with 530efa6742): removes private type definitions from CpuPageTable.h and adds an #include of the new public header",
+    "The change is a large deletion of type definitions (moved to MdePkg) plus a single #include addition — not a transformation of call sites or API usage",
+    "Header reorganization / definition migration is not suitable for Coccinelle, which works on C expression/statement patterns, not preprocessor-level structural moves"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

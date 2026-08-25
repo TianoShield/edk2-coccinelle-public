@@ -1,0 +1,13 @@
+{
+  "commit": "1a261da766ef14f6dea157d4a5362e84a755023f",
+  "short_commit": "1a261da766",
+  "subject": "MdeModulePkg/UsbMassStorageDxe: Add retry mechanism to UsbMassReadBlocks",
+  "suitable": false,
+  "reasons": [
+    "The patch introduces new retry control flow and state restoration logic in one function.",
+    "It is a context-specific robustness change, not a repeated structural migration.",
+    "The behavior depends on USB mass-storage error recovery semantics rather than a reusable match-and-replace pattern."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

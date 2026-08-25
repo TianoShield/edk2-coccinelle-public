@@ -1,0 +1,14 @@
+{
+  "commit": "0049ac1793c4abd0652652286e5506f52aaaa0d4",
+  "short_commit": "0049ac1793",
+  "subject": "MdeModulePkg: VariableSmmRuntimeDxe: Fix MM communicate v3 buffer sizing",
+  "suitable": false,
+  "reasons": [
+    "Single-location bug fix selecting between SMM_COMMUNICATE_HEADER_SIZE_V3 and SMM_COMMUNICATE_HEADER_SIZE based on a runtime condition",
+    "The change introduces a conditional branch around an allocation; it is a semantic fix requiring understanding of the protocol version, not a mechanical pattern",
+    "Only one call site changed in one file; no repetitive pattern across the codebase",
+    "No neighboring commits share the same structural pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

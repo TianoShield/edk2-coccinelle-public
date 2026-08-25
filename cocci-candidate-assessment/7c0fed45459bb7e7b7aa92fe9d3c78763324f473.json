@@ -1,0 +1,13 @@
+{
+  "commit": "7c0fed45459bb7e7b7aa92fe9d3c78763324f473",
+  "short_commit": "7c0fed4545",
+  "subject": "ArmVirtPkg: Add GUID HOBs to cache Realm IPA width and execution state",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "7ab771ddcf8df195d4ade9d835e1897f04eed6ae",
+  "short_commit": "7ab771ddcf",
+  "subject": ".github: Remove SignedCapsulePkg",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

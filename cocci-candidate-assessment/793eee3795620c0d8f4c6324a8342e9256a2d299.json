@@ -1,0 +1,13 @@
+{
+  "commit": "793eee3795620c0d8f4c6324a8342e9256a2d299",
+  "short_commit": "793eee3795",
+  "subject": "MdePkg/Acpi66.h: Fix comments for SRAT structure types",
+  "suitable": false,
+  "reasons": [
+    "Pure comment fix: changes a reserved-range comment from '6 to 0xff' to '0x8 to 0xff' in one line of one header file",
+    "Comment-only changes are not suitable for Coccinelle, which operates on C code structure",
+    "One-off correction with no repeated pattern across files"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

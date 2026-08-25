@@ -1,0 +1,13 @@
+{
+  "commit": "0d6750b88cbca7427fe3d9cc799dec3ef482a774",
+  "short_commit": "0d6750b88c",
+  "subject": "OvmfPkg/XenPlatformPei: Remove call to XenHypercallLibInit",
+  "suitable": false,
+  "reasons": [
+    "Single one-off deletion in one file: removes a specific call to XenHypercallLibInit() and its associated comment/variable",
+    "This is a targeted cleanup based on understanding of changed semantics in a prior commit, not a repeated pattern",
+    "No repetitiveness; the pattern does not appear across multiple files or callers"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

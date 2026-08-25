@@ -1,0 +1,13 @@
+{
+  "commit": "3657a4fc9f8048106fb914b07823ca050694c982",
+  "short_commit": "3657a4fc9f",
+  "subject": "ShellPkg/SmbiosView: Fix clang compatibility issue",
+  "suitable": false,
+  "reasons": [
+    "One-off fix: adds braces around a single switch case block containing VLA-style declarations, to satisfy clang's requirement that declarations not jump over",
+    "No repeated pattern across files; single location, single case",
+    "Pure syntactic bracing fix with no API migration or collateral evolution aspect"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

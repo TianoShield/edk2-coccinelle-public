@@ -1,0 +1,13 @@
+{
+  "commit": "d3dee93960cca4c4f0ccbe295606d91dabeb2332",
+  "short_commit": "d3dee93960",
+  "subject": "MdePkg: Fix property typos in MdePkg",
+  "suitable": false,
+  "reasons": [
+    "The patch corrects text typos in properties and comments.",
+    "It does not transform code structure or behavior.",
+    "This is outside Coccinelle's core use case."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

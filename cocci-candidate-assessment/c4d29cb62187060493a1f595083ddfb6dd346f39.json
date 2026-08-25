@@ -1,0 +1,14 @@
+{
+  "commit": "c4d29cb62187060493a1f595083ddfb6dd346f39",
+  "short_commit": "c4d29cb621",
+  "subject": "ShellPkg/UefiHandleParsingLib: support handle list growth",
+  "suitable": false,
+  "reasons": [
+    "Single-file refactor replacing LocateHandle() with LocateHandleBuffer() in one function",
+    "The change involves restructuring control flow and adding error-handling logic, not a mechanical substitution",
+    "No repeated pattern across files or multiple call sites; the before/after is not expressible as a simple SmPL rule without capturing complex structural changes",
+    "No neighboring commits share the same pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

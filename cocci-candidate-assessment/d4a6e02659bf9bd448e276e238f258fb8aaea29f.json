@@ -1,0 +1,13 @@
+{
+  "commit": "d4a6e02659bf9bd448e276e238f258fb8aaea29f",
+  "short_commit": "d4a6e02659",
+  "subject": "BaseTools/Conf: Add missing CLANGDWARF OBJCOPY_FLAGS",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

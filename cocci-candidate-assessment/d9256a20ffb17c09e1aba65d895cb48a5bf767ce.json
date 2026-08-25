@@ -1,0 +1,13 @@
+{
+  "commit": "d9256a20ffb17c09e1aba65d895cb48a5bf767ce",
+  "short_commit": "d9256a20ff",
+  "subject": "DynamicTablesPkg: add X64 objects for error sources",
+  "suitable": false,
+  "reasons": [
+    "Primarily an addition of new struct definitions and parser table entries in X64NameSpaceObjects.h and ConfigurationManagerObjectParser.c — no existing code is transformed",
+    "Adding new CM_ARCH_COMMON_xxx structs and parser entries is new feature work, not a mechanical transformation of existing patterns",
+    "Although the parser table has a repetitive structure, the commit adds new entries rather than modifying existing ones in a uniform way"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "1774a34cc518b0d337a0a7f4707d944dc78cb95d",
+  "short_commit": "1774a34cc5",
+  "subject": "DynamicTablesPkg/AmlLib: Refactor AmlCodeGenInvokeMethod API",
+  "suitable": false,
+  "reasons": [
+    "Large internal refactor of a single complex function: changes the internal node construction strategy and adds an optional OUT parameter to the API",
+    "The transformation is not uniform across callers; it restructures the internals of one function significantly",
+    "API signature change (adding optional ParentNode, optional NewObjectNode) cannot be expressed as a simple SmPL pattern without understanding call sites individually"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

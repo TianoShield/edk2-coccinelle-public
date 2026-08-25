@@ -1,0 +1,13 @@
+{
+  "commit": "3f677aa69ec03c0b7198a628ae3908ffbc67d4e5",
+  "short_commit": "3f677aa69e",
+  "subject": "CryptoPkg: Add AARCH64-PE Target to OpenSSL Gen",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

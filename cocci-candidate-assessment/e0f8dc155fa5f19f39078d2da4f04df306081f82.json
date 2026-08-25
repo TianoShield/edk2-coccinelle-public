@@ -1,0 +1,14 @@
+{
+  "commit": "e0f8dc155fa5f19f39078d2da4f04df306081f82",
+  "short_commit": "e0f8dc155f",
+  "subject": "ArmPkg: Replace non-ASCII characters with ASCII",
+  "suitable": false,
+  "reasons": [
+    "The change is a one-line comment cleanup that replaces Unicode dash characters with ASCII hyphens.",
+    "It is pure text/style maintenance rather than a semantic C code transformation.",
+    "There is no repeated structural before/after pattern across files or call sites for Coccinelle to generalize.",
+    "The edit is specifically about source encoding and compiler warnings, not API migration or collateral evolution."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

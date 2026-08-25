@@ -1,0 +1,14 @@
+{
+  "commit": "7ac719710c06f8d0e34612586533a987fce65112",
+  "short_commit": "7ac719710c",
+  "subject": "SignedCapsulePkg: Update wiki links",
+  "suitable": false,
+  "reasons": [
+    "The change is in a Markdown README, not C source code.",
+    "It updates documentation links and formatting rather than performing a semantic code transformation.",
+    "There is no C before/after match-and-replace pattern to encode in SmPL.",
+    "This fits the criteria's excluded categories of non-C code and pure style/documentation changes."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

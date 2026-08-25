@@ -1,0 +1,13 @@
+{
+  "commit": "cb4cbc521640f4a4ec4e0b1e83fe257d2956494a",
+  "short_commit": "cb4cbc5216",
+  "subject": "DynamicTablesPkg/AmlLib: Adds API method returning method invocations",
+  "suitable": false,
+  "reasons": [
+    "Pure feature addition: introduces a new AML code generation function AmlCodeGenReturnInvokeMethod() and its header declaration",
+    "No transformation of existing code; entirely new implementation added",
+    "Coccinelle is not appropriate for new API introductions"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

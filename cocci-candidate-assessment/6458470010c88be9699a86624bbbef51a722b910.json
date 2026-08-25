@@ -1,0 +1,13 @@
+{
+  "commit": "6458470010c88be9699a86624bbbef51a722b910",
+  "short_commit": "6458470010",
+  "subject": "MdeModulePkg/LoadFileOnFv2: Fix typo in Buffer parameter description",
+  "suitable": false,
+  "reasons": [
+    "The change is documentation text in a comment block.",
+    "It fixes a typo only and does not change C semantics.",
+    "Coccinelle is not a good fit for a one-off comment correction."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

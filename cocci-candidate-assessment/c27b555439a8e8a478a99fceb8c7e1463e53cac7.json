@@ -1,0 +1,14 @@
+{
+  "commit": "c27b555439a8e8a478a99fceb8c7e1463e53cac7",
+  "short_commit": "c27b555439",
+  "subject": "UefiCpuPkg/BaseRiscV64CpuTimerLib: Add constructor to initialize mTimeBase",
+  "suitable": false,
+  "reasons": [
+    "Adds a new constructor function to a single library - purely additive new code",
+    "Adding a CONSTRUCTOR entry in a .inf file and a new EFI_STATUS constructor function is not a transformation of existing code",
+    "One-off addition specific to this one library with no repeated pattern",
+    "Coccinelle cannot generate new code where none existed before"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

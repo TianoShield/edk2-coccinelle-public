@@ -1,0 +1,42 @@
+{
+  "id": "bd8667a7fd",
+  "cocciFile": "cocci-scripts/bd8667a7fd-manage-depth-below-check.cocci",
+  "cases": [
+    {
+      "name": "replay-smi-mdemodulepkg",
+      "beforeSource": {
+        "gitRevision": "bd8667a7fd9ff48b90ba7cca82eaf489500708f9^:MdeModulePkg/Core/PiSmmCore/Smi.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/bd8667a7fd/Smi.after.c"
+      }
+    },
+    {
+      "name": "replay-mmi-standalonemm",
+      "beforeSource": {
+        "gitRevision": "05cec0b14beff2113ceedba7983e1ce82ff60a9c^:StandaloneMmPkg/Core/Mmi.c"
+      },
+      "afterSource": {
+        "gitRevision": "05cec0b14beff2113ceedba7983e1ce82ff60a9c:StandaloneMmPkg/Core/Mmi.c"
+      }
+    },
+    {
+      "name": "fixture-rename-generalize",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/bd8667a7fd/Rename.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/bd8667a7fd/Rename.after.c"
+      }
+    },
+    {
+      "name": "noop-anchor-constraints",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/bd8667a7fd/NoMatch.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/bd8667a7fd/NoMatch.before.c"
+      }
+    }
+  ]
+}

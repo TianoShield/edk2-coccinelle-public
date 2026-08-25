@@ -1,0 +1,13 @@
+{
+  "commit": "9ff5bf99f484267fd48cc061fb7f5fa41b3f194d",
+  "short_commit": "9ff5bf99f4",
+  "subject": "MdePkg/Library/BaseFdtLib: Fix VS2022 NOOPT IA32 issues",
+  "suitable": false,
+  "reasons": [
+    "This commit adds helper implementation files and INF wiring rather than transforming existing code in bulk.",
+    "The change is a one-off compiler-compatibility workaround for IA32 builds.",
+    "There is no repeated mechanical before/after pattern for Coccinelle to generalize."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

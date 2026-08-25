@@ -1,0 +1,13 @@
+{
+  "commit": "05cec0b14beff2113ceedba7983e1ce82ff60a9c",
+  "short_commit": "05cec0b14b",
+  "subject": "StandaloneMmPkg/Core: Move MMI depth tracker below MMI check",
+  "suitable": true,
+  "reasons": [
+    "Paired with adjacent commit bd8667a7fd which applies the identical fix (moving depth counter increment below handler-presence check) in a parallel file (MdeModulePkg/Core/PiSmmCore/Smi.c vs StandaloneMmPkg/Core/Mmi.c)",
+    "The SMI/MMI cores are structurally mirrored; the same statement reordering pattern applies to both",
+    "Well-defined before/after: move mXxxManageCallingDepth++ from before the handler-lookup to after the handler is confirmed present"
+  ],
+  "candidate_pattern": "Match: mXxxManageCallingDepth++ followed by WillReturn = FALSE; Status = EFI_NOT_FOUND; ... head lookup; and reorder to place mXxxManageCallingDepth++ after the successful head lookup.",
+  "confidence": "low"
+}

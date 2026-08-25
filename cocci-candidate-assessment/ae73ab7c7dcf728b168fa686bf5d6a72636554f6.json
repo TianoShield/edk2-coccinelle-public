@@ -1,0 +1,13 @@
+{
+  "commit": "ae73ab7c7dcf728b168fa686bf5d6a72636554f6",
+  "short_commit": "ae73ab7c7d",
+  "subject": ".github: Update wiki links",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

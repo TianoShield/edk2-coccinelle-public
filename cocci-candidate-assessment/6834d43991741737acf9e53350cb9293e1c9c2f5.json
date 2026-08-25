@@ -1,0 +1,13 @@
+{
+  "commit": "6834d43991741737acf9e53350cb9293e1c9c2f5",
+  "short_commit": "6834d43991",
+  "subject": "MdeModulePkg/Core/Dxe/Mem: Align initial memory map entries",
+  "suitable": false,
+  "reasons": [
+    "The commit changes the memory-type-information sizing algorithm in multiple helper functions.",
+    "Although alignment rounding is repeated, the logic is intertwined with broader memory-map layout changes.",
+    "This is a broad refactor with a small repeated subpattern, not a clean Coccinelle candidate."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

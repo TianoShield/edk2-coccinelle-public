@@ -1,0 +1,14 @@
+{
+  "commit": "420dab0b24c4b5fa7d1f462b3319877897be63b4",
+  "short_commit": "420dab0b24",
+  "subject": "ShellPkg/UefiShellLib: Add IsDotOrDotDot() function",
+  "suitable": true,
+  "reasons": [
+    "Replaces a repeated two-part StrCmp pattern with a named function call across 9 files and multiple call sites",
+    "The before pattern is structurally identical in every location: (StrCmp(X, L\".\") == 0) || (StrCmp(X, L\"..\") == 0), or its negation",
+    "High repetitiveness: 9 occurrences across 8 different source files in ShellPkg",
+    "Straightforward match-and-replace: match the boolean expression and replace with IsDotOrDotDot(X) or !IsDotOrDotDot(X)"
+  ],
+  "candidate_pattern": "Replace `(StrCmp(E, L\".\") == 0) || (StrCmp(E, L\"..\") == 0)` with `IsDotOrDotDot(E)` (and negation form) across ShellPkg source files",
+  "confidence": "high"
+}

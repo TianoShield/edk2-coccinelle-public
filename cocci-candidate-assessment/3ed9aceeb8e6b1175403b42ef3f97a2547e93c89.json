@@ -1,0 +1,13 @@
+{
+  "commit": "3ed9aceeb8e6b1175403b42ef3f97a2547e93c89",
+  "short_commit": "3ed9aceeb8",
+  "subject": "MdeModulePkg: CpuExceptionHandlerLib: Define X86_CPU_INTERRUPT_NUM",
+  "suitable": false,
+  "reasons": [
+    "This commit only adds a single #define X86_CPU_INTERRUPT_NUM 256 to a header file — it is a prerequisite for the series rather than a structural code transformation itself",
+    "Pure header addition with no before/after match-and-replace pattern; Coccinelle operates on expression/statement rewrites, not macro introductions",
+    "One-off, single-location change"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

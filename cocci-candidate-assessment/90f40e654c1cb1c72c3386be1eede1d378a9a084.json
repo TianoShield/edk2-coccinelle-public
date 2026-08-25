@@ -1,0 +1,14 @@
+{
+  "commit": "90f40e654c1cb1c72c3386be1eede1d378a9a084",
+  "short_commit": "90f40e654c",
+  "subject": "UefiCpuPkg/ArmMmuLib: Handle Realm unprotected bit",
+  "suitable": false,
+  "reasons": [
+    "This commit makes a localized logic addition to identity mapping code to propagate the 'unprotected' top bit of a physical address into a PTE attribute.",
+    "The change is a targeted one-off addition to a single file with specific Realm/CCA semantics requiring contextual understanding.",
+    "No repetitive before/after pattern exists across multiple call sites or files.",
+    "Not suitable for Coccinelle: the logic is architecturally specific and non-repetitive."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

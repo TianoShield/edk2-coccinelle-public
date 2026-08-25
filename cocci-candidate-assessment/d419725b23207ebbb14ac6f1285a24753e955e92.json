@@ -1,0 +1,13 @@
+{
+  "commit": "d419725b23207ebbb14ac6f1285a24753e955e92",
+  "short_commit": "d419725b23",
+  "subject": "MdeModulePkg/Core/Dxe/Mem: Fix GetMemoryMap() Alignment Issues",
+  "suitable": false,
+  "reasons": [
+    "The patch is a substantial memory-map algorithm refactor with new helper logic and multiple split cases.",
+    "Only a small part of the change is alignment-related; the rest is case-specific control flow.",
+    "That makes the commit closer to a redesign than to a single reusable semantic patch."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

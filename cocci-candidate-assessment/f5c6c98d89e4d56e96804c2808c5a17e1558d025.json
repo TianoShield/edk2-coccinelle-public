@@ -1,0 +1,13 @@
+{
+  "commit": "f5c6c98d89e4d56e96804c2808c5a17e1558d025",
+  "short_commit": "f5c6c98d89",
+  "subject": "OvmfPkg/IgvmSecureBootDxe: Remove CustomMode code",
+  "suitable": false,
+  "reasons": [
+    "Large deletion (44 lines removed) of CustomMode-specific logic in a single file with no repeated structural pattern",
+    "Change involves deleting a substantial block of conditional logic specific to IGVM secure boot, not a mechanical transformation",
+    "This is part of a series (neighbors include e3e5c41598, 75ea215310, 0a7ed7ed34) but each commit does a different thing — not the same pattern repeated"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

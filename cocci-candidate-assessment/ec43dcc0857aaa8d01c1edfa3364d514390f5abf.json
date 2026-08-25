@@ -1,0 +1,14 @@
+{
+  "commit": "ec43dcc0857aaa8d01c1edfa3364d514390f5abf",
+  "short_commit": "ec43dcc085",
+  "subject": "MdePkg: Fix incorrect mask in PostCode",
+  "suitable": false,
+  "reasons": [
+    "This is a one-line constant/mask fix in a single source file.",
+    "It is a local correctness repair with no repeated structural pattern.",
+    "There is no API migration or scale to justify a semantic patch.",
+    "The commit is too specific to be generalized mechanically."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

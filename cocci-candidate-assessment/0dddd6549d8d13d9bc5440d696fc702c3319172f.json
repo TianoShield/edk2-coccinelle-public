@@ -1,0 +1,14 @@
+{
+  "commit": "0dddd6549d8d13d9bc5440d696fc702c3319172f",
+  "short_commit": "0dddd6549d",
+  "subject": "MdePkg/IndustryStandard:: Add ACPI 6.6 extension for NUMA ACPI Tables",
+  "suitable": false,
+  "reasons": [
+    "This commit adds new macro/constant definitions and renames a struct field (Reserved2 -> AddressMode) in a header file.",
+    "The changes are additive (new macros) plus a field rename in a struct definition — not a transformation of call sites.",
+    "While a field rename could in principle be handled by Coccinelle for call sites, this commit only touches the struct definition header, not consumers.",
+    "No repetitive C code pattern across multiple files."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

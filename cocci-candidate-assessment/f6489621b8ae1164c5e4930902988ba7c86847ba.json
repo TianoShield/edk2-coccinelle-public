@@ -1,0 +1,13 @@
+{
+  "commit": "f6489621b8ae1164c5e4930902988ba7c86847ba",
+  "short_commit": "f6489621b8",
+  "subject": "MdeModulePkg: PciBusDxe: Degrade MEM64 to PMEM64 when bridge lacks MEM64",
+  "suitable": false,
+  "reasons": [
+    "The change adds new branching in resource-degradation policy and introduces an extra fallback path.",
+    "This is a semantic policy update, not a repeated mechanical edit.",
+    "The logic is too context-dependent to be described as a simple Coccinelle rule."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

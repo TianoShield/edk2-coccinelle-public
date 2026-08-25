@@ -1,0 +1,13 @@
+{
+  "commit": "cfcb4eee914ebb1151f42393a4275840a867b1f3",
+  "short_commit": "cfcb4eee91",
+  "subject": "ShellPkg/UefiShellDriver1: Fix memory leaks",
+  "suitable": false,
+  "reasons": [
+    "Adds ShellCommandLineFreeVarList(Package) before exiting a block in 3 files (Disconnect.c, OpenInfo.c, Reconnect.c)",
+    "Memory leak fixes require identifying specific code paths where the resource is not freed; each instance must be reasoned about individually",
+    "While the added call is the same, the surrounding context differs and there is no generic structural pattern that could be mechanically applied codebase-wide without false positives"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

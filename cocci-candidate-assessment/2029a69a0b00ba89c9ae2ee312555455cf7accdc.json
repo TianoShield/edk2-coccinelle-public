@@ -1,0 +1,13 @@
+{
+  "commit": "2029a69a0b00ba89c9ae2ee312555455cf7accdc",
+  "short_commit": "2029a69a0b",
+  "subject": "ArmVirtPkg: ArmCcaRsiLib: Add interfaces to manage the Realm IPA state",
+  "suitable": false,
+  "reasons": [
+    "This commit adds new functions (ArmCcaRsiGetIpaState and ArmCcaRsiSetIpaState) and new type definitions to ArmCcaRsiLib. It is entirely new code addition, not a transformation of existing patterns.",
+    "Coccinelle operates on existing code to match and transform; it cannot be used to add new API functions or data types.",
+    "The change extends an existing library with new RSI interface wrappers, which is a new feature addition not expressible as a SmPL transformation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

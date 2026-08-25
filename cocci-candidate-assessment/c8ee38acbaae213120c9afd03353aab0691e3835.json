@@ -1,0 +1,14 @@
+{
+  "commit": "c8ee38acbaae213120c9afd03353aab0691e3835",
+  "short_commit": "c8ee38acba",
+  "subject": "CryptoPkg/OpensslLib: add cmellia and cmac algorithm in OpensslFullLib",
+  "suitable": false,
+  "reasons": [
+    "Changes are primarily auto-generated OpenSSL assembly files and build configuration (configure.py, .inf files)",
+    "The generated assembly files are not C source transformations suitable for Coccinelle",
+    "The configure.py change (removing no-camellia/no-cmac flags) is a build system change, not a C code pattern",
+    "No repeated C code transformation pattern present"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "b074eb78b4fc451642b2f1dbd90f3830be13cbfe",
+  "short_commit": "b074eb78b4",
+  "subject": "MdeModulePkg/PciBusDxe: Add optional CRS retry for enumeration",
+  "suitable": false,
+  "reasons": [
+    "Large feature addition: introduces entirely new CRS retry logic, new PCDs, new macros, and a restructured PciDevicePresent() function body",
+    "No before/after transformation of existing patterns — this is a new feature with complex conditional retry loops, not a mechanical collateral evolution",
+    "The existing pattern (checking VendorId != 0xffff && != 0x0001) is replaced with new macro names plus extensive new logic; this requires semantic understanding, not structural pattern matching"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

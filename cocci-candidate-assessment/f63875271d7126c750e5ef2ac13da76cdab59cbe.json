@@ -1,0 +1,13 @@
+{
+  "commit": "f63875271d7126c750e5ef2ac13da76cdab59cbe",
+  "short_commit": "f63875271d",
+  "subject": "ArmPkg/Library/StandaloneMmEntryPoint: introduce IsSecureMmCommBufferAddr()",
+  "suitable": false,
+  "reasons": [
+    "This is a one-off helper introduction used from a single source file.",
+    "It does not apply a repeated transformation across multiple call sites or files.",
+    "There is no scalable before/after pattern for Coccinelle to target."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

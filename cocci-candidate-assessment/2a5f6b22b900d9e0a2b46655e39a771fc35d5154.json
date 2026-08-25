@@ -1,0 +1,13 @@
+{
+  "commit": "2a5f6b22b900d9e0a2b46655e39a771fc35d5154",
+  "short_commit": "2a5f6b22b9",
+  "subject": "TcgTpmPkg: Update Readme.md to use markdown code block syntax",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

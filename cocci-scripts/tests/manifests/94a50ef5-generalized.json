@@ -1,0 +1,96 @@
+{
+  "id": "94a50ef5-generalized",
+  "cocciFile": "cocci-scripts/94a50ef5-is-aligned-generalized.cocci",
+  "cases": [
+    {
+      "name": "replay-cpupagetablemap",
+      "beforeSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67^:UefiCpuPkg/Library/CpuPageTableLib/CpuPageTableMap.c"
+      },
+      "afterSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67:UefiCpuPkg/Library/CpuPageTableLib/CpuPageTableMap.c"
+      }
+    },
+    {
+      "name": "replay-smmcpumemorymanagement",
+      "beforeSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67^:UefiCpuPkg/PiSmmCpuDxeSmm/SmmCpuMemoryManagement.c"
+      },
+      "afterSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67:UefiCpuPkg/PiSmmCpuDxeSmm/SmmCpuMemoryManagement.c"
+      }
+    },
+    {
+      "name": "fixture-power-of-two",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5-generalized/PowerOfTwo.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5-generalized/PowerOfTwo.after.c"
+      }
+    },
+    {
+      "name": "fixture-bitmask-alignment",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5-generalized/BitmaskAlignment.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5-generalized/BitmaskAlignment.after.c"
+      }
+    },
+    {
+      "name": "fixture-modulo-alignment",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5-generalized/ModuloAlignment.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5-generalized/ModuloAlignment.after.c"
+      }
+    },
+    {
+      "name": "replay-pciio-shift-alignment",
+      "beforeSource": {
+        "gitRevision": "c00c1216ce7f6e02b00da95747a7f4d4c239c1b1:MdeModulePkg/Bus/Pci/PciBusDxe/PciIo.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5-generalized/PciIoShiftAlignment.after.c"
+      }
+    },
+    {
+      "name": "replay-iolib-mmio-buffer-sizeof-alignment",
+      "beforeSource": {
+        "gitRevision": "c00c1216ce7f6e02b00da95747a7f4d4c239c1b1:MdePkg/Library/BaseIoLibIntrinsic/IoLibMmioBuffer.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5-generalized/IoLibMmioBufferSizeofAlignment.after.c"
+      }
+    },
+    {
+      "name": "replay-scanmem32-sizeof-alignment",
+      "beforeSource": {
+        "gitRevision": "c00c1216ce7f6e02b00da95747a7f4d4c239c1b1:MdePkg/Library/BaseMemoryLib/ScanMem32Wrapper.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5-generalized/ScanMem32SizeofAlignment.after.c"
+      }
+    },
+    {
+      "name": "fixture-normalize-parens",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5-generalized/NormalizeParens.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5-generalized/NormalizeParens.after.c"
+      }
+    },
+    {
+      "name": "fixture-address-is-aligned",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5-generalized/AddressIsAligned.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5-generalized/AddressIsAligned.after.c"
+      }
+    }
+  ]
+}

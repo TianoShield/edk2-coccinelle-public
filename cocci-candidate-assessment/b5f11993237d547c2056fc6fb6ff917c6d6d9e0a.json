@@ -1,0 +1,14 @@
+{
+  "commit": "b5f11993237d547c2056fc6fb6ff917c6d6d9e0a",
+  "short_commit": "b5f1199323",
+  "subject": "EmbeddedPkg: Add missing FreeAlignedPages() implementation",
+  "suitable": false,
+  "reasons": [
+    "This is a new function implementation added to a single file — it adds a stub FreeAlignedPages() that was previously missing.",
+    "There is no before-pattern to match and replace; the change is purely additive.",
+    "No repetitive transformation across multiple sites — just one new function in one file.",
+    "Not a systematic API migration or collateral evolution; it is a one-off addition."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

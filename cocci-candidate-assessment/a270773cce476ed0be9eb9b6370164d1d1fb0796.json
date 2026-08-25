@@ -1,0 +1,14 @@
+{
+  "commit": "a270773cce476ed0be9eb9b6370164d1d1fb0796",
+  "short_commit": "a270773cce",
+  "subject": "SecurityPkg: Tcg2AcpiFfa: Fix endianness of partition ID",
+  "suitable": false,
+  "reasons": [
+    "Single-file structural change: replaces a raw byte array (PlatformSpecificParameters[]) with a typed struct (FfaParameters) and renames the typedef",
+    "Involves data structure redesign (EFI_TPM2_ACPI_TABLE_V4 -> V5) and field access changes; requires semantic understanding of the endianness fix",
+    "Not a repeated pattern — this is a one-off migration in a single specialized file",
+    "Coccinelle could theoretically match field access replacements, but the struct rename and endianness-aware field remapping make it too case-specific"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

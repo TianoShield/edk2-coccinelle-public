@@ -1,0 +1,13 @@
+{
+  "commit": "27c785b0df7f6ef327a07b32c1680ecfc389ded4",
+  "short_commit": "27c785b0df",
+  "subject": "ShellPkg/UefiShellLevel3: Extract ProcessFileList() function",
+  "suitable": false,
+  "reasons": [
+    "Refactoring commit that extracts a new ProcessFileList() helper in Touch.c and Type.c",
+    "Function extraction — moving code into a newly defined function — is not expressible in SmPL; Coccinelle cannot create new function definitions",
+    "Although two files are touched, the extracted code differs between them and requires per-file judgment, not a uniform pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

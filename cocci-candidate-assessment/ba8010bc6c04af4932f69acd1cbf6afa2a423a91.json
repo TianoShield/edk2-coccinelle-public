@@ -1,0 +1,13 @@
+{
+  "commit": "ba8010bc6c04af4932f69acd1cbf6afa2a423a91",
+  "short_commit": "ba8010bc6c",
+  "subject": "BaseTools/Ecc: Apply CParser4 ANTLR 4.9 regeneration whitespace changes",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

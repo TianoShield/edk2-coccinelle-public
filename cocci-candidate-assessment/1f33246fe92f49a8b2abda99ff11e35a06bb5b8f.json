@@ -1,0 +1,13 @@
+{
+  "commit": "1f33246fe92f49a8b2abda99ff11e35a06bb5b8f",
+  "short_commit": "1f33246fe9",
+  "subject": "CryptoPkg: Add CLANGPDB AArch64 Support",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

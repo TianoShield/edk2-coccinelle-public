@@ -1,0 +1,14 @@
+{
+  "commit": "b80000847abbefe5c263d35e515c3acc11a96059",
+  "short_commit": "b80000847a",
+  "subject": "SecurityPkg/Library: use ArmFfaGetPartitionInfo() in Tpm2ServiceFfaLib",
+  "suitable": true,
+  "reasons": [
+    "Part of the ArmFfaGetPartitionInfo() migration series (c16f1cc684 introduces the helper; 96ad9bd397, 8955d8db32, b80000847a convert call sites).",
+    "Removes the same manual FF-A descriptor lookup boilerplate as the sibling commits, replaced by a single ArmFfaLibGetPartitionInfo (Guid, &Info) call.",
+    "Taken individually the commit changes one call path, but across the series the same before/after shape repeats in Tcg2ConfigFfaPeim, MmCommunicationDxe/Pei, and Tpm2ServiceFfaLib, which is enough repetition for a robust rule.",
+    "Covered by 96ad9bd397-armffa-get-partition-info.cocci; the Tpm2ServiceFfaRaw test fixture exercises this commit's call site."
+  ],
+  "candidate_pattern": "Replace manual FF-A descriptor partition-info lookup boilerplate (ArmFfaLibPartitionIdGet, ArmFfaLibGetRxTxBuffers, ArmFfaLibPartitionInfoGet with FFA_PART_INFO_FLAG_TYPE_DESC, Rx-buffer descriptor copy and release) with a single ArmFfaLibGetPartitionInfo (Guid, &Info) call",
+  "confidence": "high"
+}

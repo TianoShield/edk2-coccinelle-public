@@ -1,0 +1,13 @@
+{
+  "commit": "c204f5402ea545074d7ac810b85a21225c2cf54c",
+  "short_commit": "c204f5402e",
+  "subject": "DynamicTablesPkg: Adds API to create method with Notify support",
+  "suitable": false,
+  "reasons": [
+    "This is an API addition, not a migration of existing call sites.",
+    "The change introduces new functionality rather than repeating a structural edit across the tree.",
+    "Coccinelle is not a good fit for one-off API creation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

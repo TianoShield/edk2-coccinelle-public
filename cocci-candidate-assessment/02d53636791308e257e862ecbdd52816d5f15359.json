@@ -1,0 +1,13 @@
+{
+  "commit": "02d53636791308e257e862ecbdd52816d5f15359",
+  "short_commit": "02d5363679",
+  "subject": "MdeModulePkg HobPrintLib: Also print EFI_HOB_TYPE_UNUSED type HOB",
+  "suitable": false,
+  "reasons": [
+    "One-off fix in a single file: adds a new entry to a handler table and guards a function call with a NULL check",
+    "The changes are heterogeneous (table entry addition, NULL guard, typo fix) with no single repeated structural pattern",
+    "No adjacent commits apply a similar pattern to other files"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

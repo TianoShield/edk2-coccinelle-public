@@ -1,0 +1,14 @@
+{
+  "commit": "30b1cb6cabb95f1c385564957a7246882f828519",
+  "short_commit": "30b1cb6cab",
+  "subject": "DynamicTablesPkg/FdtHwInfoParserLib: Update SmmuV3 DeviceId Valid flag",
+  "suitable": false,
+  "reasons": [
+    "Single-line addition in one file: sets a flags bit (EFI_ACPI_IORT_SMMUv3_FLAG_DEVICEID_VALID) in a specific conditional block.",
+    "This is a targeted one-off bug fix for a missing flag assignment — no pattern to match across multiple sites.",
+    "No neighboring commits share the same transformation pattern.",
+    "Not suitable for Coccinelle due to lack of repetitiveness."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

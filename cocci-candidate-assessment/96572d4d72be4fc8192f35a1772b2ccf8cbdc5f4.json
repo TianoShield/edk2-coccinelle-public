@@ -1,0 +1,14 @@
+{
+  "commit": "96572d4d72be4fc8192f35a1772b2ccf8cbdc5f4",
+  "short_commit": "96572d4d72",
+  "subject": "ShellPkg: SMBIOS type 20 Extended Starting/Ending Address print type error",
+  "suitable": false,
+  "reasons": [
+    "The commit fixes a single C formatting/printing bug in one function, not a broad structural transformation.",
+    "The two replacements are local to one SMBIOS type handler and do not appear across files or multiple call sites.",
+    "This is a one-off correctness fix, which the criteria explicitly treat as a poor Coccinelle target.",
+    "There is no reusable API migration or collateral-evolution pattern here."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

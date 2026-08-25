@@ -1,0 +1,13 @@
+{
+  "commit": "1aaa37e00a71446adc7a7e78018715c91fbd173e",
+  "short_commit": "1aaa37e00a",
+  "subject": "EmulatorPkg/Unix/Host: Fix symbol loading with clang",
+  "suitable": false,
+  "reasons": [
+    "This is a host-toolchain-specific build fix.",
+    "It does not repeat as a structural code migration.",
+    "The change is too local and environment-specific for Coccinelle."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

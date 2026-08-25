@@ -1,0 +1,14 @@
+{
+  "commit": "4cc6026cb45a344269d8ab18ee6240e48ad5247d",
+  "short_commit": "4cc6026cb4",
+  "subject": "CryptoPkg: add some Bn interfaces to build TCG TPM library",
+  "suitable": false,
+  "reasons": [
+    "Primarily additive: 980 insertions adding new BigNum API functions across CryptoPkg driver, protocol, and Null library implementations",
+    "Adds new functions (BigNumMul, BigNumDiv2, BigNumGcd, BigNumContextStart/End/Get) with consistent implementation stubs across files",
+    "While the CALL_BASECRYPTLIB wrapper pattern is structurally uniform, these are new function additions not transformations of existing call patterns",
+    "The PcdCryptoServiceFamilyEnable.h changes reorganize Bn service bits but this is a structural refactor of bit assignments not a simple rename"
+  ],
+  "candidate_pattern": null,
+  "confidence": "medium"
+}

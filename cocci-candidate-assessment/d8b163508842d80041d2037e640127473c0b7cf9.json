@@ -1,0 +1,13 @@
+{
+  "commit": "d8b163508842d80041d2037e640127473c0b7cf9",
+  "short_commit": "d8b1635088",
+  "subject": "DynamicTablesPkg: add Hest table generator",
+  "suitable": false,
+  "reasons": [
+    "Primarily an addition of new code — ~2000 lines of new ACPI HEST table generator with no existing code being transformed",
+    "New driver/library implementation from scratch; Coccinelle transforms existing patterns, not new feature additions",
+    "No repetitive before/after transformation pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

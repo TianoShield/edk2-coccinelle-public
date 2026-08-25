@@ -1,0 +1,14 @@
+{
+  "commit": "939de47d12eeafdb6976217ab52015ee9cae8253",
+  "short_commit": "939de47d12",
+  "subject": "MdePkg/DebugLib: add DEBUG_PAGING",
+  "suitable": false,
+  "reasons": [
+    "This commit only adds a new #define DEBUG_PAGING constant to a header file; it is purely additive with no existing pattern being transformed",
+    "Coccinelle is suited for transforming existing code patterns, not for adding new macro definitions",
+    "The commit is the prerequisite/foundation for the DEBUG_VERBOSE->DEBUG_PAGING series but is not itself a transformation",
+    "No repeated pattern: single line addition in a single file"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

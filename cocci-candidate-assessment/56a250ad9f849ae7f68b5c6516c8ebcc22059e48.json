@@ -1,0 +1,13 @@
+{
+  "commit": "56a250ad9f849ae7f68b5c6516c8ebcc22059e48",
+  "short_commit": "56a250ad9f",
+  "subject": "DynamicTablesPkg: AcpiIortLibArm: Support IORT revision 6",
+  "suitable": false,
+  "reasons": [
+    "This is a one-line change replacing a single constant (EFI_ACPI_IO_REMAPPING_TABLE_REVISION_05 to EFI_ACPI_IO_REMAPPING_TABLE_REVISION_06) in one C file at one location.",
+    "One-off fixes with a single instance are not good Coccinelle candidates as there is no repetitiveness or scale to justify a semantic patch.",
+    "The change requires knowledge of which revision is correct and is not a mechanical, structural transformation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

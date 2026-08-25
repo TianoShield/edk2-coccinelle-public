@@ -1,0 +1,14 @@
+{
+  "commit": "ea8447eec78c77dfb9d120f57d70b8d267317cc4",
+  "short_commit": "ea8447eec7",
+  "subject": "MdeModulePkg: Remove global usage from ArmFfaSecRxTxMap",
+  "suitable": false,
+  "reasons": [
+    "Refactors FF-A Rx/Tx buffer state management across two files rather than applying one clear match-and-replace pattern",
+    "Edits are tightly coupled to function-specific control flow, error handling, HOB creation, and unmap cleanup",
+    "Only small local repetitions exist (deriving buffer addresses from the allocation HOB), but the commit as a whole is not repetitive at scale",
+    "This is closer to a context-dependent redesign than an API migration or collateral evolution"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "a6319874208e65baf97dc895d61f7b4da27a325e",
+  "short_commit": "a631987420",
+  "subject": "StandaloneMmPkg: Ensure section length alignment",
+  "suitable": true,
+  "reasons": [
+    "Neighboring commit f3f585bd42 (ArmPkg/ArmStandaloneMmCoreEntryPoint) applies the exact same pattern: replacing SectionHeader.Misc.VirtualSize with ALIGN_VALUE(SectionHeader.Misc.VirtualSize, SectionAlignment) in permission-update calls",
+    "The two commits form a series by the same author with identical commit messages and identical transformation applied to different packages",
+    "Clear structural match-and-replace: calls to permission updater functions that take raw VirtualSize should be wrapped with ALIGN_VALUE"
+  ],
+  "candidate_pattern": "Replace permission updater calls: TextUpdater/ReadOnlyUpdater/NoExecUpdater/ReadWriteUpdater(Base, SectionHeader.Misc.VirtualSize) -> same(Base, ALIGN_VALUE(SectionHeader.Misc.VirtualSize, SectionAlignment))",
+  "confidence": "medium"
+}

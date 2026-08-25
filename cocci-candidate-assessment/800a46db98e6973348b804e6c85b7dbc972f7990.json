@@ -1,0 +1,14 @@
+{
+  "commit": "800a46db98e6973348b804e6c85b7dbc972f7990",
+  "short_commit": "800a46db98",
+  "subject": "RedfishPkg: Add LOONGARCH64 as supported architecture",
+  "suitable": false,
+  "reasons": [
+    "This is a build/configuration update, not a semantic C transformation.",
+    "The changes are single-line architecture list additions in a header and DSC file.",
+    "There is no repeated structural pattern or API migration to encode in SmPL.",
+    "The commit is outside the kind of C code evolution Coccinelle is meant for."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "e9119475e1fdf1669891cd3e62c3c9617c6ee98f",
+  "short_commit": "e9119475e1",
+  "subject": "UefiCpuPkg CpuPageTableLib.h: Correct PageTableParse() Map para to OUT",
+  "suitable": false,
+  "reasons": [
+    "Single-location fix in a header file: changes one parameter annotation from IN to OUT",
+    "No adjacent commits apply the same IN-to-OUT correction to other functions or files",
+    "One-off correction requiring domain knowledge about the function contract; not a systematic API migration"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

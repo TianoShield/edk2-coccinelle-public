@@ -1,0 +1,14 @@
+{
+  "commit": "aa02571f362c2c20842fd6c2de88b746a9c8acd3",
+  "short_commit": "aa02571f36",
+  "subject": "MdeModulePkg: Change EndofDxeEvent TPLs to TPL_CALLBACK",
+  "suitable": true,
+  "reasons": [
+    "Simple, uniform substitution of TPL_NOTIFY with TPL_CALLBACK at two CreateEventEx call sites in two separate files in MdeModulePkg",
+    "Well-defined before/after pattern: within gBS->CreateEventEx calls targeting gEfiEndOfDxeEventGroupGuid, change the TPL argument from TPL_NOTIFY to TPL_CALLBACK",
+    "Paired with its revert commit 8c50e656c0 (neighbor offset +2 direction older) which does the inverse — both are structurally equivalent Coccinelle candidates",
+    "The pattern (CreateEventEx with a specific event group GUID and a specific TPL) is mechanically expressible in SmPL"
+  ],
+  "candidate_pattern": "@@\nexpression callback;\nexpression ctx;\nexpression event;\n@@\ngBS->CreateEventEx(\n   EVT_NOTIFY_SIGNAL,\n-  TPL_NOTIFY,\n+  TPL_CALLBACK,\n   callback,\n   ctx,\n   &gEfiEndOfDxeEventGroupGuid,\n   event\n)",
+  "confidence": "medium"
+}

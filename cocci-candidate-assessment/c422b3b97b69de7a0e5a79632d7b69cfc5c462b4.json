@@ -1,0 +1,13 @@
+{
+  "commit": "c422b3b97b69de7a0e5a79632d7b69cfc5c462b4",
+  "short_commit": "c422b3b97b",
+  "subject": "UefiCpuPkg/MpInitLibUp: Fix #UD exception due to NULL pointer deref",
+  "suitable": false,
+  "reasons": [
+    "One-off bug fix: adds NULL-pointer guards for OPTIONAL OUT parameters in a single function in MpInitLibUp.c",
+    "No repeated pattern across files; the fix is specific to this one uniprocessor stub implementation",
+    "Context-dependent: the fix is driven by the specific API contract (OPTIONAL parameters) of this function, not a generic pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

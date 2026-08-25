@@ -1,0 +1,13 @@
+{
+  "commit": "58c9ba24d4b7192496eeedbac3bffc0e81cc420f",
+  "short_commit": "58c9ba24d4",
+  "subject": "MdeModulePkg/TerminalDxe: Fix Backspace key for VT-UTF8 terminal type",
+  "suitable": false,
+  "reasons": [
+    "One-off fix in a single location: expands a single if-condition to include an additional terminal type",
+    "No repeated pattern across files; the change is a case-specific logic fix for VT-UTF8 terminal handling",
+    "No neighbors share the same pattern; adjacent commits address unrelated issues"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "f840501d1f861eab87d95779893f412dcf40fc62",
+  "short_commit": "f840501d1f",
+  "subject": "OvmfPkg: Fix property typos in OvmfPkg",
+  "suitable": false,
+  "reasons": [
+    "The commit only edits property text and comments.",
+    "It is documentation cleanup, not a C structural change.",
+    "There is no reusable match-and-replace rule in C syntax here."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

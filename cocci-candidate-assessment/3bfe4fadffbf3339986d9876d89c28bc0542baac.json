@@ -1,0 +1,13 @@
+{
+  "commit": "3bfe4fadffbf3339986d9876d89c28bc0542baac",
+  "short_commit": "3bfe4fadff",
+  "subject": "OvmfPkg: SEC/SMM: Use 256 IDT Descriptors",
+  "suitable": true,
+  "reasons": [
+    "Part of a series (with 3454d7ab41, 4512733ac8) replacing local magic-number IDT entry count constants (SEC_IDT_ENTRY_COUNT=34, 32) with the centrally defined X86_CPU_INTERRUPT_NUM macro across multiple packages",
+    "Pattern is well-defined: replace integer literal (32, 34) or local #define with X86_CPU_INTERRUPT_NUM in IDT table size expressions and loop bounds",
+    "As one-of-N in a series the repetitiveness is high; the same structural substitution is applied in OvmfPkg mirroring the UefiCpuPkg change"
+  ],
+  "candidate_pattern": "Replace local IDT entry count constants (32, 34, SEC_IDT_ENTRY_COUNT) with X86_CPU_INTERRUPT_NUM in sizeof() and loop-bound expressions",
+  "confidence": "medium"
+}

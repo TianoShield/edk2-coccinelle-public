@@ -1,0 +1,14 @@
+{
+  "commit": "56b1ab8ca30fc40c1f57a586c935cbbf18befac2",
+  "short_commit": "56b1ab8ca3",
+  "subject": "NetworkPkg/HttpBootDxe: Print TLS errors on screen during HTTP boot",
+  "suitable": false,
+  "reasons": [
+    "Feature addition: installs an HTTP callback protocol to capture and display TLS errors during HTTP boot",
+    "Mostly new code (115 insertions, 6 deletions) across 4 files adding new functionality",
+    "No repeated structural pattern; the change is a new implementation, not a refactoring of existing code",
+    "No expressible SmPL rule"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

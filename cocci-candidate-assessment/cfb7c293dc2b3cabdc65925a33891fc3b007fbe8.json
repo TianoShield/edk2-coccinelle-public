@@ -1,0 +1,13 @@
+{
+  "commit": "cfb7c293dc2b3cabdc65925a33891fc3b007fbe8",
+  "short_commit": "cfb7c293dc",
+  "subject": "OvmfPkg: Remove references to GCC5 in scripts and tools",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

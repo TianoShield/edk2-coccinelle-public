@@ -1,0 +1,14 @@
+{
+  "commit": "d6f41c4ff25bd277e9e67b9c9fea0172763aa367",
+  "short_commit": "d6f41c4ff2",
+  "subject": "CryptoPkg: BaseCryptLib: Reject empty X.509 cert when retrieving public key",
+  "suitable": true,
+  "reasons": [
+    "Adds an identical early-return guard (if CertSize == 0 -> set context to NULL, return FALSE) to two functions in the same file: RsaGetPublicKeyFromX509 and EcGetPublicKeyFromX509",
+    "The pattern is structurally identical in both instances: check CertSize == 0, null out the output context pointer, return FALSE",
+    "Could be part of a broader pattern if other X.509 or crypto API entry points in BaseCryptLib also lack this guard - making it a collateral evolution candidate",
+    "The repeated within-file duplication is an exact structural match suitable for Coccinelle"
+  ],
+  "candidate_pattern": "@@\nidentifier fn, CertSize, Context;\n@@\nfn(..., UINTN CertSize, ..., void **Context, ...)\n{\n  if (Context == NULL) { return FALSE; }\n+ if (CertSize == 0) { *Context = NULL; return FALSE; }\n  ...\n}",
+  "confidence": "medium"
+}

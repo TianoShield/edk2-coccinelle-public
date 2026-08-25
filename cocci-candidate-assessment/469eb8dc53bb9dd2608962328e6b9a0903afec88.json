@@ -1,0 +1,13 @@
+{
+  "commit": "469eb8dc53bb9dd2608962328e6b9a0903afec88",
+  "short_commit": "469eb8dc53",
+  "subject": ".azurepipelines,OvmfPkg: Remove RISCV64, LOONGARCH64 from CLANGPDB CI",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

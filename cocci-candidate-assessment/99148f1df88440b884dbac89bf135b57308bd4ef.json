@@ -1,0 +1,13 @@
+{
+  "commit": "99148f1df88440b884dbac89bf135b57308bd4ef",
+  "short_commit": "99148f1df8",
+  "subject": "DynamicTablesPkg: AcpiIortLibArm: Support SMMUv3 revision 5",
+  "suitable": false,
+  "reasons": [
+    "Large feature addition (170 lines added) to IortGenerator.c implementing SMMUv3 revision 5 support with new conditional logic, new fields, and validity checks",
+    "Requires case-by-case reasoning about IORT revision 5 semantics, device ID validity bits, and node-specific fields; not a uniform structural transformation",
+    "No repetitive before/after pattern expressible as SmPL rules across multiple files"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

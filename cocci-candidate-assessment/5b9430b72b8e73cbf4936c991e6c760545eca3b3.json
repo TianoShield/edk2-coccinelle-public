@@ -1,0 +1,13 @@
+{
+  "commit": "5b9430b72b8e73cbf4936c991e6c760545eca3b3",
+  "short_commit": "5b9430b72b",
+  "subject": "MdeModulePkg: DxeMain: Check memory type overlap inside CoreGetMemoryMap",
+  "suitable": false,
+  "reasons": [
+    "Large addition of new validation logic (115 lines) rather than a structural transformation of existing code",
+    "Adds entirely new helper functions and a DEBUG_CODE_BEGIN/END block; this is new feature code, not a pattern-based refactor",
+    "No repeated pattern across files; single-location change with complex domain-specific reasoning required"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

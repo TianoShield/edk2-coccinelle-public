@@ -1,0 +1,14 @@
+{
+  "commit": "7746ec4ddeaabc96b1056025a24c69cbd9cd21b0",
+  "short_commit": "7746ec4dde",
+  "subject": "ShellPkg/SmbiosView: Add Type45 entry to query table",
+  "suitable": false,
+  "reasons": [
+    "Single insertion of one struct entry into a lookup table in one file",
+    "Adding a new SMBIOS type entry is a data addition, not a code transformation pattern",
+    "No repetitive structural pattern suitable for Coccinelle; this is a one-off table update",
+    "Neighbors are unrelated commits (GCC5 removal, PCIe changes) - not part of a series"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

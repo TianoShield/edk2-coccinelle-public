@@ -1,0 +1,13 @@
+{
+  "commit": "829c70b9efe0fe16406c08bc56092bc8a927b885",
+  "short_commit": "829c70b9ef",
+  "subject": "DynamicTablesPkg: add common objects for common error sources",
+  "suitable": false,
+  "reasons": [
+    "Purely additive commit \u2014 new struct definitions in ArchCommonNameSpaceObjects.h and new parser table entries in ConfigurationManagerObjectParser.c",
+    "No existing code is being transformed; this is new feature work adding CmArmCommonErrSrc object types",
+    "Coccinelle cannot be used to add new entries to a data table or new struct definitions"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

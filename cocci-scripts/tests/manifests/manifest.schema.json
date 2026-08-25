@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/edk2-coccinelle/cocci-scripts/tests/manifests/manifest.schema.json",
+  "title": "Coccinelle Test Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "cocciFile",
+    "cases"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "cocciFile": {
+      "type": "string",
+      "minLength": 1
+    },
+    "spatchOptions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/case"
+      }
+    }
+  },
+  "$defs": {
+    "lineRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "startLine",
+        "endLine"
+      ],
+      "properties": {
+        "startLine": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "endLine": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "sourceSpec": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "gitRevision": {
+          "type": "string",
+          "minLength": 3,
+          "pattern": "^.+:.+$"
+        },
+        "fixturePath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ranges": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/lineRange"
+          }
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "gitRevision"
+          ],
+          "not": {
+            "required": [
+              "fixturePath"
+            ]
+          }
+        },
+        {
+          "required": [
+            "fixturePath"
+          ],
+          "not": {
+            "required": [
+              "gitRevision"
+            ]
+          }
+        }
+      ]
+    },
+    "case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "beforeSource",
+        "afterSource"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "beforeSource": {
+          "$ref": "#/$defs/sourceSpec"
+        },
+        "afterSource": {
+          "$ref": "#/$defs/sourceSpec"
+        }
+      }
+    }
+  }
+}

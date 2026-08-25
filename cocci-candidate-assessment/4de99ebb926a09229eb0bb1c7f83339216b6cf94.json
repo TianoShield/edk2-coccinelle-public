@@ -1,0 +1,13 @@
+{
+  "commit": "4de99ebb926a09229eb0bb1c7f83339216b6cf94",
+  "short_commit": "4de99ebb92",
+  "subject": "ShellPkg/UefiShellDriver1: Extract MainCmdXXX() function",
+  "suitable": false,
+  "reasons": [
+    "Large-scale function extraction refactoring across 10 files: splits ShellCommandRunXXX() into a new MainCmdXXX() helper per command",
+    "Function extraction requires understanding the boundary between initialization boilerplate and main logic, which is not mechanically determinable",
+    "No functional change; purely structural refactoring that Coccinelle cannot express as a pattern-match-and-replace rule"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

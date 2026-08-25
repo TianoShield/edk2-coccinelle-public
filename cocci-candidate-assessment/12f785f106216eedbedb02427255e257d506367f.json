@@ -1,0 +1,14 @@
+{
+  "commit": "12f785f106216eedbedb02427255e257d506367f",
+  "short_commit": "12f785f106",
+  "subject": "Revert \"BaseTools: Add support for out-of-tree builds\"",
+  "suitable": false,
+  "reasons": [
+    "The commit is dominated by GNU make, shell wrapper, and Python changes rather than C source transformations.",
+    "Coccinelle targets C/C++ AST-level edits; most of this revert is outside that domain.",
+    "Even where changes repeat, the patterns are build-system specific (`BUILDROOT`/`OBJDIR` handling, path rewrites, wrapper logic), not C semantic collateral evolution.",
+    "This is a revert of an out-of-tree build design change, so the edits are tied to build-flow context across multiple file types rather than one reusable C before/after rule."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

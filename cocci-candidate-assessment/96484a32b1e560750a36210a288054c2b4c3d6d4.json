@@ -1,0 +1,14 @@
+{
+  "commit": "96484a32b1e560750a36210a288054c2b4c3d6d4",
+  "short_commit": "96484a32b1",
+  "subject": "OvmfPkg/VirtioBlkDxe: protect SynchronousRequest against interrupts",
+  "suitable": false,
+  "reasons": [
+    "Bug fix that adds TPL raise/restore around a specific critical section in one function in one file",
+    "The exact placement of RaiseTPL/RestoreTPL requires understanding the concurrency semantics of VirtioPrepare/VirtioFlush; this is not a mechanical pattern",
+    "Single location change; the commit message notes it mirrors a previous fix in VirtioRng but does not indicate there are other instances to transform",
+    "No series pattern: neighbors are unrelated commits"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

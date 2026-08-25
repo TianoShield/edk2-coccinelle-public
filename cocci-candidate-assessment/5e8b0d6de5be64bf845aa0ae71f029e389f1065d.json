@@ -1,0 +1,13 @@
+{
+  "commit": "5e8b0d6de5be64bf845aa0ae71f029e389f1065d",
+  "short_commit": "5e8b0d6de5",
+  "subject": "ShellPkg/SerMode: Lower indentation level in DisplaySettings()",
+  "suitable": false,
+  "reasons": [
+    "Pure style/control-flow refactoring: inverts error-handling condition to reduce indentation in a single function in one file",
+    "Coccinelle cannot mechanically express 'invert an if-block to lower indentation' since the transformation requires understanding the semantic equivalence of the restructured control flow",
+    "No repeated pattern across files; this is a one-off manual cleanup within a single function"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

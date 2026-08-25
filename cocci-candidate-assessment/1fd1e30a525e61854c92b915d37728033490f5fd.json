@@ -1,0 +1,13 @@
+{
+  "commit": "1fd1e30a525e61854c92b915d37728033490f5fd",
+  "short_commit": "1fd1e30a52",
+  "subject": "ArmVirtPkg: ArmCcaRsiLib: Add RSI Features support",
+  "suitable": false,
+  "reasons": [
+    "Adds a new function RsiGetFeatures() to a library: new header declaration plus new implementation; purely additive",
+    "Part of a series (idx 83) adding distinct RSI interface functions (attestation, host call, REMs, IPA state), but each adds a completely different function with unique semantics",
+    "No existing code is being transformed; the series adds new API surface incrementally rather than mechanically transforming existing call patterns"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "e01df522811363bf0dfb2bb5921f6f79396213d8",
+  "short_commit": "e01df52281",
+  "subject": "MdeModulePkg/VarCheckHiiLib: fix gcc 16 warning",
+  "suitable": false,
+  "reasons": [
+    "This is a one-off warning fix in a single function, not a repeated structural transformation.",
+    "The edit removes one unused loop variable and changes one loop form, which is context-specific rather than a reusable match-and-replace pattern.",
+    "There is no scale or collateral evolution across multiple call sites or files for Coccinelle to generalize."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

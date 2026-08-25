@@ -1,0 +1,15 @@
+{
+  "commit": "7416ebda09de01092c9dec0bdf078a64e93dc69f",
+  "short_commit": "7416ebda09",
+  "subject": "MdeModulePkg: Remove global usage in ArmFfaCommon",
+  "suitable": false,
+  "reasons": [
+    "Touches C code, but the commit is a broad refactor rather than a single uniform transformation.",
+    "Several edits are phase-specific and require case-by-case reasoning about DXE/PEI/SEC/StandaloneMM state handling and initialization flow.",
+    "The repeated `gPartId` replacement exists, but it is mixed with new API design, new locals/statics, constructor changes, and support-state handling.",
+    "Before/after shape is not consistent enough across all instances to describe the whole commit as one semantic patch.",
+    "Best Coccinelle fit here would be only a narrow subpattern, not the overall commit."
+  ],
+  "candidate_pattern": "A limited subpattern could replace direct `gPartId` use with a fetched local ID (`ArmFfaLibGetPartId` or `ArmFfaLibPartitionIdGet`) before composing FF-A arguments, but that does not cover most of the commit.",
+  "confidence": "high"
+}

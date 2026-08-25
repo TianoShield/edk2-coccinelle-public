@@ -1,0 +1,13 @@
+{
+  "commit": "74c508abe8dd57ec713e0d2aec9cc8a5cec4d57b",
+  "short_commit": "74c508abe8",
+  "subject": "MdePkg/BaseFdtLib: Add more wrappers",
+  "suitable": false,
+  "reasons": [
+    "This commit introduces new wrapper APIs and helper macros rather than changing existing call sites in a repetitive way.",
+    "It is API creation, not API migration or collateral evolution across many consumers.",
+    "The added wrappers are useful, but they do not match Coccinelle's typical before/after bulk transformation pattern."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

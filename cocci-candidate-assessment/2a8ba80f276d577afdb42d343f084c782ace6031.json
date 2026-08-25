@@ -1,0 +1,13 @@
+{
+  "commit": "2a8ba80f276d577afdb42d343f084c782ace6031",
+  "short_commit": "2a8ba80f27",
+  "subject": "MdePkg: Add CDAT structure definitions",
+  "suitable": false,
+  "reasons": [
+    "Pure addition of a new header file (CxlCdat.h) with 149 lines of struct definitions — no existing code is transformed",
+    "Coccinelle cannot be used to generate new struct definitions; it matches and rewrites existing C patterns",
+    "No repetitive before/after transformation pattern present"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

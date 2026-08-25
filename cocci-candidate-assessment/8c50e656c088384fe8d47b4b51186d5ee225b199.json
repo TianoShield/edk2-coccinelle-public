@@ -1,0 +1,14 @@
+{
+  "commit": "8c50e656c088384fe8d47b4b51186d5ee225b199",
+  "short_commit": "8c50e656c0",
+  "subject": "MdeModulePkg: : revert EndofDxeEvent TPLs to TPL_NOTIFY for FPDT",
+  "suitable": true,
+  "reasons": [
+    "Simple, uniform substitution of TPL_CALLBACK with TPL_NOTIFY at two CreateEventEx call sites in two separate files",
+    "This is a revert of commit aa02571f36 which itself changed TPL_NOTIFY to TPL_CALLBACK in the same two locations — both the original commit and this revert are Coccinelle-expressible",
+    "Pattern is well-defined: within gBS->CreateEventEx(..., TPL_CALLBACK, ..., &gEfiEndOfDxeEventGroupGuid, ...) replace TPL_CALLBACK with TPL_NOTIFY",
+    "Adjacent commit aa02571f36 (offset -1 neighbor) performs the exact inverse transformation, confirming this is a repeating structural pattern that Coccinelle can express bidirectionally"
+  ],
+  "candidate_pattern": "@@\nexpression callback;\nexpression ctx;\nexpression event;\n@@\ngBS->CreateEventEx(\n   EVT_NOTIFY_SIGNAL,\n-  TPL_CALLBACK,\n+  TPL_NOTIFY,\n   callback,\n   ctx,\n   &gEfiEndOfDxeEventGroupGuid,\n   event\n)",
+  "confidence": "medium"
+}

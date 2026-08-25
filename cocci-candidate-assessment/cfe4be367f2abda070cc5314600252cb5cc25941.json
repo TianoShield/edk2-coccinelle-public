@@ -1,0 +1,14 @@
+{
+  "commit": "cfe4be367f2abda070cc5314600252cb5cc25941",
+  "short_commit": "cfe4be367f",
+  "subject": "StandaloneMmPkg/MmCommunicationDxe: Enforce CommSize validation",
+  "suitable": false,
+  "reasons": [
+    "One-off bug fix adding two validation checks in a single function in a single file",
+    "The change replaces an ASSERT with a proper EFI_INVALID_PARAMETER return and adds a buffer size check - logic changes specific to this function's semantics",
+    "No repeated pattern across multiple files or call sites",
+    "Case-by-case reasoning is required to understand the CommSize vs BufferSize semantics"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

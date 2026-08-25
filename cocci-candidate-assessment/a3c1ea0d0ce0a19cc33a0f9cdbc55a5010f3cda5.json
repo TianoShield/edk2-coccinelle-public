@@ -1,0 +1,14 @@
+{
+  "commit": "a3c1ea0d0ce0a19cc33a0f9cdbc55a5010f3cda5",
+  "short_commit": "a3c1ea0d0c",
+  "subject": "MdeModulePkg: Optimize the process while cleaning dynamic string",
+  "suitable": false,
+  "reasons": [
+    "This is a refactor of one feature path in one driver, not a broad mechanical rewrite.",
+    "The commit introduces a helper plus a cached package list and changes lifecycle behavior.",
+    "The logic is context-specific and not repeated across multiple files or call sites.",
+    "Coccinelle would only cover a small subpattern, not the whole commit."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

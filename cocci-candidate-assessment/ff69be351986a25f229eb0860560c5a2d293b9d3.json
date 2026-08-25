@@ -1,0 +1,14 @@
+{
+  "commit": "ff69be351986a25f229eb0860560c5a2d293b9d3",
+  "short_commit": "ff69be3519",
+  "subject": "MdeModulePkg/CapsuleOnDiskLoadPei: fix gcc 16 warning",
+  "suitable": false,
+  "reasons": [
+    "The commit removes one unused loop variable from a single function.",
+    "There is no repeated structural before/after pattern across files or call sites.",
+    "This is a one-off warning cleanup, not an API migration or collateral evolution.",
+    "Coccinelle is not a good fit for an isolated dead-variable deletion."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

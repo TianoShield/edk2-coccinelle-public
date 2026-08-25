@@ -1,0 +1,13 @@
+{
+  "commit": "03e7c8c44f70d2e9c66c010ba84925d7d413d6ad",
+  "short_commit": "03e7c8c44f",
+  "subject": "MdeModulePkg: Update performance measurements to use new perf macros",
+  "suitable": false,
+  "reasons": [
+    "While the commit is in the same PERF_FUNCTION_* migration series as 11af818b3e (SecurityPkg), the specific changes here are mixed: adds PERF_FUNCTION_END() at early-return paths (Dispatcher.c) and adds PERF_CROSSMODULE_END/BEGIN pairs (BmBoot.c) — not a uniform PERF_START_EX/PERF_END_EX replacement",
+    "The PERF_CROSSMODULE_END/BEGIN insertions at specific semantic points (before legacy boot return, after BmEndOfBdsPerfCode) require case-by-case reasoning about the control flow, not a structural pattern match",
+    "The Dispatcher.c changes insert PERF_FUNCTION_END() at early return sites which is context-dependent; no clean before/after SmPL rule can express this insertion"
+  ],
+  "candidate_pattern": null,
+  "confidence": "medium"
+}

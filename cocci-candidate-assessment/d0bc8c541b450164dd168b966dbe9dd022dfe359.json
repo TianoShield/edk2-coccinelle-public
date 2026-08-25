@@ -1,0 +1,14 @@
+{
+  "commit": "d0bc8c541b450164dd168b966dbe9dd022dfe359",
+  "short_commit": "d0bc8c541b",
+  "subject": "CryptoPkg: add/modify EC interfaces for TPM TCG library",
+  "suitable": false,
+  "reasons": [
+    "Primarily additive: 891 insertions adding new EC API functions (EcGroupInitGFp, EcGroupSetGenerator, EcPointsMul) across CryptoPkg driver, protocol, and library implementations",
+    "New API additions require consistent stub/null implementations across multiple files, but this is collateral addition not transformation",
+    "The CALL_BASECRYPTLIB pattern is repeated structurally, but the changes are adding new function wrappers, not transforming existing call sites",
+    "This is preparation for TCG TPM library integration - domain-specific API extension not a systematic rename/migration of existing patterns"
+  ],
+  "candidate_pattern": null,
+  "confidence": "medium"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "0f2dc7558713f1774bb7317e9fdcd371fcbb10cc",
+  "short_commit": "0f2dc75587",
+  "subject": "MdeModulePkg: Don't Allow Guard Pages to Cross Bin Boundaries",
+  "suitable": false,
+  "reasons": [
+    "Complex algorithmic bug fix that changes the AdjustMemoryS() API signature from pass-by-value to pass-by-pointer (IN to IN OUT), adds new logic for tracking guard page placement, and updates all callers",
+    "While the API signature change (IN UINT64 Start -> IN OUT UINT64 *Start) affects multiple parameters and one call site, it is a targeted fix requiring deep understanding of heap guard semantics",
+    "The broader change involves restructuring the function body with new variables, new conditions, and changed logic — not a purely mechanical transformation",
+    "Single conceptual fix in a small cluster of related files; no series of similar changes across packages"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

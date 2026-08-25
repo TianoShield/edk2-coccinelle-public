@@ -1,0 +1,13 @@
+{
+  "commit": "507c956316e63e53738b484a9a08b73e119fcd73",
+  "short_commit": "507c956316",
+  "subject": "TcgTpmPkg: add TCG TPM 2.0 Reference Implementation Library",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

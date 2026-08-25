@@ -1,0 +1,13 @@
+{
+  "commit": "819af4cd11f4fe095a0cf149c6aa36b6917434bb",
+  "short_commit": "819af4cd11",
+  "subject": "IntelFsp2Pkg/FspSecCore: Allocate correct number of IDT entries on stack",
+  "suitable": false,
+  "reasons": [
+    "Targeted off-by-one bug fix in a single struct definition and a single loop bound in one package",
+    "The change from FixedPcdGet8(PcdFspMaxInterruptSupported) to FixedPcdGet8(PcdFspMaxInterruptSupported)+1 appears only twice in one package — not a widespread pattern across edk2",
+    "No collateral evolution series; this is an isolated correction in IntelFsp2Pkg with no analogous sibling commits"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

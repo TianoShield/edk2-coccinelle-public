@@ -1,0 +1,13 @@
+{
+  "commit": "d85a9c6e23c6eff2bdcb2eec9a6c79f0b6261603",
+  "short_commit": "d85a9c6e23",
+  "subject": "SecurityPkg: Make TPM2_Startup() return an error",
+  "suitable": false,
+  "reasons": [
+    "One-off addition of DEBUG + ASSERT_EFI_ERROR statements inside two specific error-handling paths in Tcg2Pei.c",
+    "No repeated cross-file pattern; the two instances are within the same function and serve different code paths",
+    "Debugging/diagnostic addition, not a structural transformation or API migration"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

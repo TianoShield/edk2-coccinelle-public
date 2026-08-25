@@ -1,0 +1,13 @@
+{
+  "commit": "4906829f64b3b9f9d7bc8a163c9c016831c0bd16",
+  "short_commit": "4906829f64",
+  "subject": ".github: Add ManageabilityPkg to git issue and bug report",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

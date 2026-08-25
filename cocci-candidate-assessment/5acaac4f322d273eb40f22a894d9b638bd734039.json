@@ -1,0 +1,13 @@
+{
+  "commit": "5acaac4f322d273eb40f22a894d9b638bd734039",
+  "short_commit": "5acaac4f32",
+  "subject": "NetworkPkg/Ip4Dxe: Reject IPv4 addresses ending with dot",
+  "suitable": false,
+  "reasons": [
+    "Single-site refactoring of one function (Ip4Config2StrToIp) in one file \u2014 replacing a custom hand-rolled IPv4 parser with a call to StrToIpv4Address()",
+    "One-off API migration specific to this function; the change deletes ~40 lines of custom parsing code and replaces with a helper, but this pattern does not appear elsewhere",
+    "The fix requires case-by-case reasoning about the EndPointer validation and the specific invalid-trailing-dot bug"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "49ba46ec0ae6f8b496800f3db55cd1369d326483",
+  "short_commit": "49ba46ec0a",
+  "subject": "ShellPkg/UefiShellLevel3: Return if ShellCommandLineParse() failed",
+  "suitable": true,
+  "reasons": [
+    "Applies the same structural transformation — early return on ShellCommandLineParse() error instead of wrapping the rest of the function in an else block — across 9 files in the same library",
+    "The before/after pattern is well-defined: replace 'if (EFI_ERROR(Status)) { ... } else { <body> ShellCommandLineFreeVarList(Package); }' with 'if (EFI_ERROR(Status)) { return ...; } <body> ShellCommandLineFreeVarList(Package);'",
+    "High repetitiveness: the identical guard pattern appears in every ShellCommandRunXXX() function across the library"
+  ],
+  "candidate_pattern": "Match ShellCommandLineParse() call followed by error check that wraps remaining function body in else branch; transform to early return on error, moving body out of else at top level. Applies to each ShellCommandRunXXX() function that follows this structure.",
+  "confidence": "medium"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "eea64c7fcd7f8d6dddb0173e6c4e43590afe460d",
+  "short_commit": "eea64c7fcd",
+  "subject": "MdePkg, MdeModulePkg/ArmFfaLib: add funcs to get partition info via regs",
+  "suitable": false,
+  "reasons": [
+    "This is API creation: new helper functions and header declarations are added.",
+    "The commit does not transform existing call sites, so there is no repeated before/after pattern to generalize.",
+    "The change is foundational work for later migrations, not itself a migration.",
+    "Coccinelle is not the right tool for introducing the helper layer."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

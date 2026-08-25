@@ -1,0 +1,13 @@
+{
+  "commit": "0fe6b755f246a7307e2cd537d6f486453690f002",
+  "short_commit": "0fe6b755f2",
+  "subject": "ArmPkg,MdePkg: Add an ASM function to read register AIDR_EL1",
+  "suitable": false,
+  "reasons": [
+    "New feature addition: adds a single new ASM function (ArmReadAidr) and its C prototype declaration",
+    "No before/after transformation pattern — this is purely additive with no existing code being modified structurally",
+    "One-of-a-kind addition for a specific hardware register; not a systematic collateral evolution across many similar call sites"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

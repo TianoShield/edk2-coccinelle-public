@@ -1,0 +1,13 @@
+{
+  "commit": "530efa6742b935957bc6d89ac374e581aebd710c",
+  "short_commit": "530efa6742",
+  "subject": "MdePkg: Make X64 Page Table Definitions Public",
+  "suitable": false,
+  "reasons": [
+    "Purely additive: creates a new public header (MdePkg/Include/Register/X86/CpuPageTable.h) by copying type definitions from a private header",
+    "No transformation of existing call sites or API usage — just a new file introduction",
+    "The paired consumer commit (6ae3cc5d5e) also is not Coccinelle-suitable; together they form a header reorganization that is not expressible as a SmPL rule"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

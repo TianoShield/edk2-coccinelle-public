@@ -1,0 +1,13 @@
+{
+  "commit": "a366d6f8fe6c5792c875af0636910cd4f75f09a5",
+  "short_commit": "a366d6f8fe",
+  "subject": "ShellPkg/TimeDate: Extract PrintTime() helper",
+  "suitable": false,
+  "reasons": [
+    "Function extraction refactor: two duplicated ShellPrintHiiDefaultEx blocks for printing time are replaced by calls to a new PrintTime() helper",
+    "The pattern (duplicated time-print block replaced by single call) is present at two sites, but Coccinelle cannot introduce new helper functions or restructure into a new abstraction",
+    "While the two call sites share identical structure, the transformation requires generating a new function declaration - beyond Coccinelle's capability"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

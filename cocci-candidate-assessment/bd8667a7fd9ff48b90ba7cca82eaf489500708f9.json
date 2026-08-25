@@ -1,0 +1,13 @@
+{
+  "commit": "bd8667a7fd9ff48b90ba7cca82eaf489500708f9",
+  "short_commit": "bd8667a7fd",
+  "subject": "MdeModulePkg/Core: Move SMI depth tracker below SMI presence check",
+  "suitable": true,
+  "reasons": [
+    "Paired with adjacent commit 05cec0b14b which applies the identical fix in StandaloneMmPkg/Core/Mmi.c",
+    "Both commits move a depth-counter increment statement to after the handler-presence confirmation in mirrored SMI/MMI dispatch functions",
+    "Structural reordering of a specific statement across two parallel files — a 2-instance series"
+  ],
+  "candidate_pattern": "Match the pattern where mSmiManageCallingDepth++ (or mMmiManageCallingDepth++) appears before the handler lookup block, and move it to immediately after the successful lookup, before the handler dispatch loop.",
+  "confidence": "low"
+}

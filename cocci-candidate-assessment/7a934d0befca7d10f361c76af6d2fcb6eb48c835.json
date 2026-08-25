@@ -1,0 +1,14 @@
+{
+  "commit": "7a934d0befca7d10f361c76af6d2fcb6eb48c835",
+  "short_commit": "7a934d0bef",
+  "subject": "MdeModulePkg: Replace include guards with #pragma once",
+  "suitable": false,
+  "reasons": [
+    "The transformation replaces #ifndef/#define/#endif preprocessor include guards with #pragma once directives, which are preprocessor constructs, not C AST nodes.",
+    "Coccinelle operates on C source code at the AST level and cannot match or rewrite preprocessor directives like #ifndef, #define, or #endif.",
+    "Although the pattern is highly repetitive (14+ commits in the series across all edk2 packages), the transformation is not expressible as an SmPL rule.",
+    "A sed/awk/Python script would be the appropriate tool for this kind of change."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

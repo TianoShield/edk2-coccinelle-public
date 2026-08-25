@@ -1,0 +1,13 @@
+{
+  "commit": "bdff71b21284f1d114b574b0f7523dd5fbdc6b74",
+  "short_commit": "bdff71b212",
+  "subject": "EmulatorPkg: Fix build issue when REDFISH_ENABLE is TRUE",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

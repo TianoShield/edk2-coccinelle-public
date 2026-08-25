@@ -1,0 +1,13 @@
+{
+  "commit": "8b2e33476d290b610883d1692c8db00878d183af",
+  "short_commit": "8b2e33476d",
+  "subject": "ArmVirtPkg: ArmCcaRsiLib: Add an interface to get an attestation token",
+  "suitable": false,
+  "reasons": [
+    "Adds a new complex function for attestation token retrieval (344 lines) to ArmCcaRsiLib; entirely new code",
+    "Part of the ArmCcaRsiLib addition series, but each commit in the series introduces a different unique RSI interface function",
+    "No before/after transformation of existing code; Coccinelle cannot generate new complex logic"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

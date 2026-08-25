@@ -1,0 +1,13 @@
+{
+  "commit": "0302aa5bca97143ce86b91f6db7b3a00342b4f3d",
+  "short_commit": "0302aa5bca",
+  "subject": "UnitTestFrameworkPkg: WIN_MINGW32_BUILD generate .exe",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

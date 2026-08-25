@@ -1,0 +1,14 @@
+{
+  "commit": "4e92a6a9d473ce71a87648538958c59e5b1af24d",
+  "short_commit": "4e92a6a9d4",
+  "subject": "MdeModulePkg: Fix issue that French package is unexpectedly cleaned",
+  "suitable": false,
+  "reasons": [
+    "This is a one-line fix in a single function.",
+    "The change is a local bug fix, not a reusable structural transformation.",
+    "There is no repetition or collateral evolution to capture.",
+    "The commit is too specific for Coccinelle."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

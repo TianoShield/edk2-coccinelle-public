@@ -1,0 +1,13 @@
+{
+  "commit": "c50e5fe946ad7b81f567d1bc662769992ff284d1",
+  "short_commit": "c50e5fe946",
+  "subject": "ShellPkg/UefiShellLevel1: Extract MainCmdXXX() function",
+  "suitable": false,
+  "reasons": [
+    "Function extraction refactoring — extracting a block of code from ShellCommandRunXXX() into a new MainCmdXXX() function requires understanding of which code belongs to the callee vs. setup/teardown, which varies per command",
+    "Each extracted function (MainCmdExit, MainCmdGoto, MainCmdStall) has different logic bodies, so this is not a uniform mechanical transformation",
+    "Coccinelle cannot reliably express 'extract this block into a new function' as a pattern — it requires per-site reasoning about variable scope and ownership"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

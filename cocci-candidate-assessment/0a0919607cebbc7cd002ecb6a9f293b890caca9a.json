@@ -1,0 +1,14 @@
+{
+  "commit": "0a0919607cebbc7cd002ecb6a9f293b890caca9a",
+  "short_commit": "0a0919607c",
+  "subject": "OvmfPkg/PlatformInitLib: redefine low memory",
+  "suitable": false,
+  "reasons": [
+    "Single-file semantic logic change: redefines 'low memory' from 'all memory below 4G' to 'first memory block with base address zero'",
+    "Involves removing a local variable, changing the callback logic in PlatformGetLowMemoryCB, and restructuring PlatformAddHobCB — all requiring semantic understanding",
+    "One-off design change specific to OVMF's memory model; not a repeated structural pattern",
+    "No expressible SmPL rule"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

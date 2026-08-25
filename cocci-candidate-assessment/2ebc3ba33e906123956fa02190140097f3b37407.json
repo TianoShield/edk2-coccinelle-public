@@ -1,0 +1,13 @@
+{
+  "commit": "2ebc3ba33e906123956fa02190140097f3b37407",
+  "short_commit": "2ebc3ba33e",
+  "subject": "TcgTpmPkg/Library/TpmLib: add license notification for TPM reference lib",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

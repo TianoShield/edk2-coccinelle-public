@@ -1,0 +1,13 @@
+{
+  "commit": "81c95449749469480f0124a1416f22b4ecc67584",
+  "short_commit": "81c9544974",
+  "subject": "CryptoPkg/Library/OpensslLib: Add -UWIN32 to GCC Family",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

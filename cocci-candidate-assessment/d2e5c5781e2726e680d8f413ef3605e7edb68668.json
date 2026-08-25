@@ -1,0 +1,14 @@
+{
+  "commit": "d2e5c5781e2726e680d8f413ef3605e7edb68668",
+  "short_commit": "d2e5c5781e",
+  "subject": "UefiCpuPkg/MpInitLib: Skip ucode rev dump if not loaded in the library",
+  "suitable": false,
+  "reasons": [
+    "Single-file restructuring: wraps an existing DEBUG_CODE block inside a new conditional on MicrocodePatchRegionSize != 0",
+    "Requires semantic understanding of when microcode is loaded via the library vs. external mechanism — not a mechanical transformation",
+    "One-off fix in a single function; no repeated pattern in other files or functions",
+    "The added else-branch with a distinct debug message makes this case-specific"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

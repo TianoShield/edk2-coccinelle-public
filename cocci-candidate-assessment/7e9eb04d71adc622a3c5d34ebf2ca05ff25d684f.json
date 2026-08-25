@@ -1,0 +1,13 @@
+{
+  "commit": "7e9eb04d71adc622a3c5d34ebf2ca05ff25d684f",
+  "short_commit": "7e9eb04d71",
+  "subject": "CryptoPkg/Library/MbedTlsLib: Update mbedtls submodule to v3.6.6",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

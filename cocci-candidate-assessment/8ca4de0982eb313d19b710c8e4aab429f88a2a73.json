@@ -1,0 +1,13 @@
+{
+  "commit": "8ca4de0982eb313d19b710c8e4aab429f88a2a73",
+  "short_commit": "8ca4de0982",
+  "subject": ".pytool/Plugin/CompilerPlugin: Skip TARGET not supported by DSC",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

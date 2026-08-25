@@ -1,0 +1,13 @@
+{
+  "commit": "273edd9e014730a1f70bb04eff53916c4e246d7a",
+  "short_commit": "273edd9e01",
+  "subject": "ShellPkg/Ls: Extract GetCorrectedPath() function",
+  "suitable": false,
+  "reasons": [
+    "Function extraction: path-construction logic (StrnCatGrow + separator check) is moved into a new GetCorrectedPath() helper called from PrintLsOutput()",
+    "Coccinelle cannot introduce new helper functions or lift code blocks into separate abstractions",
+    "One-off refactor in a single file; also includes a preparatory change to free CorrectedPath before re-allocating"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

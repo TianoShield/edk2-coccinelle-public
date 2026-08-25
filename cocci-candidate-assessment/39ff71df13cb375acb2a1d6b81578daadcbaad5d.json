@@ -1,0 +1,13 @@
+{
+  "commit": "39ff71df13cb375acb2a1d6b81578daadcbaad5d",
+  "short_commit": "39ff71df13",
+  "subject": "ArmVirtPkg: Add library for Arm CCA helper functions",
+  "suitable": false,
+  "reasons": [
+    "This commit adds a large new library implementation (ArmCcaLib) with new header and 227-line C source. It is entirely new code, not a transformation of existing code.",
+    "Coccinelle requires existing code to match and transform; it cannot be used to author new library implementations.",
+    "The change introduces new functions ArmCcaIsRealm() and ArmCcaGetIpaWidth() with no prior pattern in the codebase to replace."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

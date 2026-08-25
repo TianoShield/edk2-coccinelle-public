@@ -1,0 +1,15 @@
+{
+  "commit": "2e92a908e7595329d31f453e7144e90b42b6ea03",
+  "short_commit": "2e92a908e7",
+  "subject": "MdeModulePkg: Mark PcdMrIovSupport obsolete - deprecated in PCIe 6.0",
+  "suitable": false,
+  "reasons": [
+    "Removes MR-IOV code from a handful of locations within a single module (PciBusDxe)",
+    "The change involves removing a feature: deleting a struct member, a #define, a PcdGetBool() block, and a .inf entry",
+    "While there is a PcdGetBool(PcdMrIovSupport) pattern removal, it only appears in one location",
+    "Neighbors (UefiPayloadPkg removal) are related but each is a single-site cleanup - combined repetitiveness is still low",
+    "The change to the .dec comment is purely editorial"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

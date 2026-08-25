@@ -1,0 +1,13 @@
+{
+  "commit": "070d88a592f734a5316b5bd0af15ca5b31d2dd1e",
+  "short_commit": "070d88a592",
+  "subject": "BaseTools/Conf: CLANGDWARF remove -mno-sse -mno-mmx",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

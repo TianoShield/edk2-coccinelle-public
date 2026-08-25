@@ -1,0 +1,33 @@
+{
+  "id": "4d0946c082",
+  "cocciFile": "cocci-scripts/4d0946c082-debuglib-comma-flag.cocci",
+  "cases": [
+    {
+      "name": "replay-peidxe-reportstatuscode",
+      "beforeSource": {
+        "gitRevision": "4d0946c082dfaf1556a2ecb0fd496d27acb8cecd^:MdeModulePkg/Library/PeiDxeDebugLibReportStatusCode/DebugLib.c"
+      },
+      "afterSource": {
+        "gitRevision": "4d0946c082dfaf1556a2ecb0fd496d27acb8cecd:MdeModulePkg/Library/PeiDxeDebugLibReportStatusCode/DebugLib.c"
+      }
+    },
+    {
+      "name": "replay-peidebuglib-debugppi",
+      "beforeSource": {
+        "gitRevision": "a7c119589fe2c5829011e3bbe717285f2ff2ab28^:MdeModulePkg/Library/PeiDebugLibDebugPpi/DebugLib.c"
+      },
+      "afterSource": {
+        "gitRevision": "a7c119589fe2c5829011e3bbe717285f2ff2ab28:MdeModulePkg/Library/PeiDebugLibDebugPpi/DebugLib.c"
+      }
+    },
+    {
+      "name": "fixture-generalize-operand-and-adversarial-chains",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/4d0946c082/FlagParse.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/4d0946c082/FlagParse.after.c"
+      }
+    }
+  ]
+}

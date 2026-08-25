@@ -1,0 +1,13 @@
+{
+  "commit": "539c53375e84a7542a45e7b2893d59bdb0a81ff3",
+  "short_commit": "539c53375e",
+  "subject": "ShellPkg/AcpiView: Adds FPDT Parser",
+  "suitable": false,
+  "reasons": [
+    "This adds new parser code rather than transforming existing call sites or structures.",
+    "It is feature implementation work, not a reusable before/after migration.",
+    "There is no repeated edit pattern to encode in a semantic patch."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

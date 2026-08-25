@@ -1,0 +1,13 @@
+{
+  "commit": "ddc7ed1deeb0f8acadc936f8fae6f0be07232efb",
+  "short_commit": "ddc7ed1dee",
+  "subject": "MdeModulePkg/Library: introduce ArmFfaConsoleDebugLib",
+  "suitable": false,
+  "reasons": [
+    "Introduces a brand-new library (ArmFfaConsoleDebugLib) by adding new files; there is no existing code being transformed",
+    "No before/after pattern: this is purely additive, creating new source files from scratch",
+    "Coccinelle operates on transformations of existing code, not on authoring new implementations"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

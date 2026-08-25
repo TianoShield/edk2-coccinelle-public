@@ -1,0 +1,13 @@
+{
+  "commit": "23329a90a071b3e15a017681cab6c01bcd3039bb",
+  "short_commit": "23329a90a0",
+  "subject": "EmbeddedPkg/Universal/MmcDxe: Fix VS2022 NOOPT IA32/X64 issues",
+  "suitable": true,
+  "reasons": [
+    "The commit applies the same type-narrowing and explicit-cast pattern across two C files.",
+    "Several call sites switch from wider `UINTN` values to `UINT32` or `UINT16` with consistent casts.",
+    "The transformation is mechanical enough to describe as a reusable match-and-replace rule."
+  ],
+  "candidate_pattern": "Narrow MMC command-argument and card-state variables to 32-bit or 16-bit types and insert explicit casts at the affected assignments and call sites.",
+  "confidence": "medium"
+}

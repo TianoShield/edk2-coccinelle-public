@@ -1,0 +1,13 @@
+{
+  "commit": "f82d1fa48eeae62581383c5f341bf9549e370e6c",
+  "short_commit": "f82d1fa48e",
+  "subject": "MdePkg/FvLib: Need section alignment for FindFfsSectionInSections",
+  "suitable": false,
+  "reasons": [
+    "This is a narrow alignment fix in one search routine.",
+    "The edit is local to a single algorithmic edge case, not a repeated cross-file transformation.",
+    "There is no API migration or helper replacement pattern to capture."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

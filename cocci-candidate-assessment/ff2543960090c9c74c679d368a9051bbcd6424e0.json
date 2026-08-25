@@ -1,0 +1,14 @@
+{
+  "commit": "ff2543960090c9c74c679d368a9051bbcd6424e0",
+  "short_commit": "ff25439600",
+  "subject": "IntelFsp2Pkg/FspSecCore: Do not hang when bootloader IDT is larger",
+  "suitable": false,
+  "reasons": [
+    "Single-location bug fix: removes a CpuDeadLoop() dead-end and replaces it with a MIN() truncation and a warning print",
+    "Logic restructuring in one function (SecStartup) with a PCD value change; not a repeated structural pattern",
+    "No collateral evolution across files — just one code site and one PCD default value adjustment",
+    "Case-by-case reasoning required to understand the IDT size semantics"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

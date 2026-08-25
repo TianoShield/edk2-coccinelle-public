@@ -1,0 +1,13 @@
+{
+  "commit": "5bdf8acc138474408a7f39e793e5dfe571d0421b",
+  "short_commit": "5bdf8acc13",
+  "subject": "MdePkg: Add helper function to detect RME",
+  "suitable": false,
+  "reasons": [
+    "This commit adds a new helper function ArmHasRme() — it is purely additive with no existing pattern to replace.",
+    "Only one new function is added in one file with no repeated transformation across sites.",
+    "Not a collateral evolution or API migration pattern; it introduces new API rather than migrating existing usage."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "ff3693d345d9aa6f0ff2de158a88ac395242eb60",
+  "short_commit": "ff3693d345",
+  "subject": "UefiCpuPkg: Include AMD Cpuid.h",
+  "suitable": false,
+  "reasons": [
+    "Single-line header inclusion change in one file",
+    "Adding a new #include to a header aggregator is a one-off infrastructure change, not a repeated structural pattern",
+    "No code transformation pattern; Coccinelle cannot help add include directives to header files meaningfully at scale"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

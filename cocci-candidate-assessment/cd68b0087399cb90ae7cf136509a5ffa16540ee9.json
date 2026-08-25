@@ -1,0 +1,13 @@
+{
+  "commit": "cd68b0087399cb90ae7cf136509a5ffa16540ee9",
+  "short_commit": "cd68b00873",
+  "subject": "EmulatorPkg/Win/Host: Fix GetProcessAffinityMask() param types",
+  "suitable": false,
+  "reasons": [
+    "The patch is a one-off parameter-type correction in a host wrapper.",
+    "There is no repeated transformation pattern across the codebase.",
+    "This is a local build fix, not a semantic-patch candidate."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

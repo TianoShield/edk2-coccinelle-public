@@ -1,0 +1,14 @@
+{
+  "commit": "53783077e291f2fa5028eacd402fc983239b55ff",
+  "short_commit": "53783077e2",
+  "subject": "RedfishPkg/RedfishDiscoverDxe: Do not require TCP6 if IPv6 HTTP off",
+  "suitable": false,
+  "reasons": [
+    "The change adds a new helper function and inserts an identical guard (if (!IsRedfishRequiredProtocolIndexActive(Index)) continue;) in three loops within one file",
+    "While the guard insertion is repeated 3 times in the same file, the core change is a targeted platform-conditional logic fix specific to this driver's protocol table walk",
+    "No neighboring commits apply the same pattern to other drivers or packages",
+    "The new helper function and PcdIPv6HttpSupport gating is specific to this driver's architecture; the pattern does not generalize across the codebase"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

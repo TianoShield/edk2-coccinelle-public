@@ -1,0 +1,13 @@
+{
+  "commit": "becbdb4e27661002ecf08814028b631e0dbe4e9b",
+  "short_commit": "becbdb4e27",
+  "subject": "ShellPkg/UefiShellDriver1: Lower indentation level in MainCmdXXX()",
+  "suitable": false,
+  "reasons": [
+    "Pure structural refactoring: converts if-else chains to early-return style across 6 files in the ShellPkg",
+    "No functional change; the transformation is a style/indentation improvement not an API migration or collateral evolution",
+    "While the pattern (if (cond) { return X; } ... remove else) is repeated, it is a one-time series cleanup within a single subsystem and requires understanding equivalence of each transformation"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

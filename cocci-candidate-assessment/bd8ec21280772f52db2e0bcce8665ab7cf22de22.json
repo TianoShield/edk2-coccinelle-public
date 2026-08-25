@@ -1,0 +1,13 @@
+{
+  "commit": "bd8ec21280772f52db2e0bcce8665ab7cf22de22",
+  "short_commit": "bd8ec21280",
+  "subject": "ShellPkg/AcpiView: Avoid mutating HEST hardware bank count during parse",
+  "suitable": false,
+  "reasons": [
+    "Two-part fix: adds CONST qualifiers to pointer variables and removes one erroneous write-through; single file, single parser",
+    "Adding CONST qualifiers to pointer-to-parsed-buffer variables is a correctness fix; each instance requires reasoning about whether the pointer targets read-only data",
+    "One-off fix in a specific ACPI parser; no repeated pattern across multiple parsers or files"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

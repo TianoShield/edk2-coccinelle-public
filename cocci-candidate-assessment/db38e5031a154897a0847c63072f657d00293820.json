@@ -1,0 +1,14 @@
+{
+  "commit": "db38e5031a154897a0847c63072f657d00293820",
+  "short_commit": "db38e5031a",
+  "subject": "ShellPkg/AcpiView: Update MPAM table \"MMIO size\" field check",
+  "suitable": false,
+  "reasons": [
+    "Single-location change: one validation function in one file, relaxing a check from '!= 0' to '> 1'.",
+    "The change is a spec-driven one-off adjustment to a validation condition — case-by-case reasoning required.",
+    "No neighboring commits share the same pattern.",
+    "Not suitable for Coccinelle: it is a targeted one-off fix with no repetitive structural pattern."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

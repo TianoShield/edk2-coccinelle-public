@@ -1,0 +1,209 @@
+{
+  "id": "3454d7ab41",
+  "cocciFile": "cocci-scripts/3454d7ab41-idt-x86-cpu-interrupt-num.cocci",
+  "spatchOptions": [
+    "--max-width", "120",
+    "--include", "cocci-scripts/BaseLib.h",
+    "--include-headers-for-types"
+  ],
+  "cases": [
+    {
+      "name": "replay-cpudxe",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/CpuDxe/CpuDxe.c"
+      },
+      "afterSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b:UefiCpuPkg/CpuDxe/CpuDxe.c"
+      }
+    },
+    {
+      "name": "replay-cpu-exception-common-h",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/Library/CpuExceptionHandlerLib/CpuExceptionCommon.h"
+      },
+      "afterSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b:UefiCpuPkg/Library/CpuExceptionHandlerLib/CpuExceptionCommon.h"
+      }
+    },
+    {
+      "name": "replay-dxe-exception",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/Library/CpuExceptionHandlerLib/DxeException.c"
+      },
+      "afterSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b:UefiCpuPkg/Library/CpuExceptionHandlerLib/DxeException.c"
+      }
+    },
+    {
+      "name": "replay-ia32-arch-exception-handler",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/Library/CpuExceptionHandlerLib/Ia32/ArchExceptionHandler.c"
+      },
+      "afterSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b:UefiCpuPkg/Library/CpuExceptionHandlerLib/Ia32/ArchExceptionHandler.c"
+      }
+    },
+    {
+      "name": "replay-pei-cpu-exception",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuException.c"
+      },
+      "afterSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b:UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuException.c"
+      }
+    },
+    {
+      "name": "replay-smm-exception",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/Library/CpuExceptionHandlerLib/SmmException.c"
+      },
+      "afterSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b:UefiCpuPkg/Library/CpuExceptionHandlerLib/SmmException.c"
+      }
+    },
+    {
+      "name": "replay-unit-test-h",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/Library/CpuExceptionHandlerLib/UnitTest/CpuExceptionHandlerTest.h"
+      },
+      "afterSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b:UefiCpuPkg/Library/CpuExceptionHandlerLib/UnitTest/CpuExceptionHandlerTest.h"
+      }
+    },
+    {
+      "name": "replay-dxe-unit-test",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/Library/CpuExceptionHandlerLib/UnitTest/DxeCpuExceptionHandlerUnitTest.c"
+      },
+      "afterSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b:UefiCpuPkg/Library/CpuExceptionHandlerLib/UnitTest/DxeCpuExceptionHandlerUnitTest.c"
+      }
+    },
+    {
+      "name": "replay-pei-unit-test",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/Library/CpuExceptionHandlerLib/UnitTest/PeiCpuExceptionHandlerUnitTest.c"
+      },
+      "afterSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b:UefiCpuPkg/Library/CpuExceptionHandlerLib/UnitTest/PeiCpuExceptionHandlerUnitTest.c"
+      }
+    },
+    {
+      "name": "replay-x64-arch-exception-handler",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/ArchExceptionHandler.c"
+      },
+      "afterSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b:UefiCpuPkg/Library/CpuExceptionHandlerLib/X64/ArchExceptionHandler.c"
+      }
+    },
+    {
+      "name": "replay-cpu-s3",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/PiSmmCpuDxeSmm/CpuS3.c"
+      },
+      "afterSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b:UefiCpuPkg/PiSmmCpuDxeSmm/CpuS3.c"
+      }
+    },
+    {
+      "name": "replay-sec-core",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/SecCore/SecMain.c"
+      },
+      "afterSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b:UefiCpuPkg/SecCore/SecMain.c"
+      }
+    },
+    {
+      "name": "replay-dxeipl-ia32",
+      "beforeSource": {
+        "gitRevision": "4512733ac8b3612816675a7f717dab9101f0e7a6^:MdeModulePkg/Core/DxeIplPeim/Ia32/DxeLoadFunc.c"
+      },
+      "afterSource": {
+        "gitRevision": "4512733ac8b3612816675a7f717dab9101f0e7a6:MdeModulePkg/Core/DxeIplPeim/Ia32/DxeLoadFunc.c"
+      }
+    },
+    {
+      "name": "replay-sec-pei-cpu-exception",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/Library/CpuExceptionHandlerLib/SecPeiCpuException.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/3454d7ab41/SecPeiCpuException.after.c"
+      }
+    },
+    {
+      "name": "replay-pei-dxe-smm-cpu-exception",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiDxeSmmCpuException.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/3454d7ab41/PeiDxeSmmCpuException.after.c"
+      }
+    },
+    {
+      "name": "replay-smm-relocation",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/Library/SmmRelocationLib/SmmRelocationLib.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/3454d7ab41/SmmRelocationLib.after.c"
+      }
+    },
+    {
+      "name": "replay-pi-smm-cpu-common",
+      "beforeSource": {
+        "gitRevision": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b^:UefiCpuPkg/PiSmmCpuDxeSmm/PiSmmCpuCommon.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/3454d7ab41/PiSmmCpuCommon.after.c"
+      }
+    },
+    {
+      "name": "replay-ovmf-smm-relocation",
+      "beforeSource": {
+        "gitRevision": "3bfe4fadffbf3339986d9876d89c28bc0542baac^:OvmfPkg/Library/SmmRelocationLib/SmmRelocationLib.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/3454d7ab41/OvmfSmmRelocationLib.after.c"
+      }
+    },
+    {
+      "name": "replay-ovmf-sec",
+      "beforeSource": {
+        "gitRevision": "3bfe4fadffbf3339986d9876d89c28bc0542baac^:OvmfPkg/Sec/SecMain.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/3454d7ab41/OvmfSecMain.after.c"
+      }
+    },
+    {
+      "name": "generalize-inteltdx-sec",
+      "beforeSource": {
+        "gitRevision": "3bfe4fadffbf3339986d9876d89c28bc0542baac:OvmfPkg/IntelTdx/Sec/SecMain.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/3454d7ab41/IntelTdxSecMain.after.c"
+      }
+    },
+    {
+      "name": "generalize-uefipayload-dxeloadfunc",
+      "beforeSource": {
+        "gitRevision": "3bfe4fadffbf3339986d9876d89c28bc0542baac:UefiPayloadPkg/UefiPayloadEntry/Ia32/DxeLoadFunc.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/3454d7ab41/UefiPayloadDxeLoadFunc.after.c"
+      }
+    },
+    {
+      "name": "noop-adversarial-neighbors",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/3454d7ab41/NoMatch.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/3454d7ab41/NoMatch.before.c"
+      }
+    }
+  ]
+}

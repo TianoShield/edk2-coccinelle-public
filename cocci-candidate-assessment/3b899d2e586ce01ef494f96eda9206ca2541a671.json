@@ -1,0 +1,13 @@
+{
+  "commit": "3b899d2e586ce01ef494f96eda9206ca2541a671",
+  "short_commit": "3b899d2e58",
+  "subject": "MdeModulePkg/DxeCapsuleLibFmp: Tolerate EFI_ALREADY_STARTED in LockVariable",
+  "suitable": false,
+  "reasons": [
+    "Single one-line change in a single file: condition changed from `if (EFI_ERROR(Status))` to `if (EFI_ERROR(Status) && (Status != EFI_ALREADY_STARTED))`",
+    "One-off bug fix specific to the LockVariable() function context \u2014 not a pattern repeated across the codebase",
+    "The logic depends on the specific semantics of RegisterBasicVariablePolicy returning EFI_ALREADY_STARTED, making it a case-by-case fix rather than a systematic transformation"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

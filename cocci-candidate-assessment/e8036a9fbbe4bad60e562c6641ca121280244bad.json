@@ -1,0 +1,13 @@
+{
+  "commit": "e8036a9fbbe4bad60e562c6641ca121280244bad",
+  "short_commit": "e8036a9fbb",
+  "subject": "ShellPkg/UefiShellLevel1: Return if ShellCommandLineParse() failed",
+  "suitable": false,
+  "reasons": [
+    "Control-flow refactoring that de-nests an else-block after a ShellCommandLineParse() error check — differs in the surrounding context per file",
+    "Although the same pattern (early return on parse error) appears in 3 files, the surrounding code structure varies enough that this is best described as de-nesting, not a uniform API-level substitution",
+    "The changes involve restructuring the overall function body rather than replacing a specific call pattern, making it hard to express as a reliable SmPL rule without false positives"
+  ],
+  "candidate_pattern": null,
+  "confidence": "medium"
+}

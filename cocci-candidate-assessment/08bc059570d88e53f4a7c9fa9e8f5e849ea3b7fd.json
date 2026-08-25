@@ -1,0 +1,13 @@
+{
+  "commit": "08bc059570d88e53f4a7c9fa9e8f5e849ea3b7fd",
+  "short_commit": "08bc059570",
+  "subject": "ShellPkg/Ls: Remove unused TimeZone parameter",
+  "suitable": false,
+  "reasons": [
+    "Parameter removal refactor: removes the TimeZone parameter from PrintLsOutput() signature and all its call sites (2 calls), plus removes the associated gRT->GetTime() setup code in the caller",
+    "Coccinelle can handle parameter removal from function signatures and call sites, but this also involves removing associated dead code (the gRT->GetTime call and TheTime variable) which requires more context-sensitivity",
+    "Low repetitiveness: affects only one function's signature and two call sites in a single file; the cleanup involves removing several distinct code fragments, not a uniform structural pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "medium"
+}

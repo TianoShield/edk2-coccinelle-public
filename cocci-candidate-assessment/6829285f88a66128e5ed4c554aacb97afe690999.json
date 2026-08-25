@@ -1,0 +1,14 @@
+{
+  "commit": "6829285f88a66128e5ed4c554aacb97afe690999",
+  "short_commit": "6829285f88",
+  "subject": "ShellPkg/Rm: Extract DeleteDirectory() function",
+  "suitable": false,
+  "reasons": [
+    "This is a pure code refactoring that extracts a block of code from CascadeDelete() into a new DeleteDirectory() function, restructuring control flow and lowering indentation",
+    "The transformation is not a repetitive pattern across files but a single function restructure in one file",
+    "Coccinelle cannot express 'extract N lines from one function into a new function' — it has no notion of function extraction or restructuring logic",
+    "The diff involves removing nested if-blocks and inverting error handling, which requires case-by-case reasoning about the control flow semantics"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

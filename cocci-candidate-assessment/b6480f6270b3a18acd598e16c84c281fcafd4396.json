@@ -1,0 +1,13 @@
+{
+  "commit": "b6480f6270b3a18acd598e16c84c281fcafd4396",
+  "short_commit": "b6480f6270",
+  "subject": "ArmVirtPkg: Add a helper to check protected MMIO address",
+  "suitable": false,
+  "reasons": [
+    "This commit adds a new function ArmCcaMemRangeIsProtectedMmio() to both the real ArmCcaLib and the null stub. It is new functionality being added, not a transformation of existing code.",
+    "Adding a new function symmetrically to a library and its null stub is a code-authoring pattern, not a match-and-replace transformation expressible in SmPL.",
+    "There are no existing call sites or structural patterns being changed across the codebase; the commit is purely additive."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

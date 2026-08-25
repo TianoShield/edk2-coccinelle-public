@@ -1,0 +1,13 @@
+{
+  "commit": "c00c1216ce7f6e02b00da95747a7f4d4c239c1b1",
+  "short_commit": "c00c1216ce",
+  "subject": "ArmPkg/CpuDxe: Refuse to clear XN from device memory mappings",
+  "suitable": false,
+  "reasons": [
+    "One-off fix: adds a new guard block in a single function (ClearMemoryAttributes) in a single file",
+    "The change is context-specific to ARM device memory semantics — requires architectural reasoning about XN and device memory attributes, not a mechanical pattern",
+    "No repetitive structural pattern; the inserted code is unique logic traversing translation tables"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

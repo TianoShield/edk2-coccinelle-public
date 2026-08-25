@@ -1,0 +1,13 @@
+{
+  "commit": "014d8fb941f8d66455e7960a6b2b26ca2030e159",
+  "short_commit": "014d8fb941",
+  "subject": "ShellPkg/UefiShellLevel3: Extract MainCmdXXX() function",
+  "suitable": false,
+  "reasons": [
+    "Large-scale refactoring that extracts a MainCmdXXX() function from each of 9 shell command files",
+    "Function extraction is not expressible in SmPL — Coccinelle cannot define new functions or partition existing function bodies into separate functions",
+    "Each extraction is unique to its command's logic and not a uniform structural pattern suitable for automated transformation"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

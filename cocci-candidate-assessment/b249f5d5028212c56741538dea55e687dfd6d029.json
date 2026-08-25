@@ -1,0 +1,14 @@
+{
+  "commit": "b249f5d5028212c56741538dea55e687dfd6d029",
+  "short_commit": "b249f5d502",
+  "subject": "MdePkg: ArmLib: Drop DebugLib Dependency",
+  "suitable": false,
+  "reasons": [
+    "Removes one #include <Library/DebugLib.h> from a .c file and removes a [LibraryClasses] DebugLib entry from one .inf file.",
+    "This is a targeted one-off dependency cleanup in a single library — not a systematic pattern across multiple callers.",
+    "INF file changes are not within Coccinelle's scope (it handles C code, not build descriptor files).",
+    "No repetitive transformation across multiple files."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

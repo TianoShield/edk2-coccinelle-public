@@ -1,0 +1,14 @@
+{
+  "commit": "ab021465cbd6d5c77cfe02104078fae5fb6cdc06",
+  "short_commit": "ab021465cb",
+  "subject": "CryptoPkg: add CAMELLIA APIs for TCG TPM reference library",
+  "suitable": false,
+  "reasons": [
+    "This is a new API addition (adding CAMELLIA wrapper functions), not a transformation of existing code",
+    "Adding new functions, structs, and PCD entries across multiple files cannot be expressed as a Coccinelle match-and-replace rule",
+    "While it is part of a series of TPM-related API additions, each commit adds a different new cipher API which requires new code, not transforming existing patterns",
+    "Coccinelle cannot generate new code where none existed before"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

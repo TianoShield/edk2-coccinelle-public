@@ -1,0 +1,13 @@
+{
+  "commit": "3f542ff5726c12da813e3d11987d6184d7d23bfc",
+  "short_commit": "3f542ff572",
+  "subject": "ArmPkg: ArmStandaloneMmCoreEntryPoint add missing guid",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

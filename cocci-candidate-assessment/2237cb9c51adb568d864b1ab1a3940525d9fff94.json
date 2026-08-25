@@ -1,0 +1,13 @@
+{
+  "commit": "2237cb9c51adb568d864b1ab1a3940525d9fff94",
+  "short_commit": "2237cb9c51",
+  "subject": ".azurepipelines/templates: Remove `echo new PATH` from 'Set PATH' task",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

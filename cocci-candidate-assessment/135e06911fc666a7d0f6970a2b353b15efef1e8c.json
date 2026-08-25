@@ -1,0 +1,13 @@
+{
+  "commit": "135e06911fc666a7d0f6970a2b353b15efef1e8c",
+  "short_commit": "135e06911f",
+  "subject": "EmulatorPkg/Win/Host: Remove workarounds for older VS20xx/SDKs",
+  "suitable": false,
+  "reasons": [
+    "This is build-environment cleanup and removal of compatibility workarounds.",
+    "The edit shape varies by file and does not form one reusable Coccinelle rule.",
+    "It is closer to platform-specific maintenance than to a systematic C transformation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

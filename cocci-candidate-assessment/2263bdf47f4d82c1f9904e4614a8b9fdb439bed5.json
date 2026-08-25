@@ -1,0 +1,13 @@
+{
+  "commit": "2263bdf47f4d82c1f9904e4614a8b9fdb439bed5",
+  "short_commit": "2263bdf47f",
+  "subject": "Global: Clone GCC to CLANGPDB CI",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

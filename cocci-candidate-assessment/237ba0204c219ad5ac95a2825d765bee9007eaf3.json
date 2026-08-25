@@ -1,0 +1,13 @@
+{
+  "commit": "237ba0204c219ad5ac95a2825d765bee9007eaf3",
+  "short_commit": "237ba0204c",
+  "subject": "ArmPkg: Add Required Library Classes for ArmTransferListLib",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

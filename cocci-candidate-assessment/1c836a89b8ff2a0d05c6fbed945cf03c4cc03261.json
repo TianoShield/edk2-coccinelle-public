@@ -1,0 +1,13 @@
+{
+  "commit": "1c836a89b8ff2a0d05c6fbed945cf03c4cc03261",
+  "short_commit": "1c836a89b8",
+  "subject": "ArmPkg/StandaloneMmCpu: rename gGuidedEventContext to mGuidedEventContext",
+  "suitable": false,
+  "reasons": [
+    "This is a single-file global-to-static rename.",
+    "The change does not repeat across files or call sites in a way that gives scale.",
+    "It is a local cleanup rather than a reusable semantic patch pattern."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

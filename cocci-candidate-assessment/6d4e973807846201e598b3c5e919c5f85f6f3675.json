@@ -1,0 +1,13 @@
+{
+  "commit": "6d4e973807846201e598b3c5e919c5f85f6f3675",
+  "short_commit": "6d4e973807",
+  "subject": "NetworkPkg/DnsDxe: Refactor answer loop to for in ParseDnsResponse",
+  "suitable": false,
+  "reasons": [
+    "One-off refactor in a single function (ParseDnsResponse) in a single file (DnsImpl.c)",
+    "The while-to-for loop conversion is not a repeating pattern across the codebase — it is specific to this one loop",
+    "The associated Status assignment change (unconditional to conditional) also requires case-by-case reasoning about the surrounding data flow"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "ddcd0fd167055e5d6df6b829d900325168d81d61",
+  "short_commit": "ddcd0fd167",
+  "subject": "DynamicTablesPkg/AmlLib: Fix refactor AmlCodeGenInvokeMethod API",
+  "suitable": false,
+  "reasons": [
+    "Single-file bug fix: moves ArgCountNode = NULL initialization to an earlier point to avoid uninitialized-variable use",
+    "One-off fix at a specific location with no repeated pattern across the codebase",
+    "The change is logically subtle (initialization order around goto/exit_handler) and requires case-by-case reasoning"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

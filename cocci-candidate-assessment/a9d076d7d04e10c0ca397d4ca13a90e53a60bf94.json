@@ -1,0 +1,13 @@
+{
+  "commit": "a9d076d7d04e10c0ca397d4ca13a90e53a60bf94",
+  "short_commit": "a9d076d7d0",
+  "subject": "BaseTools/PatchCheck.py: Disallow commit subject lines that end with period",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "1fe2504afb6ed8a991d5cfe2e3cf1d39afb47b95",
+  "short_commit": "1fe2504afb",
+  "subject": "StandaloneMmPkg: StandaloneMmIplPei: Guard S3 hob with PcdAcpiS3Enable",
+  "suitable": false,
+  "reasons": [
+    "One-off conditional guard: wraps a specific HOB copy sequence with a PcdGetBool(PcdAcpiS3Enable) check in a single location",
+    "No repeated pattern across files; the change is specific to the S3 HOB handling logic in one function",
+    "Context-dependent fix requiring semantic understanding of PCD semantics; not a structural rename or collateral evolution"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

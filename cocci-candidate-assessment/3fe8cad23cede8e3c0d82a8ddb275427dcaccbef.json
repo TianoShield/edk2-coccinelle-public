@@ -1,0 +1,14 @@
+{
+  "commit": "3fe8cad23cede8e3c0d82a8ddb275427dcaccbef",
+  "short_commit": "3fe8cad23c",
+  "subject": "MdeModulePkg: RuntimeDxeReportStatusCodeLib: Do not query protocol",
+  "suitable": false,
+  "reasons": [
+    "This is a broad refactor that moves protocol lookup into constructor/destructor logic.",
+    "The change introduces new event plumbing and state management rather than a single reusable match-and-replace rule.",
+    "The altered behavior is context-dependent and not a simple pattern repeated across many sites.",
+    "Coccinelle would only cover a narrow subpattern, not the commit as a whole."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

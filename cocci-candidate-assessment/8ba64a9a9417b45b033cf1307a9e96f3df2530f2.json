@@ -1,0 +1,13 @@
+{
+  "commit": "8ba64a9a9417b45b033cf1307a9e96f3df2530f2",
+  "short_commit": "8ba64a9a94",
+  "subject": "UefiPayloadPkg: Fix build failure with CLANGPDB",
+  "suitable": true,
+  "reasons": [
+    "The same enum-member replacement is repeated across multiple call sites in one file.",
+    "The before/after mapping is explicit: switch `EfiPciWidthUint32` to `EfiPciIoWidthUint32`.",
+    "This is a small but clean API/enum migration pattern that Coccinelle handles well."
+  ],
+  "candidate_pattern": "Replace `EfiPciWidthUint32` with `EfiPciIoWidthUint32` in repeated `PciIo->Pci.Read()` and `PciIo->Pci.Write()` call sites.",
+  "confidence": "high"
+}

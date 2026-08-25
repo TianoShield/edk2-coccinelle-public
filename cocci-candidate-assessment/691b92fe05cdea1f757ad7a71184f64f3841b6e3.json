@@ -1,0 +1,14 @@
+{
+  "commit": "691b92fe05cdea1f757ad7a71184f64f3841b6e3",
+  "short_commit": "691b92fe05",
+  "subject": "UefiCpuPkg/ArmMmuLib: Introduce ArmCcaSetMemoryProtectionAttribute()",
+  "suitable": false,
+  "reasons": [
+    "This commit introduces a new API function (ArmCcaSetMemoryProtectionAttribute) along with substantial new implementation logic in ArmMmuLibCore.c — primarily additive code.",
+    "No existing pattern is being systematically replaced or migrated.",
+    "The diff is dominated by new code (222 insertions, 22 deletions) with highly specific Realm/CCA logic that requires per-instance reasoning.",
+    "Not a repetitive structural transformation across multiple call sites."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

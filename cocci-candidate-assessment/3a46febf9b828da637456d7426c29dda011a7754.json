@@ -1,0 +1,13 @@
+{
+  "commit": "3a46febf9b828da637456d7426c29dda011a7754",
+  "short_commit": "3a46febf9b",
+  "subject": "Maintainers.txt: Add Doug Flick as maintainer for CryptoPkg",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

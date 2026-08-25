@@ -1,0 +1,14 @@
+{
+  "commit": "b3fdc0994db62b72a8b56ea25ffd024ab5e4e017",
+  "short_commit": "b3fdc0994d",
+  "subject": "CryptoPkg: Add digest-based RSA-PSS sign and verify APIs",
+  "suitable": false,
+  "reasons": [
+    "Large feature addition: introduces new RsaPssSignDigest() and RsaPssVerifyDigest() APIs across 15 files",
+    "Mostly new code (914 insertions, 27 deletions); not a transformation of existing patterns",
+    "Involves new API design, protocol versioning (v24), PCD additions, and unit tests — not a mechanical refactoring",
+    "No repeated before/after structural pattern expressible as SmPL"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

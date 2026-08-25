@@ -1,0 +1,13 @@
+{
+  "commit": "0a7ed7ed345749707dea0f8f264ef42924a65546",
+  "short_commit": "0a7ed7ed34",
+  "subject": "OvmfPkg/EnrollDefaultKeys: do not require CustomMode",
+  "suitable": false,
+  "reasons": [
+    "Complex policy change in a single file: makes CustomMode failure non-fatal and tracks its state for conditional teardown",
+    "Requires domain reasoning about UEFI secure boot CustomMode semantics and how PcdRequireSelfSignedPk affects enrollment",
+    "One-off change with no repeated structural pattern; 31 insertions and 27 deletions touching control flow throughout one function"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

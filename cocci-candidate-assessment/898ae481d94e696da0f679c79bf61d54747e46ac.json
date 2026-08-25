@@ -1,0 +1,14 @@
+{
+  "commit": "898ae481d94e696da0f679c79bf61d54747e46ac",
+  "short_commit": "898ae481d9",
+  "subject": "MdeModulePkg/ArmFfaLib: support ArmFfaLib wihtout Rx/Tx buffer",
+  "suitable": false,
+  "reasons": [
+    "This is a context-specific refactor that adds alternate execution paths in three libraries.",
+    "The edits are tied to FF-A buffer availability handling, not a reusable structural rewrite.",
+    "There is no simple repeated match-and-replace pattern across the commit.",
+    "The overall change is a feature adaptation, not a semantic migration."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

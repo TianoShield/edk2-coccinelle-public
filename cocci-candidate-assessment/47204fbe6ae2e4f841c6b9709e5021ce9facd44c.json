@@ -1,0 +1,13 @@
+{
+  "commit": "47204fbe6ae2e4f841c6b9709e5021ce9facd44c",
+  "short_commit": "47204fbe6a",
+  "subject": "PrmPkg: align UNI file headers with UNI Spec standard",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

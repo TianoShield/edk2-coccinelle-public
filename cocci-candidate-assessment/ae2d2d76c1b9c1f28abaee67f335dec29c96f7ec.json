@@ -1,0 +1,14 @@
+{
+  "commit": "ae2d2d76c1b9c1f28abaee67f335dec29c96f7ec",
+  "short_commit": "ae2d2d76c1",
+  "subject": "ArmPkg,MdePkg,MdeModulePkg: change ArmFfaLibGetVersion() with whole version",
+  "suitable": true,
+  "reasons": [
+    "Clear API migration: ArmFfaLibGetVersion() signature changes from (UINT16 major, UINT16 minor, UINT16 *outMajor, UINT16 *outMinor) to (UINT32 version, UINT32 *outVersion), applied consistently across 5 files in 3 packages",
+    "High repetitiveness: the same call-site transformation appears multiple times across MmCommunicationDxe, MmCommunicationPei, ArmStandaloneMmCoreEntryPoint, ArmMmuStandaloneMmLib, and ArmFfaCommon",
+    "The transformation pattern is well-defined: replace ArmFfaLibGetVersion(ARM_FFA_MAJOR_VERSION, ARM_FFA_MINOR_VERSION, &major, &minor) with ArmFfaLibGetVersion(ARM_FFA_CREATE_VERSION(...), &version); replace subsequent uses of major/minor with ARM_FFA_MAJOR/MINOR_VERSION_GET(version)",
+    "Also replaces the two-variable comparison (major != X || minor > Y) with ARM_FFA_ABI_COMPATIBLE(version, X, Y) - a systematic macro migration pattern"
+  ],
+  "candidate_pattern": "@@\nUINT16 major;\nUINT16 minor;\n@@\n- ArmFfaLibGetVersion(ARM_FFA_MAJOR_VERSION, ARM_FFA_MINOR_VERSION, &major, &minor)\n+ ArmFfaLibGetVersion(ARM_FFA_CREATE_VERSION(ARM_FFA_MAJOR_VERSION, ARM_FFA_MINOR_VERSION), &version)\n... replace subsequent major/minor usage with ARM_FFA_MAJOR/MINOR_VERSION_GET(version) and version compatibility checks with ARM_FFA_ABI_COMPATIBLE macro",
+  "confidence": "high"
+}

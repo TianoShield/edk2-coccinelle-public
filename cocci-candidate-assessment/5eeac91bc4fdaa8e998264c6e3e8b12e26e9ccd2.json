@@ -1,0 +1,13 @@
+{
+  "commit": "5eeac91bc4fdaa8e998264c6e3e8b12e26e9ccd2",
+  "short_commit": "5eeac91bc4",
+  "subject": "MdePkg: AArch64Mmu.h: Fix define shifts",
+  "suitable": false,
+  "reasons": [
+    "This is a localized header fix to a few macro expressions.",
+    "It is a one-off correctness cleanup with no repeated structural pattern.",
+    "There is no scale or collateral evolution for Coccinelle to exploit."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

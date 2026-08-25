@@ -1,0 +1,13 @@
+{
+  "commit": "d53d0fd5c0513ed9e6ec1dbd2235fde6ef4277cb",
+  "short_commit": "d53d0fd5c0",
+  "subject": "UefiPayloadPkg: Fix build failure with GCC",
+  "suitable": false,
+  "reasons": [
+    "This is a single header-level build fix, not a structural C transformation.",
+    "The change is isolated to one file and one incompatibility, with no repetition or scale.",
+    "It is build-system compatibility work rather than API migration or collateral evolution."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

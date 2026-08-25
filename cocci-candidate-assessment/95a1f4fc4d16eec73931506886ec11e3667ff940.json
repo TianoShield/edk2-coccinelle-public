@@ -1,0 +1,14 @@
+{
+  "commit": "95a1f4fc4d16eec73931506886ec11e3667ff940",
+  "short_commit": "95a1f4fc4d",
+  "subject": "UefiPayloadPkg: Update wiki links",
+  "suitable": false,
+  "reasons": [
+    "The commit only updates documentation links in `.txt` and `.md` files, not C source.",
+    "It is a non-C change, which the criteria explicitly exclude.",
+    "The edits are URL replacements in prose, not a semantic C before/after transformation.",
+    "This is documentation maintenance, not API migration or collateral evolution in code."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

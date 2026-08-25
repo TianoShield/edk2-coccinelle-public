@@ -1,0 +1,14 @@
+{
+  "commit": "8992abde26b2c60a859f38b16df7ff5ab5148a22",
+  "short_commit": "8992abde26",
+  "subject": "MdeModulePkg/DisplayEngineDxe: fix gcc 16 warning",
+  "suitable": false,
+  "reasons": [
+    "The change is confined to one function in one C file.",
+    "It removes an unused local and deletes a now-unneeded loop counter increment, which is a one-off warning cleanup rather than a reusable structural transformation.",
+    "There is no repetition across files or multiple call sites, so there is no scale for a Coccinelle rule to leverage.",
+    "This fits the criteria's excluded category of a context-specific fix, not API migration or collateral evolution."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

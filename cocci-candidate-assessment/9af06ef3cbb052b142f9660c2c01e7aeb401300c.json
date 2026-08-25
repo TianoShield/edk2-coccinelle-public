@@ -1,0 +1,14 @@
+{
+  "commit": "9af06ef3cbb052b142f9660c2c01e7aeb401300c",
+  "short_commit": "9af06ef3cb",
+  "subject": "BaseTools/EfiRom: fix compiler warning",
+  "suitable": false,
+  "reasons": [
+    "This is a one-off compiler-warning fix in a single C file and a single function.",
+    "The change removes one unused local and inlines one `strstr()` check, which is not a repeated structural pattern.",
+    "There is no API migration, repeated call-site rewrite, or other collateral evolution for Coccinelle to generalize.",
+    "The transformation is context-specific cleanup rather than a reusable match-and-replace rule."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

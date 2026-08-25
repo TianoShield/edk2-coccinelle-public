@@ -1,0 +1,13 @@
+{
+  "commit": "17cb2be383568fad979ccaaab7378ff149533761",
+  "short_commit": "17cb2be383",
+  "subject": "MdeModulePkg: IpmiCommandLib: Add IPMI mailbox declarations",
+  "suitable": false,
+  "reasons": [
+    "Pure addition of new function declarations to a header file - no transformation of existing code",
+    "No before/after pattern to match: it is a feature addition, not a structural refactor of existing code",
+    "Coccinelle is not appropriate for adding new API declarations"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

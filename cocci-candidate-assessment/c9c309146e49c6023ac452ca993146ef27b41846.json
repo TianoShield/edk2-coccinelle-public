@@ -1,0 +1,13 @@
+{
+  "commit": "c9c309146e49c6023ac452ca993146ef27b41846",
+  "short_commit": "c9c309146e",
+  "subject": "ManageabilityPkg: Initial version of ManageabilityPkg",
+  "suitable": false,
+  "reasons": [
+    "This is a large initial import of a new package (ManageabilityPkg) migrated from edk2-platform; it is entirely new code with no before/after transformation",
+    "Coccinelle requires existing code to transform; an initial package addition has no pre-existing patterns to match and replace",
+    "The change spans many new files (headers, libraries, drivers) but none of them are modifications of existing code"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

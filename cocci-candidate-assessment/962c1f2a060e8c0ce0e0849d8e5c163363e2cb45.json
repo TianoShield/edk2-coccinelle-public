@@ -1,0 +1,13 @@
+{
+  "commit": "962c1f2a060e8c0ce0e0849d8e5c163363e2cb45",
+  "short_commit": "962c1f2a06",
+  "subject": "StandaloneMmPkg: Fix possible infinite loop due invalid hob",
+  "suitable": false,
+  "reasons": [
+    "One-off bug fix: a single argument in one function call is changed from HobList to (UINT8 *)HobList + PhitHobSize",
+    "The fix requires understanding of the specific PHIT/platform HOB layout; it is not a mechanical structural transformation",
+    "No neighboring commits apply the same argument correction to other call sites"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

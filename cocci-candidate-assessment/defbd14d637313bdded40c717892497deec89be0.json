@@ -1,0 +1,14 @@
+{
+  "commit": "defbd14d637313bdded40c717892497deec89be0",
+  "short_commit": "defbd14d63",
+  "subject": "Revert \"MdeModulePkg/PciBusDxe: Degrade MEM64 to PMEM64...\"",
+  "suitable": false,
+  "reasons": [
+    "This is a revert commit that removes previously added logic; it is a one-off change in a single file",
+    "The removed code was a non-trivial conditional block introduced to implement a specific PCI resource degradation policy; there is no repeated pattern",
+    "Reverts are typically not Coccinelle candidates because the patch is removing unique code that was added for a specific design decision",
+    "No neighboring commits share the same revert or similar structural removal pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "35c03c1c9f53af6ff9bbc5f8748eb30614259687",
+  "short_commit": "35c03c1c9f",
+  "subject": "BaseTools: Ecc: Update to ANTLR 4.13.2",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

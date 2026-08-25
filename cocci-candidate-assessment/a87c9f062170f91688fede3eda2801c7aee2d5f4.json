@@ -1,0 +1,13 @@
+{
+  "commit": "a87c9f062170f91688fede3eda2801c7aee2d5f4",
+  "short_commit": "a87c9f0621",
+  "subject": "MdeModulePkg: Add CxlDxe driver",
+  "suitable": false,
+  "reasons": [
+    "This is a pure addition of new code (1946 lines inserted, nothing removed), not a transformation of existing code",
+    "Coccinelle is designed to match and transform existing patterns, not generate new driver implementations from scratch",
+    "No repetitive before/after pattern exists — the commit creates new C files and a new .inf"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

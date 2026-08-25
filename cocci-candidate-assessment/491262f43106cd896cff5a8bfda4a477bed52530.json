@@ -1,0 +1,13 @@
+{
+  "commit": "491262f43106cd896cff5a8bfda4a477bed52530",
+  "short_commit": "491262f431",
+  "subject": "MdeModulePkg/Library: Fix property typos",
+  "suitable": false,
+  "reasons": [
+    "This is property text cleanup across library metadata.",
+    "It is not a structural C transformation and does not scale as a semantic patch.",
+    "Pure typo fixes are a poor match for Coccinelle."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

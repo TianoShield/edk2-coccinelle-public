@@ -1,0 +1,13 @@
+{
+  "commit": "43e0552a74622a9e63d5bebc5a86e5ea4c33ceb5",
+  "short_commit": "43e0552a74",
+  "subject": "SecurityPkg: Fix VS2022 NOOPT IA32 use of intrinsics",
+  "suitable": false,
+  "reasons": [
+    "This is a single cast insertion in one function.",
+    "There is no meaningful repetition across files or call sites.",
+    "The change is too small and context-specific to justify a semantic patch."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

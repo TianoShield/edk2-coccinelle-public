@@ -1,0 +1,81 @@
+{
+  "id": "3457388",
+  "cocciFile": "cocci-scripts/3457388-pages-to-size-pcdget64.cocci",
+  "spatchOptions": [
+    "--smpl-spacing"
+  ],
+  "cases": [
+    {
+      "name": "replay-get-rxtx-buffers",
+      "beforeSource": {
+        "gitRevision": "3457388b7cec770cc6599c85e50ec81030f3cc9f^:MdeModulePkg/Library/ArmFfaLib/ArmFfaSecRxTxMap.c",
+        "ranges": [
+          {
+            "startLine": 46,
+            "endLine": 86
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "3457388b7cec770cc6599c85e50ec81030f3cc9f:MdeModulePkg/Library/ArmFfaLib/ArmFfaSecRxTxMap.c",
+        "ranges": [
+          {
+            "startLine": 46,
+            "endLine": 86
+          }
+        ]
+      }
+    },
+    {
+      "name": "fixture-rxtx-map-generated-format",
+      "beforeSource": {
+        "gitRevision": "3457388b7cec770cc6599c85e50ec81030f3cc9f^:MdeModulePkg/Library/ArmFfaLib/ArmFfaSecRxTxMap.c",
+        "ranges": [
+          {
+            "startLine": 100,
+            "endLine": 278
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "3457388b7cec770cc6599c85e50ec81030f3cc9f:MdeModulePkg/Library/ArmFfaLib/ArmFfaSecRxTxMap.c",
+        "ranges": [
+          {
+            "startLine": 100,
+            "endLine": 278
+          }
+        ]
+      }
+    },
+    {
+      "name": "replay-update-rxtx-buffer-info",
+      "beforeSource": {
+        "gitRevision": "3457388b7cec770cc6599c85e50ec81030f3cc9f^:MdeModulePkg/Library/ArmFfaLib/ArmFfaSecRxTxMap.c",
+        "ranges": [
+          {
+            "startLine": 344,
+            "endLine": 364
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "3457388b7cec770cc6599c85e50ec81030f3cc9f:MdeModulePkg/Library/ArmFfaLib/ArmFfaSecRxTxMap.c",
+        "ranges": [
+          {
+            "startLine": 344,
+            "endLine": 364
+          }
+        ]
+      }
+    },
+    {
+      "name": "fixture-generalize-pcdget64-page-size",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/3457388/PcdGet64PageSize.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/3457388/PcdGet64PageSize.after.c"
+      }
+    }
+  ]
+}

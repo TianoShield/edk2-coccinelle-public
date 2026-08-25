@@ -1,0 +1,14 @@
+{
+  "commit": "99d8c3710a0fc2d15fcc28d8b9a1aedbb190b9b9",
+  "short_commit": "99d8c3710a",
+  "subject": "ArmPkg/CpuDxe: Drop GCD system memory check from MemoryAttribute protocol",
+  "suitable": false,
+  "reasons": [
+    "Change is confined to a single file (MemoryAttribute.c) in ArmPkg/CpuDxe",
+    "Although the same guard 'if (!RegionIsSystemMemory(...)) return EFI_UNSUPPORTED;' is removed from three functions, all three are in the same file and the pattern does not recur across the broader codebase",
+    "The deletion also removes the entire RegionIsSystemMemory() helper — this is more of a targeted API cleanup than a broadly repeating structural transformation",
+    "Neighbors are unrelated commits (SignedCapsulePkg removal), so there is no multi-file series to leverage"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

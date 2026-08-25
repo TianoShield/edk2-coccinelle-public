@@ -1,0 +1,13 @@
+{
+  "commit": "e2b0e207f7b1009a6729f7973ed17242cb6672a4",
+  "short_commit": "e2b0e207f7",
+  "subject": "MdePkg/BaseLib: Add AsmReadFsBase and AsmWriteFsBase for X86-64",
+  "suitable": false,
+  "reasons": [
+    "Pure feature addition: new assembly functions and their C declarations are added from scratch",
+    "No transformation of existing code; no before/after pattern to match",
+    "Coccinelle is not appropriate for adding new API functions and their implementations"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

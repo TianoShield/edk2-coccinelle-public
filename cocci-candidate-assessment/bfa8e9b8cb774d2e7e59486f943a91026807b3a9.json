@@ -1,0 +1,14 @@
+{
+  "commit": "bfa8e9b8cb774d2e7e59486f943a91026807b3a9",
+  "short_commit": "bfa8e9b8cb",
+  "subject": "TcgTpmPkg/Library: introduce PlatformTpmLib",
+  "suitable": false,
+  "reasons": [
+    "Entirely new library introduction: 2006 lines of new code across 15 new files, 0 deletions",
+    "Introduces PlatformTpmNullLib with new stub implementations - no transformation of existing code",
+    "Part of TcgTpmPkg introduction series",
+    "New content cannot be expressed as a Coccinelle before/after transformation rule"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

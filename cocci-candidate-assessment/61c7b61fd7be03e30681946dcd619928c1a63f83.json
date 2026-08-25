@@ -1,0 +1,13 @@
+{
+  "commit": "61c7b61fd7be03e30681946dcd619928c1a63f83",
+  "short_commit": "61c7b61fd7",
+  "subject": "RedfishPkg/RedfishPlatformConfigDxe: add missing HII handles",
+  "suitable": false,
+  "reasons": [
+    "The commit adds missing handles in a specific code path.",
+    "There is no repeated transformation to generalize.",
+    "This is a one-off correctness fix, not a semantic-patch candidate."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "f39883ea115f4aef8fe1df4b83b9c33439deca33",
+  "short_commit": "f39883ea11",
+  "subject": "BaseTools: Refactor shell BinWrappers/PosixLike wrappers",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

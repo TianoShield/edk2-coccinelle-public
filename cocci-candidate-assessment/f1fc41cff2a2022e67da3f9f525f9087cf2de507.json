@@ -1,0 +1,14 @@
+{
+  "commit": "f1fc41cff2a2022e67da3f9f525f9087cf2de507",
+  "short_commit": "f1fc41cff2",
+  "subject": "SecurityPkg: Tcg2AcpiFfa: Polish revision checks for TPM2 table",
+  "suitable": false,
+  "reasons": [
+    "Single-file change with logic restructuring: inverts a conditional check and removes a compound condition",
+    "The change requires semantic reasoning about revision constraints — not a mechanical structural transformation",
+    "One-off fix in a single function in a single file; no repeated pattern across codebase",
+    "Neighbors (a270773cce) are related but each addresses a distinct concern in the same file"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

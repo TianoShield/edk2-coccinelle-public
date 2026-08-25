@@ -1,0 +1,14 @@
+{
+  "commit": "e9935da03b697df34a424ea05d53e67bd4e1a38a",
+  "short_commit": "e9935da03b",
+  "subject": "TcgTpmPkg/TpmLib: add build option files for TPM reference library",
+  "suitable": false,
+  "reasons": [
+    "Entirely new files added (550 insertions, 1 deletion in .yaml): new header files for TPM build configuration",
+    "No transformation of existing code - all content is new",
+    "Part of TcgTpmPkg introduction series adding build option headers",
+    "Coccinelle cannot operate on new file creation"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

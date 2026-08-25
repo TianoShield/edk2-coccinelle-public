@@ -1,0 +1,14 @@
+{
+  "commit": "10e6fb31a335ff3346d7f3d0b6edc005f1945a3b",
+  "short_commit": "10e6fb31a3",
+  "subject": "OvmfPkg: Remove redundant assignment not required after GCC48/49 removal",
+  "suitable": false,
+  "reasons": [
+    "Single-location change removing one redundant NULL assignment in one file",
+    "The change is a one-off cleanup specific to a compiler workaround that no longer applies",
+    "Not a systematic pattern repeated across files; only 5 lines deleted in a single .c file",
+    "Neighbors are GCC5 removal commits affecting build infrastructure (scripts, .md files, toolchain configs), not the same C code pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

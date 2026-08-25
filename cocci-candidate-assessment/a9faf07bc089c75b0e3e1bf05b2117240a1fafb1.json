@@ -1,0 +1,13 @@
+{
+  "commit": "a9faf07bc089c75b0e3e1bf05b2117240a1fafb1",
+  "short_commit": "a9faf07bc0",
+  "subject": "MdePkg: Add PE Target Support to AArch64",
+  "suitable": false,
+  "reasons": [
+    "The commit is a broad PE-target support refactor across C and assembly files.",
+    "The changes are architecture-specific and spread across unrelated subsystems rather than one reusable pattern.",
+    "This is context-dependent bring-up work, not a systematic semantic patch candidate."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

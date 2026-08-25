@@ -1,0 +1,13 @@
+{
+  "commit": "50a00eb5d43c018bb45033cac1185cf57f582a2f",
+  "short_commit": "50a00eb5d4",
+  "subject": "ArmPlatformPkg: Extend SpellCheck dictionary",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

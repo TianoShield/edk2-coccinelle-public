@@ -1,0 +1,13 @@
+{
+  "commit": "31d7cb91c16120f7932a181ffe8a7c6ab4fa13db",
+  "short_commit": "31d7cb91c1",
+  "subject": "CryptoPkg: add EC algorithm for SmmCryptLib",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

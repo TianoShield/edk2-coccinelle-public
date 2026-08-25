@@ -1,0 +1,12 @@
+{
+  "commit": "0e6d10de1c9aa3dd8c38979afc0249ad3da97e31",
+  "short_commit": "0e6d10de1c",
+  "subject": "BaseTools: Replace include guards with #pragma once",
+  "suitable": false,
+  "reasons": [
+    "Replacing include guards with `#pragma once` requires matching a coordinated `#ifndef`/`#define` pair at the top of a file and its `#endif` at the bottom as a unit \u2014 SmPL has no construct for this.",
+    "Use sed/awk/Python for this kind of whole-file structural preprocessor change."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

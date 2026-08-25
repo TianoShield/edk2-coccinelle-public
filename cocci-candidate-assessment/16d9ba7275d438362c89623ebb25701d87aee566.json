@@ -1,0 +1,14 @@
+{
+  "commit": "16d9ba7275d438362c89623ebb25701d87aee566",
+  "short_commit": "16d9ba7275",
+  "subject": "MdeModulePkg: Add helper to check if FF-A is supported",
+  "suitable": false,
+  "reasons": [
+    "Adds a new helper function and declaration rather than transforming existing call sites.",
+    "The change is confined to one implementation file and one header with no repeated before/after edit pattern.",
+    "Applying it elsewhere would require case-by-case design judgment about where the helper should be used, not a mechanical match-and-replace.",
+    "This is API creation, not an API migration or collateral evolution across the codebase."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

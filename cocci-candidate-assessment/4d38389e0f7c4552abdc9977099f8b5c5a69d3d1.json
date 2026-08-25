@@ -1,0 +1,14 @@
+{
+  "commit": "4d38389e0f7c4552abdc9977099f8b5c5a69d3d1",
+  "short_commit": "4d38389e0f",
+  "subject": "UefiCpuPkg/CpuMpPei: Support AMD GetProcessorCoreType",
+  "suitable": false,
+  "reasons": [
+    "Single-file change adding AMD-specific logic to an existing Intel-only code path",
+    "The change adds a new conditional branch (if StandardSignatureIsAuthenticAMD()) with a loop to iterate CPUID topology levels - complex algorithmic logic, not a structural pattern",
+    "Not a collateral evolution or API rename; it is extending platform-specific behavior in a one-off location",
+    "No repeated pattern across files that Coccinelle could match and transform"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

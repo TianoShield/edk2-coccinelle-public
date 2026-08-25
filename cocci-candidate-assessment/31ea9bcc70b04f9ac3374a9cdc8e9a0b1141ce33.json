@@ -1,0 +1,13 @@
+{
+  "commit": "31ea9bcc70b04f9ac3374a9cdc8e9a0b1141ce33",
+  "short_commit": "31ea9bcc70",
+  "subject": "ArmVirtPkg: Kvmtool: Init Arm CCA HOBs in PlatformPeim()",
+  "suitable": false,
+  "reasons": [
+    "Single call-site addition: ArmCcaInitialiseHobs() is added to one specific function (PlatformPeim) in one file",
+    "The change is context-specific \u2014 it adds a HOB initialization call to a platform PEI entrypoint with an error check, not a repeated structural pattern",
+    "One-off feature integration rather than a systematic API migration or collateral evolution across multiple sites"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "3c3cc89e7a77adca25431b7403ed83580deb822e",
+  "short_commit": "3c3cc89e7a",
+  "subject": "ArmPkg/Include/IndustryStandard: introduce firmware update feature headers",
+  "suitable": false,
+  "reasons": [
+    "The commit adds a new header rather than transforming existing code.",
+    "It is definition creation, not a repetitive code migration.",
+    "There are no repeated before/after edits to capture in SmPL."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

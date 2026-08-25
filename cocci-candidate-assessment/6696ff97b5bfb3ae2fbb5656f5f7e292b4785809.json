@@ -1,0 +1,14 @@
+{
+  "commit": "6696ff97b5bfb3ae2fbb5656f5f7e292b4785809",
+  "short_commit": "6696ff97b5",
+  "subject": "MdePkg: Add LoongArch64 instance in BaseRngLib",
+  "suitable": false,
+  "reasons": [
+    "This adds a new architecture-specific RNG implementation rather than transforming existing code.",
+    "The commit creates new source files and build entries instead of modifying a repeated pattern.",
+    "There is no existing before/after shape to match mechanically.",
+    "This is feature addition, not collateral evolution."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

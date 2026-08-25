@@ -1,0 +1,14 @@
+{
+  "commit": "e7ffbde9ad82776a20878c9ace1decb2f617ff38",
+  "short_commit": "e7ffbde9ad",
+  "subject": "UefiCpuPkg/ArmMmuLib: DEBUG_VERBOSE -> DEBUG_PAGING",
+  "suitable": true,
+  "reasons": [
+    "Mechanical substitution of DEBUG_VERBOSE with DEBUG_PAGING inside a DEBUG() macro call",
+    "Part of a clearly identified multi-commit series: 939de47d12 adds DEBUG_PAGING definition, then 3d6453f515 (OvmfPkg), 5dc31efc42 (UefiCpuPkg/CpuDxe), e7ffbde9ad (UefiCpuPkg/ArmMmuLib), and af1ae393d0 (UefiCpuPkg/MpLib) all apply the same DEBUG_VERBOSE->DEBUG_PAGING substitution to paging-related debug messages across packages",
+    "The pattern is well-defined and purely structural: replace DEBUG_VERBOSE with DEBUG_PAGING in DEBUG() calls within paging-related code",
+    "High repetitiveness as 1-of-N in a series spanning multiple packages and files"
+  ],
+  "candidate_pattern": "@@\nexpression msg, args;\n@@\nDEBUG((\n- DEBUG_VERBOSE,\n+ DEBUG_PAGING,\n  msg, ##args))",
+  "confidence": "high"
+}

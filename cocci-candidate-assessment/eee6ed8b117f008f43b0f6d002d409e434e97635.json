@@ -1,0 +1,13 @@
+{
+  "commit": "eee6ed8b117f008f43b0f6d002d409e434e97635",
+  "short_commit": "eee6ed8b11",
+  "subject": "OvmfPkg/XenBusDxe: Fix an error message",
+  "suitable": false,
+  "reasons": [
+    "Single one-off fix in a single location: adds a missing newline to one DEBUG() call and changes prefix text",
+    "The change is not a repeated pattern - it's a unique fixup of one specific error message",
+    "No repetitiveness across files or callers; neighbors are unrelated commits"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

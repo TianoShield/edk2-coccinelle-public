@@ -1,0 +1,14 @@
+{
+  "commit": "641a32bd4ae093f1251209a44b1bcf4d32b8b507",
+  "short_commit": "641a32bd4a",
+  "subject": "TcgTpmPkg/Private: copy standard headers from CryptoPkg",
+  "suitable": false,
+  "reasons": [
+    "Pure file addition: 29 new header files copied/introduced with 764 insertions and 0 deletions",
+    "Copying existing headers to a new package location is not a code transformation",
+    "No before/after structural pattern - entirely additive work",
+    "Part of TcgTpmPkg new package introduction series"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

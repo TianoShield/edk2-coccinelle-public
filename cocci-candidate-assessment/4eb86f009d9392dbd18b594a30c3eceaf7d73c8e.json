@@ -1,0 +1,14 @@
+{
+  "commit": "4eb86f009d9392dbd18b594a30c3eceaf7d73c8e",
+  "short_commit": "4eb86f009d",
+  "subject": "MdePkg: Added several mock libraries for google test",
+  "suitable": false,
+  "reasons": [
+    "Pure addition of new mock library files for Google Test; 225 insertions, 2 deletions",
+    "Adds new C++ header and implementation files — not a transformation of existing C code",
+    "Neighbor commits (d68752de91: MdeModulePkg mock libs, e9f03fca28: CryptoPkg MockBaseCryptLib) follow the same pattern but each adds entirely new files rather than transforming existing ones",
+    "Coccinelle operates on existing C source transformations; adding new mock library stubs is outside its scope"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

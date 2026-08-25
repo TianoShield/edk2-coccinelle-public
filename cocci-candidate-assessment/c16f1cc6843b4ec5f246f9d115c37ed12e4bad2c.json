@@ -1,0 +1,14 @@
+{
+  "commit": "c16f1cc6843b4ec5f246f9d115c37ed12e4bad2c",
+  "short_commit": "c16f1cc684",
+  "subject": "MdePkg,MdeModulePkg/ArmFfaLib: introduce ArmFfaGetPartitionInfo()",
+  "suitable": false,
+  "reasons": [
+    "This introduces a new helper API and its implementation rather than transforming existing code.",
+    "There is no repeated before/after call-site pattern in the commit itself.",
+    "API creation is not the same as API migration.",
+    "Coccinelle is a poor fit for adding the helper from scratch."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

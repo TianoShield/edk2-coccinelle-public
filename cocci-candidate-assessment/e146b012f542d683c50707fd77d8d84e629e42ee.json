@@ -1,0 +1,14 @@
+{
+  "commit": "e146b012f542d683c50707fd77d8d84e629e42ee",
+  "short_commit": "e146b012f5",
+  "subject": "MdePkg/ArmFfaMemMgmtLib: Set NS bit support in FFA_FEATURES query",
+  "suitable": false,
+  "reasons": [
+    "Single call-site change: replaces a literal 0 argument with a newly introduced macro FFA_FEATURES_MEM_RETRIEVE_REQ_NS_SUPPORT in one function call",
+    "Only one occurrence in one file; there is no pattern repeated across multiple locations",
+    "The change requires understanding of the protocol semantics (which argument to change), not a structural code pattern",
+    "Neighboring commits are unrelated in subject matter"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

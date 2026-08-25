@@ -1,0 +1,13 @@
+{
+  "commit": "6fb6ef54e7599b2b20d0bc24937403b76144a0f0",
+  "short_commit": "6fb6ef54e7",
+  "subject": "SecurityPkg/Tcg2Smm: harden NVS/SMI state initialization",
+  "suitable": false,
+  "reasons": [
+    "Multiple distinct changes: initializing globals to MAX_UINTN, adding a NULL guard check in a callback, and reinitializing locals in a function",
+    "Each change addresses a different concern (state hardening) and requires case-by-case reasoning about what sentinel value is appropriate",
+    "No single uniform structural pattern that Coccinelle could express as a SmPL rule"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "969879cb28d15a4de562ad9b63b0f6b72b8cb7c2",
+  "short_commit": "969879cb28",
+  "subject": "MdePkg, ArmPkg, ArmPlatformPkg: Create VECTOR_TABLE Macro",
+  "suitable": false,
+  "reasons": [
+    "The commit rewrites vector-table scaffolding across assembly and header files.",
+    "It is not a C-only transformation, and the bulk of the change is macro scaffolding.",
+    "The work is broad vector-table rework, not a generic reusable Coccinelle rule."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

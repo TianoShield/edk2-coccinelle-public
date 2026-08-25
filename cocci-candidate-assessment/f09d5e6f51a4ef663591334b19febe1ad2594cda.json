@@ -1,0 +1,13 @@
+{
+  "commit": "f09d5e6f51a4ef663591334b19febe1ad2594cda",
+  "short_commit": "f09d5e6f51",
+  "subject": "ArmPkg/ArmLib: Remove unused ArmLibPrivate.h",
+  "suitable": false,
+  "reasons": [
+    "Deletes a private header file and removes its #include from two C files and one .inf file",
+    "Purely a cleanup of an unused file; no repeated code transformation pattern",
+    "Coccinelle can remove #include directives but this is a one-off cleanup affecting only ArmLib, not a pattern repeated across many files"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

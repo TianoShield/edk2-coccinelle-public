@@ -1,0 +1,13 @@
+{
+  "commit": "0e6f016032ed6c51a44cee684e4e0b0c65667cbd",
+  "short_commit": "0e6f016032",
+  "subject": "MdePkg/IndustryStandard: add LoongArch IOVT structures",
+  "suitable": false,
+  "reasons": [
+    "Pure new header file addition: 75 lines of struct and macro definitions added to a new file",
+    "No before/after transformation pattern; this is entirely new code with no existing code being changed",
+    "Coccinelle operates on transformations of existing code, not on adding new declarations"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

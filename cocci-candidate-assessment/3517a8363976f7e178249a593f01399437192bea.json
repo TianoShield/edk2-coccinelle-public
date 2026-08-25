@@ -1,0 +1,13 @@
+{
+  "commit": "3517a8363976f7e178249a593f01399437192bea",
+  "short_commit": "3517a83639",
+  "subject": "MdePkg/BaseRngLib: Rename Riscv folder to RiscV",
+  "suitable": false,
+  "reasons": [
+    "File rename/move operation (Riscv/ -> RiscV/) plus updating the .inf path references",
+    "Not a C code transformation; Coccinelle operates on C source ASTs, not file system paths or INF files",
+    "Pure renaming with no semantic code change"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "7ccc418c23be1109aba8649ca2b08ef217f1d9e6",
+  "short_commit": "7ccc418c23",
+  "subject": "ArmPkg: MmCommunicationDxe: Handle when the region is already reported",
+  "suitable": false,
+  "reasons": [
+    "This is a one-off control-flow fix for a specific region-reporting case.",
+    "There is no repeated code shape to generalize across the tree.",
+    "The behavior depends on a special-case runtime condition rather than a reusable edit pattern."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

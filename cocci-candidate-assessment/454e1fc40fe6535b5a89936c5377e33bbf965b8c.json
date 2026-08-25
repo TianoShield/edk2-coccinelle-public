@@ -1,0 +1,13 @@
+{
+  "commit": "454e1fc40fe6535b5a89936c5377e33bbf965b8c",
+  "short_commit": "454e1fc40f",
+  "subject": "SecurityPkg: Fix Tcg2SubmitCommand in most cases",
+  "suitable": false,
+  "reasons": [
+    "This is a large refactor of one TPM command path with case-specific branching.",
+    "The new behavior depends on TPM presence and response-code state, which requires per-condition reasoning.",
+    "The commit is not a uniform match-and-replace pattern repeated at scale."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

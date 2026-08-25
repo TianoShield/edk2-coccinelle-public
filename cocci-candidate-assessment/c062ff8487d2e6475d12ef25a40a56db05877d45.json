@@ -1,0 +1,13 @@
+{
+  "commit": "c062ff8487d2e6475d12ef25a40a56db05877d45",
+  "short_commit": "c062ff8487",
+  "subject": "ShellPkg/TimeDate: Extract PrintDaylight() helper",
+  "suitable": false,
+  "reasons": [
+    "One-off function extraction: a single switch block is moved into a new helper PrintDaylight() and replaced with one call site",
+    "Coccinelle cannot generate new functions or move code into them; it can only transform existing patterns",
+    "The switch block appears only once - no repetitiveness"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

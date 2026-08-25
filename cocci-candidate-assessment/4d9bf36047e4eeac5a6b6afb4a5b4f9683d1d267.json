@@ -1,0 +1,13 @@
+{
+  "commit": "4d9bf36047e4eeac5a6b6afb4a5b4f9683d1d267",
+  "short_commit": "4d9bf36047",
+  "subject": "MdePkg/IndustryStandard: Add Arm CCA RSI FID definitions",
+  "suitable": false,
+  "reasons": [
+    "Pure addition of new #define constants to a header file - no existing code is transformed",
+    "There is no before/after structural pattern to match and replace",
+    "Coccinelle requires an existing pattern to find and transform; purely additive header changes are not suitable"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

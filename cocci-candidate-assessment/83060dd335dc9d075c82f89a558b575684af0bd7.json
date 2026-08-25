@@ -1,0 +1,14 @@
+{
+  "commit": "83060dd335dc9d075c82f89a558b575684af0bd7",
+  "short_commit": "83060dd335",
+  "subject": "NetworkPkg/UefiPxeBcDxe: Add missing Token.Context initialization",
+  "suitable": false,
+  "reasons": [
+    "Only 2 lines added in a single file to initialize Token.Context = Private in two write-file functions",
+    "While the same field assignment is added in two places (Mtftp4 and Mtftp6 paths), the scope is too narrow (2 additions in 1 file) to justify a Coccinelle rule",
+    "A Coccinelle rule matching 'Token.PacketNeeded = NULL' followed by missing 'Token.Context = Private' could theoretically work, but there is no indication of a broader codebase-wide pattern requiring this fix",
+    "Bug fix at specific call sites, not a collateral evolution pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

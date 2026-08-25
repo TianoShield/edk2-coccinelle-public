@@ -1,0 +1,13 @@
+{
+  "commit": "b2a149cf97e4244e61930207c050075311996c2f",
+  "short_commit": "b2a149cf97",
+  "subject": "UefiCpuPkg: ArmMmuLib: Check if Block Split Following Page Alloc",
+  "suitable": false,
+  "reasons": [
+    "Complex algorithmic bug fix in AArch64 MMU page-table management; requires deep understanding of block/table splitting semantics",
+    "Change adds 69 lines and restructures the recursive logic for detecting already-split blocks — far beyond a mechanical pattern match",
+    "Single file, one-off fix with no analogous repeated pattern elsewhere"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

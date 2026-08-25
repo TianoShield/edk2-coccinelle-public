@@ -1,0 +1,13 @@
+{
+  "commit": "409aef9c7a4cbf96d1bc62bab373a363f150ecf5",
+  "short_commit": "409aef9c7a",
+  "subject": "CryptoPkg/OpensslLib: add NULL EC interfaces for TPM TCG library",
+  "suitable": false,
+  "reasons": [
+    "Adds new NULL stub functions to a single file (EcSm2Null.c) - purely additive, not a transformation",
+    "Only one file changed, no repeated pattern across the codebase to match",
+    "Coccinelle cannot generate new code where none existed before"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

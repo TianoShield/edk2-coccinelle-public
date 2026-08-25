@@ -1,0 +1,14 @@
+{
+  "commit": "e092122653c003551afc4e58ba197c1da51621cc",
+  "short_commit": "e092122653",
+  "subject": "ArmPlatformPkg/PL011UartLib : Fix SetControl() SCT conformance",
+  "suitable": false,
+  "reasons": [
+    "This is a one-off correctness fix in a single C function, not a repeated structural transformation.",
+    "The change adds argument validation specific to `PL011UartSetControl()`, so the before/after shape is context-dependent rather than reusable across call sites.",
+    "There is no cross-file API migration or collateral evolution pattern to generalize into a Coccinelle rule.",
+    "The edit is not a broad code-shape change; it is a targeted conformance fix for one SCT failure."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

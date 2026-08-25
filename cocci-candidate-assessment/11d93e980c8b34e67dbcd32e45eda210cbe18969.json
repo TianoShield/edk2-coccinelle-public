@@ -1,0 +1,14 @@
+{
+  "commit": "11d93e980c8b34e67dbcd32e45eda210cbe18969",
+  "short_commit": "11d93e980c",
+  "subject": "CryptoPkg: add AES_encrypt/AES_decrpyt for TPM reference library",
+  "suitable": false,
+  "reasons": [
+    "This is a new API addition (adding AesEncrypt/AesDecrypt wrapper functions), not a transformation of existing code",
+    "Adding new function declarations, implementations, and protocol table entries cannot be expressed as a Coccinelle match-and-replace rule",
+    "Part of a series of TPM-related API additions, but each commit adds genuinely new code rather than transforming existing patterns",
+    "Coccinelle cannot generate new code where none existed before"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

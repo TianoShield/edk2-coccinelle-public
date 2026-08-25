@@ -1,0 +1,13 @@
+{
+  "commit": "85d3fc596bcc0193cac6b57140a622b8ac5c2b8e",
+  "short_commit": "85d3fc596b",
+  "subject": "BaseTools/Conf: Use common rule for Hii-Binary-Package",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

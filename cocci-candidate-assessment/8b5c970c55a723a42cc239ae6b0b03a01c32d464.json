@@ -1,0 +1,13 @@
+{
+  "commit": "8b5c970c55a723a42cc239ae6b0b03a01c32d464",
+  "short_commit": "8b5c970c55",
+  "subject": "ShellPkg/Help: Extract PrintMatchingHelp() function",
+  "suitable": false,
+  "reasons": [
+    "This is a refactoring commit that extracts a new helper function from existing code in a single file (Help.c)",
+    "Function extraction is not expressible as an SmPL transformation — Coccinelle cannot define new functions or move code blocks into a new function",
+    "One-off structural refactor with no repeating pattern across files"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

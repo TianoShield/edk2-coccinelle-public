@@ -1,0 +1,14 @@
+{
+  "commit": "24eddc65b34538b397bcacec057a4a1fff7550df",
+  "short_commit": "24eddc65b3",
+  "subject": "MdeModulePkg: Add platform limit for size in Resizable BAR",
+  "suitable": false,
+  "reasons": [
+    "This is a feature addition introducing a new PCD and validation logic in PciLib.c",
+    "The changes are case-specific logic enhancements (error checking, new PCD use, debug message updates) in one .c file",
+    "Not a systematic rename or API migration; requires per-site reasoning about the new PCD semantics",
+    "Neighbors (UefiPayloadPkg) add platform limits in a different package, but each change involves unique platform-specific logic"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

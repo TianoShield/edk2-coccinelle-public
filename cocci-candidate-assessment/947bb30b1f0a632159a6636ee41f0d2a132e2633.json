@@ -1,0 +1,13 @@
+{
+  "commit": "947bb30b1f0a632159a6636ee41f0d2a132e2633",
+  "short_commit": "947bb30b1f",
+  "subject": ".pytool/Plugin/HostUnitTestCompilerPlugin: Allow non VS20xx IA32",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

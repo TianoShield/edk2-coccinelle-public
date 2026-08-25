@@ -1,0 +1,13 @@
+{
+  "commit": "7075ab567bc182a718418d49dadfd4b0f869d5c6",
+  "short_commit": "7075ab567b",
+  "subject": "UefiCpuPkg: Add CLANGPDB AARCH64 Support",
+  "suitable": false,
+  "reasons": [
+    "This is architecture/toolchain bring-up spanning C, assembly, and build files.",
+    "The edits are highly context-specific to PE target support rather than a reusable C transformation.",
+    "It is a broad porting change, not a single pattern repeated across many C call sites."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

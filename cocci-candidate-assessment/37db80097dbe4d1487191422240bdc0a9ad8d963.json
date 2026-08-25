@@ -1,0 +1,13 @@
+{
+  "commit": "37db80097dbe4d1487191422240bdc0a9ad8d963",
+  "short_commit": "37db80097d",
+  "subject": "StandaloneMmPkg Core: Treat no DEPEX as TRUE",
+  "suitable": false,
+  "reasons": [
+    "One-off semantic policy change in a single function: changes NULL-DEPEX handling from ASSERT/return FALSE to return TRUE",
+    "No repeated pattern across files; single-location logic inversion that requires understanding of DEPEX dispatch semantics",
+    "Not an API migration or mechanical rename; the before/after are logically opposite behaviors, not structurally equivalent substitutions"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "e412a892b3c6a132b971ae2b513e8c24766509b9",
+  "short_commit": "e412a892b3",
+  "subject": "SecurityPkg: Add Debug Message to show the TPM2 PCR bank info",
+  "suitable": false,
+  "reasons": [
+    "One-off: inserts a single DEBUG((DEBUG_INFO, ...)) line after a specific API call in one file",
+    "No repeated pattern; adding a one-line debug print does not constitute a structural transformation",
+    "Not an API migration or collateral evolution"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

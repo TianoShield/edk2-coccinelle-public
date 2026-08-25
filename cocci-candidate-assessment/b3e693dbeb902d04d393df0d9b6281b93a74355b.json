@@ -1,0 +1,14 @@
+{
+  "commit": "b3e693dbeb902d04d393df0d9b6281b93a74355b",
+  "short_commit": "b3e693dbeb",
+  "subject": "CryptoPkg: preparation to build TPM reference library",
+  "suitable": false,
+  "reasons": [
+    "Two unrelated changes bundled: replacing a memcpy macro with a function declaration, and adding INT16_MAX/UINT16_MAX constants",
+    "The memcpy macro-to-function change is a one-off fix in a single header/source location pair, not a repeated pattern across multiple files",
+    "The constant additions are purely additive, not transformations of existing code",
+    "No repeated pattern across the codebase that Coccinelle could match and transform"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

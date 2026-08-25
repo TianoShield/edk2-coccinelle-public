@@ -1,0 +1,14 @@
+{
+  "commit": "ffa6fc362aaf0e8d0bb3344e2d2cbe87aaa75531",
+  "short_commit": "ffa6fc362a",
+  "subject": "StandaloneMmPkg: StandaloneMmCore: Don't Print Entry/Exit Logs",
+  "suitable": false,
+  "reasons": [
+    "The change removes two debug print calls in a single function, so it is a one-off logging cleanup rather than a reusable transformation.",
+    "There is no repeated before/after structural pattern across multiple files or call sites.",
+    "This is pure style/debug output reduction, which the criteria explicitly exclude.",
+    "The commit does not represent API migration or collateral evolution that Coccinelle is meant to automate."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

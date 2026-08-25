@@ -1,0 +1,14 @@
+{
+  "commit": "3b0deb5e7941f59b0a262a4ed8a928f0d2dcb0da",
+  "short_commit": "3b0deb5e79",
+  "subject": "EmbeddedPkg/PrePiLib: Prevent overread with FFS size macros",
+  "suitable": true,
+  "reasons": [
+    "Replaces a repeated unsafe pattern '*(UINT32 *)(header->Size) & 0x00FFFFFF' with the safe macro FFS_FILE_SIZE(header) across 4 sites in one file.",
+    "Adjacent commit 9989454219 applies the exact same transformation to EmulatorPkg/SecPeiServicesLib/FwVol.c, and also adds SECTION_SIZE(section) for the section size variant.",
+    "Together these two commits form a series applying the same FFS size macro migration across multiple FwVol.c implementations — high repetitiveness as a conceptual group.",
+    "The before/after pattern is structurally identical and well-defined: replace raw pointer cast + mask with standardized macro."
+  ],
+  "candidate_pattern": "@@\nEFI_FFS_FILE_HEADER *hdr;\n@@\n- *(UINT32 *)(hdr->Size) & 0x00FFFFFF\n+ FFS_FILE_SIZE(hdr)",
+  "confidence": "high"
+}

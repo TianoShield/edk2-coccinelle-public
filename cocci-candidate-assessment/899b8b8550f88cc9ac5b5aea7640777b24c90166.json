@@ -1,0 +1,13 @@
+{
+  "commit": "899b8b8550f88cc9ac5b5aea7640777b24c90166",
+  "short_commit": "899b8b8550",
+  "subject": "ShellPkg/Type: Factorize character display",
+  "suitable": false,
+  "reasons": [
+    "Refactoring that extracts a new PrintTypeCharacter() helper and replaces two similar inline code blocks in Type.c with calls to it",
+    "Function extraction is not expressible in SmPL — Coccinelle cannot define new functions",
+    "The two replaced blocks differ slightly (ASCII vs UCS2 handling), requiring per-instance adaptation rather than a uniform substitution"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "64ad6f20d883bea836a8b144acd45dba2eb226a5",
+  "short_commit": "64ad6f20d8",
+  "subject": "MdeModulePkg: BdsDxe: Introduce infinite boot retries",
+  "suitable": false,
+  "reasons": [
+    "The commit adds a new feature gate and changes one boot loop path, but it does not apply a repeated structural transformation across multiple files or call sites.",
+    "Most of the edit is context-specific BDS control-flow logic around boot retries and menu handling, which is not a generic match-and-replace pattern.",
+    "The supporting PCD and INF updates are plumbing for the feature, not evidence of a reusable Coccinelle migration pattern.",
+    "This is a one-off behavioral change rather than collateral evolution or API migration with broad repetition."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

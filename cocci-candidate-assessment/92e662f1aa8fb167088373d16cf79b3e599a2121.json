@@ -1,0 +1,13 @@
+{
+  "commit": "92e662f1aa8fb167088373d16cf79b3e599a2121",
+  "short_commit": "92e662f1aa",
+  "subject": "MdePkg/Acpi65|66.h: Add Generic Port Affinity structure and flags for SRAT",
+  "suitable": false,
+  "reasons": [
+    "Adds new struct definitions and macro constants to two header files (Acpi65.h and Acpi66.h); purely additive new code",
+    "No before/after code transformation; Coccinelle cannot be used to add entirely new declarations",
+    "The two-file touch reflects parallel ACPI spec versions, not a repeated transformation of existing code"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

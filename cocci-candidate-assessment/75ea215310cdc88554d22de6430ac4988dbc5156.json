@@ -1,0 +1,13 @@
+{
+  "commit": "75ea215310cdc88554d22de6430ac4988dbc5156",
+  "short_commit": "75ea215310",
+  "subject": "OvmfPkg/EnrollDefaultKeys: do not check VendorKeys",
+  "suitable": false,
+  "reasons": [
+    "Tiny one-off removal of a VendorKeys check in a single function in a single file (1 insertion, 2 deletions)",
+    "The change removes a specific policy check that is no longer needed given PcdRequireSelfSignedPk changes; requires domain reasoning",
+    "No repeated pattern; part of a series of OVMF CustomMode changes but this instance is distinct and non-mechanical"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

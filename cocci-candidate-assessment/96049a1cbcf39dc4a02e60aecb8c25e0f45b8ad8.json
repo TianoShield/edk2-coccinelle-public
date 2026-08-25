@@ -1,0 +1,13 @@
+{
+  "commit": "96049a1cbcf39dc4a02e60aecb8c25e0f45b8ad8",
+  "short_commit": "96049a1cbc",
+  "subject": "StandaloneMmPkg/StandaloneMmIplPei: Optimize CreateMmPlatformHob calls",
+  "suitable": false,
+  "reasons": [
+    "This is a local optimization of one function's control flow.",
+    "The edit removes duplicated calls, but only in this specific code path.",
+    "There is no repeated structural pattern across files or call sites for a semantic patch to target."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

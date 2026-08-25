@@ -1,0 +1,14 @@
+{
+  "commit": "6d4b80aab3acc9cf7a127e0112b1bd68c7d40ddb",
+  "short_commit": "6d4b80aab3",
+  "subject": "ArmPkg/Library: update xferlist version to 2",
+  "suitable": false,
+  "reasons": [
+    "The change is a single constant update in one header, not a repeated structural transformation.",
+    "It is a protocol/version bump driven by specification changes, so the edit is specific to this context.",
+    "There is no before/after pattern spanning multiple call sites, files, or similar instances that would justify a Coccinelle rule.",
+    "This fits the criteria's one-off fix category more than API migration or collateral evolution."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "260b91a352b870a6d7c05bdf47bd4564e7677c7c",
+  "short_commit": "260b91a352",
+  "subject": "MdeModulePkg/Core: Validate DXE event signature before usage",
+  "suitable": false,
+  "reasons": [
+    "Single-location security fix adding an event signature validation check to one function (CoreRegisterProtocolNotify)",
+    "The change adds a new condition to an existing NULL-pointer check; it requires semantic understanding of the IEVENT structure and EVENT_SIGNATURE constant",
+    "No repeated pattern across the codebase: this is a targeted use-after-free prevention in a single function",
+    "No neighboring commits share a similar signature-validation addition pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

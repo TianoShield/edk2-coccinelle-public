@@ -1,0 +1,14 @@
+{
+  "commit": "be6ff0f289f40e42a75d3c53af7f43a667f509d5",
+  "short_commit": "be6ff0f289",
+  "subject": "MdeModulePkg/HiiDatabaseDxe: Fix parser issue in GetNameElement()",
+  "suitable": false,
+  "reasons": [
+    "The change removes one incorrect `goto Done;` in a single parser function, so it is a one-off control-flow fix.",
+    "There is no repeated structural before/after pattern across multiple call sites, files, or similar functions.",
+    "The behavior depends on a specific `ConfigRequest` parsing edge case, which makes it context-specific rather than a mechanical match-and-replace.",
+    "This is a local bug fix, not an API migration, helper-macro replacement, or other broad collateral evolution."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

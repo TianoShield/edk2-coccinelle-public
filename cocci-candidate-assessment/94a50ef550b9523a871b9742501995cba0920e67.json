@@ -1,0 +1,14 @@
+{
+  "commit": "94a50ef550b9523a871b9742501995cba0920e67",
+  "short_commit": "94a50ef550",
+  "subject": "UefiCpuPkg: Fix VS2022 NOOPT IA32 build issues",
+  "suitable": true,
+  "reasons": [
+    "The commit repeats the same alignment-check rewrite across several C files, replacing bitmask and modulo tests with `IS_ALIGNED()`.",
+    "It also applies the same type narrowing pattern to a few SMM bookkeeping variables to avoid 64-bit intrinsic use.",
+    "The before/after shape is clear and mostly mechanical, which fits Coccinelle well.",
+    "This is a build-fix migration with enough repetition to generalize, even though it is mixed with some local type adjustments."
+  ],
+  "candidate_pattern": "Replace alignment bitmask/modulo checks with `IS_ALIGNED()` and narrow the affected SMM size/index variables to `UINTN` where needed.",
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "50349c5e07e7a6b0451c42104c18553a14fabc32",
+  "short_commit": "50349c5e07",
+  "subject": "ArmPkg/Library: optimise StandaloneMmMmuLib with FF-A v1.3",
+  "suitable": false,
+  "reasons": [
+    "This is an algorithmic optimization of memory permission update logic in one file (ArmMmuStandaloneMmLib.c): replaces per-page SMC calls with bulk range processing using new FF-A v1.3 return values",
+    "The changes require domain-specific reasoning about FF-A v1.3 semantics and page count encoding - not expressible as a structural pattern match",
+    "Low repetitiveness: the logic change is localized within one function, not a pattern repeated across multiple files or call sites"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

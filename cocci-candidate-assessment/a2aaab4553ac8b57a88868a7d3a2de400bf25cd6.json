@@ -1,0 +1,13 @@
+{
+  "commit": "a2aaab4553ac8b57a88868a7d3a2de400bf25cd6",
+  "short_commit": "a2aaab4553",
+  "subject": "MdeModulePkg/Core/PiSmmCore/Page.c: Correct gMemoryMap typo",
+  "suitable": false,
+  "reasons": [
+    "The change corrects a typo in a single identifier.",
+    "It is one-off cleanup with no reusable before/after form.",
+    "Coccinelle does not help with this kind of local typo fix."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

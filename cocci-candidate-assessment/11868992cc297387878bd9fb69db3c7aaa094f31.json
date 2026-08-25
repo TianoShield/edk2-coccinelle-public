@@ -1,0 +1,13 @@
+{
+  "commit": "11868992cc297387878bd9fb69db3c7aaa094f31",
+  "short_commit": "11868992cc",
+  "subject": "IntelFsp2Pkg: Save/restore FSBASE/GSBASE in entry and exit",
+  "suitable": false,
+  "reasons": [
+    "Changes are in NASM assembly files and a C struct definition; Coccinelle operates on C source only and cannot transform assembly",
+    "The assembly changes (save/restore of FSBASE/GSBASE via rdfsbase/wrfsbase instructions) are a one-off addition in FSP entry/exit stubs",
+    "The C struct change adds two new fields to a private typedef struct - structural but not a repeated pattern across multiple files"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

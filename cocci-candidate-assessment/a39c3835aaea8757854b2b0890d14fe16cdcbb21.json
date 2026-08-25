@@ -1,0 +1,13 @@
+{
+  "commit": "a39c3835aaea8757854b2b0890d14fe16cdcbb21",
+  "short_commit": "a39c3835aa",
+  "subject": "MdeModulePkg: Add FFA_NS_RES_INFO_GET to ArmFfaCommon",
+  "suitable": false,
+  "reasons": [
+    "Pure feature addition: implements a new ArmFfaLibFfaNsResInfoGet() function and its declaration — no before/after transformation",
+    "No repeated pattern; adding new functionality does not constitute a structural match-and-replace",
+    "Not an API migration or collateral evolution; it is a net-new function implementation"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "7e0b85e03bccb56c67a23fc651b449f75126719d",
+  "short_commit": "7e0b85e03b",
+  "subject": "StandaloneMmPkg/Core: Return when processing malformed DEPEX",
+  "suitable": false,
+  "reasons": [
+    "Single-location fix: adds one 'return FALSE' statement after an ASSERT(FALSE) in a single file",
+    "One-off bug fix addressing a specific Coverity issue; no repeated pattern across files",
+    "The change requires reasoning about control flow semantics (fallthrough in switch), not a mechanical transformation"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

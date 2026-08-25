@@ -1,0 +1,13 @@
+{
+  "commit": "76406ef119625ee3185d4ae3bf7701147dba50ac",
+  "short_commit": "76406ef119",
+  "subject": "ShellPkg/UefiShellDriver1: Remove unused Status",
+  "suitable": false,
+  "reasons": [
+    "Removes an unused EFI_STATUS variable in two specific functions; the return values of two specific calls are intentionally ignored",
+    "While 'remove unused variable' is a general pattern, the fix is narrow: only two instances where Status was set but the return value was already being disregarded by design",
+    "Coccinelle could match this pattern generically, but it would produce false positives; each instance needs reasoning about whether the return value matters"
+  ],
+  "candidate_pattern": null,
+  "confidence": "medium"
+}

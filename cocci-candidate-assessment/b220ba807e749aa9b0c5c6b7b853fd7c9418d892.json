@@ -1,0 +1,14 @@
+{
+  "commit": "b220ba807e749aa9b0c5c6b7b853fd7c9418d892",
+  "short_commit": "b220ba807e",
+  "subject": "MdeModulePkg: Fix overflow in PciAllocateBusNumber",
+  "suitable": false,
+  "reasons": [
+    "This is a single arithmetic-width fix in one helper.",
+    "The edit changes one variable type and a few casts, not a repeated structural transformation.",
+    "There is no scale or collateral evolution to generalize.",
+    "The commit is context-specific to overflow handling in PCI bus allocation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

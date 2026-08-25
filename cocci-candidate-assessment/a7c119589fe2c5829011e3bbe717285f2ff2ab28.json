@@ -1,0 +1,13 @@
+{
+  "commit": "a7c119589fe2c5829011e3bbe717285f2ff2ab28",
+  "short_commit": "a7c119589f",
+  "subject": "MdeModulePkg/PeiDebugLibDebugPpi: Fix comma parsing in VaListToBaseList",
+  "suitable": true,
+  "reasons": [
+    "Paired with adjacent commit 4d0946c082 applying the identical fix to PeiDxeDebugLibReportStatusCode/DebugLib.c",
+    "Both commits add || (*Format == ',') to the same format-flag parsing condition in mirrored debug library files",
+    "Likely more instances exist across other DebugLib implementations that parse format strings — pattern is well-defined and mechanical"
+  ],
+  "candidate_pattern": "Match: if ((*Format == '.') || (*Format == '-') || (*Format == '+') || (*Format == ' ')) inside format-string parsing loops in DebugLib files, and add || (*Format == ',') to the condition.",
+  "confidence": "medium"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "2bfde627ff858f1ca1a3a7809d8cbe968e21b6cc",
+  "short_commit": "2bfde627ff",
+  "subject": "ShellPkg/SmbiosView: Support print Protocol Records of SMBIOS type42",
+  "suitable": false,
+  "reasons": [
+    "Feature addition: adds 39 new lines of printing/decoding logic for SMBIOS type42 protocol records — no before/after transformation pattern",
+    "One-off addition to a single file; not a systematic refactor or API migration",
+    "Case-by-case decoding logic with switch/case reasoning, not suitable for mechanical SmPL match-and-replace"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

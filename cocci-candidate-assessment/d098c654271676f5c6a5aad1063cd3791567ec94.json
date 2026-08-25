@@ -1,0 +1,13 @@
+{
+  "commit": "d098c654271676f5c6a5aad1063cd3791567ec94",
+  "short_commit": "d098c65427",
+  "subject": "StandaloneMmPkg: Correct Build Options for CLANGPDB",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

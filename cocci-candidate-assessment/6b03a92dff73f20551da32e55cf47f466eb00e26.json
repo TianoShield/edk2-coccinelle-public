@@ -1,0 +1,13 @@
+{
+  "commit": "6b03a92dff73f20551da32e55cf47f466eb00e26",
+  "short_commit": "6b03a92dff",
+  "subject": "MdePkg/IndustryStandard/ArmFfaSvc.h: add partition type helper",
+  "suitable": false,
+  "reasons": [
+    "The commit adds a new helper in a header rather than changing existing code structure.",
+    "It is API creation, not migration or collateral evolution across the codebase.",
+    "There is no repeated structural change to encode as a semantic patch."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

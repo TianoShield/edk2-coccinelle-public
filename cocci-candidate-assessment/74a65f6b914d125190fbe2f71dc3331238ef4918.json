@@ -1,0 +1,14 @@
+{
+  "commit": "74a65f6b914d125190fbe2f71dc3331238ef4918",
+  "short_commit": "74a65f6b91",
+  "subject": "MdePkg/BaseFdtLib: Implement new libfdt wrappers",
+  "suitable": false,
+  "reasons": [
+    "Adds new wrapper functions and a macro definition; this is new code, not a transformation of existing code",
+    "Coccinelle is suited for modifying existing patterns, not for generating new wrapper boilerplate",
+    "The changes are additive (new function FdtFindMaxPhandle, new macro FdtForEachPropertyOffset) with no before-state to match",
+    "No repeated structural pattern in existing code is being transformed"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

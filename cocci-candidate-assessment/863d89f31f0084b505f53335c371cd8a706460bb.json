@@ -1,0 +1,14 @@
+{
+  "commit": "863d89f31f0084b505f53335c371cd8a706460bb",
+  "short_commit": "863d89f31f",
+  "subject": "OvmfPkg: Update wiki links",
+  "suitable": false,
+  "reasons": [
+    "The commit changes Markdown/readme documentation links, not C source code.",
+    "Coccinelle targets structural transformations in C, so this is outside its primary domain.",
+    "The edits are documentation URL updates rather than a semantic before/after code pattern.",
+    "This fits the excluded category of non-C and documentation/style maintenance work."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

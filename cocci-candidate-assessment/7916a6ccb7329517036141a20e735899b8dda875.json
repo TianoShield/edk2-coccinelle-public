@@ -1,0 +1,13 @@
+{
+  "commit": "7916a6ccb7329517036141a20e735899b8dda875",
+  "short_commit": "7916a6ccb7",
+  "subject": "OvmfPkg/MemDebugLogPeiLib: drop duplicate MemDebugLogWrite function",
+  "suitable": false,
+  "reasons": [
+    "The commit removes a duplicated function body and switches the INF to a different source file.",
+    "This is consolidation work, not a repetitive source-to-source transformation.",
+    "Coccinelle is not a good fit for deleting one duplicate and changing the build manifest."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

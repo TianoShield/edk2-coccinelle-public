@@ -1,0 +1,13 @@
+{
+  "commit": "33f7389070de2151c15d7887df0120a44f28efe1",
+  "short_commit": "33f7389070",
+  "subject": "ArmPkg: Remove branch prediction control APIs",
+  "suitable": false,
+  "reasons": [
+    "Removes a few call sites (ArmCallSEV, ArmBranchPredictionBarrier calls in CpuPei.c) and the assembly implementation in AArch64Support.S",
+    "The removal affects only 2 files with a small number of call sites; this is a targeted cleanup, not a widespread pattern",
+    "Paired with 2a7edc37c3 (MdePkg header removal), but together they are still a low-repetition, API-deletion scenario rather than a migration Coccinelle is suited for"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

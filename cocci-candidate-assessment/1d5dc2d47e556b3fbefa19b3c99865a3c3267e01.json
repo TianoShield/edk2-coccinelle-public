@@ -1,0 +1,13 @@
+{
+  "commit": "1d5dc2d47e556b3fbefa19b3c99865a3c3267e01",
+  "short_commit": "1d5dc2d47e",
+  "subject": "BaseTools: use double hyphens for CLANGPDB llvm-rc",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

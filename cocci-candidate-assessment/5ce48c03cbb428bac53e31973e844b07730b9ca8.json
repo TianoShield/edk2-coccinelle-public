@@ -1,0 +1,13 @@
+{
+  "commit": "5ce48c03cbb428bac53e31973e844b07730b9ca8",
+  "short_commit": "5ce48c03cb",
+  "subject": "BaseTools/Ecc: Remove #ifndef include guard checks",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

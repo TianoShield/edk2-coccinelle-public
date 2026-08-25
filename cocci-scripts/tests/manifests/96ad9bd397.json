@@ -1,0 +1,95 @@
+{
+  "id": "96ad9bd397",
+  "cocciFile": "cocci-scripts/96ad9bd397-armffa-get-partition-info.cocci",
+  "cases": [
+    {
+      "name": "fixture-mmcommunication-dxe-cleanup",
+      "beforeSource": {
+        "gitRevision": "8955d8db328686a0224c882cd3b45114439f62b6^:ArmPkg/Drivers/MmCommunicationDxe/MmCommunication.c",
+        "ranges": [
+          {
+            "startLine": 27,
+            "endLine": 31
+          },
+          {
+            "startLine": 538,
+            "endLine": 624
+          }
+        ]
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/96ad9bd397/MmCommunicationDxe.after.c"
+      }
+    },
+    {
+      "name": "fixture-mmcommunication-pei-cleanup",
+      "beforeSource": {
+        "gitRevision": "8955d8db328686a0224c882cd3b45114439f62b6^:ArmPkg/Drivers/MmCommunicationPei/MmCommunicationPei.c",
+        "ranges": [
+          {
+            "startLine": 26,
+            "endLine": 30
+          },
+          {
+            "startLine": 133,
+            "endLine": 219
+          }
+        ]
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/96ad9bd397/MmCommunicationPei.after.c"
+      }
+    },
+    {
+      "name": "replay-tpm2-service",
+      "beforeSource": {
+        "gitRevision": "b80000847abbefe5c263d35e515c3acc11a96059^:SecurityPkg/Library/Tpm2DeviceLibFfa/Tpm2ServiceFfaRaw.c",
+        "ranges": [
+          {
+            "startLine": 98,
+            "endLine": 169
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "b80000847abbefe5c263d35e515c3acc11a96059:SecurityPkg/Library/Tpm2DeviceLibFfa/Tpm2ServiceFfaRaw.c",
+        "ranges": [
+          {
+            "startLine": 98,
+            "endLine": 125
+          }
+        ]
+      }
+    },
+    {
+      "name": "replay-tcg2-config",
+      "beforeSource": {
+        "gitRevision": "96ad9bd397ca721a78fd0d41021f4621c4a04082^:SecurityPkg/Tcg/Tcg2Config/Tcg2ConfigFfaPeim.c",
+        "ranges": [
+          {
+            "startLine": 109,
+            "endLine": 198
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "96ad9bd397ca721a78fd0d41021f4621c4a04082:SecurityPkg/Tcg/Tcg2Config/Tcg2ConfigFfaPeim.c",
+        "ranges": [
+          {
+            "startLine": 109,
+            "endLine": 161
+          }
+        ]
+      }
+    },
+    {
+      "name": "fixture-noop-non-desc-query",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/96ad9bd397/NonDescQuery.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/96ad9bd397/NonDescQuery.after.c"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "1574cd37a2ab112f42b6cf07160a29b482878c9b",
+  "short_commit": "1574cd37a2",
+  "subject": "MdePkg/BaseFdtLib: Header style update to FdtOverlayApply and FdtStrerror",
+  "suitable": false,
+  "reasons": [
+    "Changes are documentation/style-only: updating IN to IN OUT in Doxygen comments and reformatting a multi-line return type onto one line",
+    "Coccinelle does not operate on comments or Doxygen annotations; it operates on C code structure",
+    "The FdtStrerror return-type reformatting (CONST CHAR8 * split across lines -> single line) is a pure formatting change not expressible in SmPL",
+    "Only 2 functions in 2 files changed; no repeated pattern across the codebase"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

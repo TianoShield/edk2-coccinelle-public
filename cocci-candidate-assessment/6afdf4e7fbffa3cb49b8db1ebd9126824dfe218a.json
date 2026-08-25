@@ -1,0 +1,13 @@
+{
+  "commit": "6afdf4e7fbffa3cb49b8db1ebd9126824dfe218a",
+  "short_commit": "6afdf4e7fb",
+  "subject": "MdeModulePkg: Add CxlIo.h protocol",
+  "suitable": false,
+  "reasons": [
+    "The commit adds a brand-new protocol header file with no prior version to replace.",
+    "Coccinelle requires an existing before/after transformation pattern; purely additive code additions have no 'before' to match.",
+    "No repetitive structural change across multiple call sites or files."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

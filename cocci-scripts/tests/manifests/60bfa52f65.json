@@ -1,0 +1,108 @@
+{
+  "id": "60bfa52f65",
+  "cocciFile": "cocci-scripts/60bfa52f65-redfish-setvalue-byref.cocci",
+  "cases": [
+    {
+      "name": "replay-library-prototype",
+      "beforeSource": {
+        "gitRevision": "60bfa52f6520bff0aa265c3e89ef9d6f6aeca5e7^:RedfishPkg/Include/Library/RedfishPlatformConfigLib.h",
+        "ranges": [
+          {
+            "startLine": 50,
+            "endLine": 56
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "60bfa52f6520bff0aa265c3e89ef9d6f6aeca5e7:RedfishPkg/Include/Library/RedfishPlatformConfigLib.h",
+        "ranges": [
+          {
+            "startLine": 50,
+            "endLine": 56
+          }
+        ]
+      }
+    },
+    {
+      "name": "replay-protocol-typedef",
+      "beforeSource": {
+        "gitRevision": "60bfa52f6520bff0aa265c3e89ef9d6f6aeca5e7^:RedfishPkg/Include/Protocol/EdkIIRedfishPlatformConfig.h",
+        "ranges": [
+          {
+            "startLine": 172,
+            "endLine": 180
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "60bfa52f6520bff0aa265c3e89ef9d6f6aeca5e7:RedfishPkg/Include/Protocol/EdkIIRedfishPlatformConfig.h",
+        "ranges": [
+          {
+            "startLine": 174,
+            "endLine": 182
+          }
+        ]
+      }
+    },
+    {
+      "name": "replay-library-wrapper",
+      "beforeSource": {
+        "gitRevision": "60bfa52f6520bff0aa265c3e89ef9d6f6aeca5e7^:RedfishPkg/Library/RedfishPlatformConfigLib/RedfishPlatformConfigLib.c",
+        "ranges": [
+          {
+            "startLine": 132,
+            "endLine": 151
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "60bfa52f6520bff0aa265c3e89ef9d6f6aeca5e7:RedfishPkg/Library/RedfishPlatformConfigLib/RedfishPlatformConfigLib.c",
+        "ranges": [
+          {
+            "startLine": 132,
+            "endLine": 155
+          }
+        ]
+      }
+    },
+    {
+      "name": "replay-protocol-setter",
+      "beforeSource": {
+        "gitRevision": "60bfa52f6520bff0aa265c3e89ef9d6f6aeca5e7^:RedfishPkg/RedfishPlatformConfigDxe/RedfishPlatformConfigDxe.c",
+        "ranges": [
+          {
+            "startLine": 1962,
+            "endLine": 2046
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "60bfa52f6520bff0aa265c3e89ef9d6f6aeca5e7:RedfishPkg/RedfishPlatformConfigDxe/RedfishPlatformConfigDxe.c",
+        "ranges": [
+          {
+            "startLine": 1962,
+            "endLine": 2046
+          }
+        ]
+      }
+    },
+    {
+      "name": "fixture-generalize-value-name-and-field",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/60bfa52f65/GeneralValueFields.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/60bfa52f65/GeneralValueFields.after.c"
+      }
+    },
+    {
+      "name": "fixture-noop-existing-pointer",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/60bfa52f65/ExistingPointer.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/60bfa52f65/ExistingPointer.before.c"
+      }
+    }
+  ]
+}

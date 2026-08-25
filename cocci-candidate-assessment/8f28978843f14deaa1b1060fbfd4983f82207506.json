@@ -1,0 +1,14 @@
+{
+  "commit": "8f28978843f14deaa1b1060fbfd4983f82207506",
+  "short_commit": "8f28978843",
+  "subject": "MdeModulePkg/Core: Increment handle key outside if block",
+  "suitable": false,
+  "reasons": [
+    "Single-file logic fix: moves gHandleDatabaseKey++ and Handle->Key = gHandleDatabaseKey from inside an if-block to outside it",
+    "Applied identically to the UnitTest stub in 2691afa269, but only two total instances exist in the entire codebase",
+    "This is a control-flow restructuring bug fix, not an API migration or naming/structural pattern Coccinelle excels at",
+    "Coccinelle would struggle to reliably match this without false positives given the general nature of the pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "medium"
+}

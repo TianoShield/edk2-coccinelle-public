@@ -1,0 +1,13 @@
+{
+  "commit": "37f59e190c29580586e58c923801da8bdcb18ea8",
+  "short_commit": "37f59e190c",
+  "subject": "CryptoPkg/OpensslLib: add NULL CAMELLIA interfaces for TPM TCG library",
+  "suitable": false,
+  "reasons": [
+    "Adds a new NULL stub file (CamelliaNull.c) and adds it to .inf build files - purely additive",
+    "No existing code is transformed; new stub functions are being created from scratch",
+    "Coccinelle cannot generate new code where none existed before"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "8dca04c5ffdf6ad4662d716eaceb97d43f91ac66",
+  "short_commit": "8dca04c5ff",
+  "subject": "EmulatorPkg/Win/Host: Fix WinNtOpenVolume() uninitialized variable",
+  "suitable": false,
+  "reasons": [
+    "This is a single-function bug fix for an uninitialized variable.",
+    "There is no reusable before/after pattern across the tree.",
+    "Coccinelle is not a good fit for one-off initialization fixes."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

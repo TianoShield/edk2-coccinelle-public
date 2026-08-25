@@ -1,0 +1,13 @@
+{
+  "commit": "c801f959bba919d44a189b274690bca804fdf9c0",
+  "short_commit": "c801f959bb",
+  "subject": "ShellPkg/UefiShellLevel1: Lower indentation level in MainCmdXXX()",
+  "suitable": false,
+  "reasons": [
+    "This is a control-flow restructuring (early returns + removing intermediate ShellStatus variable) that changes logic shape differently for each function",
+    "The transformation varies meaningfully per function: Exit.c, Goto.c, and Stall.c each have different conditions and paths being collapsed",
+    "Pure refactoring with case-by-case reasoning required — not a uniform structural pattern expressible as SmPL"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

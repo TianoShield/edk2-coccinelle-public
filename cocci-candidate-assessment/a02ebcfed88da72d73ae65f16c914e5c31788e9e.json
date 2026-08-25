@@ -1,0 +1,13 @@
+{
+  "commit": "a02ebcfed88da72d73ae65f16c914e5c31788e9e",
+  "short_commit": "a02ebcfed8",
+  "subject": "EmulatorPkg/Unix/Host: Fix gPpiList multiply defined",
+  "suitable": false,
+  "reasons": [
+    "The patch resolves a symbol-definition issue in a single host component.",
+    "There is no repetitive before/after source transformation to automate.",
+    "This is specific linker/build cleanup, not a candidate for Coccinelle."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

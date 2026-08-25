@@ -1,0 +1,14 @@
+{
+  "commit": "18d0c3596e9312ebaff2ad4ba653c6aa5d5dd9cd",
+  "short_commit": "18d0c3596e",
+  "subject": "DynamicTablesPkg: handle missing 'iommu-map' in root complex parser",
+  "suitable": false,
+  "reasons": [
+    "Single-file logic change: replaces an ASSERT-on-NULL with a graceful EFI_NOT_FOUND return for a missing DTB property",
+    "Requires semantic understanding of when 'iommu-map' is absent and what the correct recovery action is",
+    "48 insertions / 38 deletions involving significant restructuring of one function, not a mechanical pattern transformation",
+    "No repeated pattern across multiple files or functions"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

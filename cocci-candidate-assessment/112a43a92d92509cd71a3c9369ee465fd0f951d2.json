@@ -1,0 +1,13 @@
+{
+  "commit": "112a43a92d92509cd71a3c9369ee465fd0f951d2",
+  "short_commit": "112a43a92d",
+  "subject": "RedfishPkg/RedfishHttpDxe: Improve RedfishHttpOperation error handling",
+  "suitable": false,
+  "reasons": [
+    "This is a one-off bug fix in a single function (ParseResponseMessage) in a single file, adding proper error handling when CreateRedfishPayload returns NULL.",
+    "The fix is context-specific: it adds a goto ON_ERROR after a particular NULL check in a specific function flow. There is no repeated pattern across multiple files or call sites.",
+    "One-off, context-sensitive bug fixes with case-by-case reasoning are explicitly not good Coccinelle candidates."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

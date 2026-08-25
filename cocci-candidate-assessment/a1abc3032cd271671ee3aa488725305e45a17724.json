@@ -1,0 +1,13 @@
+{
+  "commit": "a1abc3032cd271671ee3aa488725305e45a17724",
+  "short_commit": "a1abc3032c",
+  "subject": "OvmfPkg/RiscVVirt: Make SecureBootDefaultKeysInit driver configurable",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

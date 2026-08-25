@@ -1,0 +1,13 @@
+{
+  "commit": "811f56c9386be0dcd151cb5b1af3878c0a4e7b09",
+  "short_commit": "811f56c938",
+  "subject": "UefiCpuPkg/Library/CpuPageTableLib/UnitTest: Fix pointer compare",
+  "suitable": false,
+  "reasons": [
+    "This is a one-line test fix in a single function.",
+    "There is no repeated before/after pattern across files or call sites.",
+    "The edit is specific to one pointer comparison in the unit test, not a reusable structural transformation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

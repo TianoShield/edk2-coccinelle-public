@@ -1,0 +1,13 @@
+{
+  "commit": "300dada916aa9492d5fe52693e9d6fd84adccdf3",
+  "short_commit": "300dada916",
+  "subject": "MdeModulePkg/Core: Make PPI services spec complaint",
+  "suitable": true,
+  "reasons": [
+    "The same allocation-failure pattern is repeated three times in the same file.",
+    "The before/after shape is explicit: preserve the `ASSERT` and add an `EFI_OUT_OF_RESOURCES` return path when allocation fails.",
+    "That makes this a mechanical collateral-evolution style change."
+  ],
+  "candidate_pattern": "Replace `ASSERT (TempPtr != NULL);` in the PPI list growth paths with an `if (TempPtr == NULL)` block that asserts and returns `EFI_OUT_OF_RESOURCES`.",
+  "confidence": "high"
+}

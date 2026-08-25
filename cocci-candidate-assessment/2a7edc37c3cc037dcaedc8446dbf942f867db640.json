@@ -1,0 +1,14 @@
+{
+  "commit": "2a7edc37c3cc037dcaedc8446dbf942f867db640",
+  "short_commit": "2a7edc37c3",
+  "subject": "MdePkg: Remove branch prediction control APIs",
+  "suitable": false,
+  "reasons": [
+    "Removes function prototype declarations from a header file only; no call-site code is changed in this commit",
+    "The paired commit 33f7389070 (ArmPkg: Remove branch prediction control APIs) removes the implementations and callers",
+    "Even considered together, the callers are removed (not transformed to use a different API), making this an API deletion rather than migration",
+    "Coccinelle could theoretically remove the call sites but the number of callers appears very small, making it a low-value target"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

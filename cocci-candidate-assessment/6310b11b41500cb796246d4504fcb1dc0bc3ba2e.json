@@ -1,0 +1,13 @@
+{
+  "commit": "6310b11b41500cb796246d4504fcb1dc0bc3ba2e",
+  "short_commit": "6310b11b41",
+  "subject": "ArmPlatformPkg: MemoryInitPeiLib: Read PCDs into local variable",
+  "suitable": false,
+  "reasons": [
+    "The commit is a small local refactor to cache PCD reads in variables.",
+    "It is not repeated widely enough to justify a semantic patch.",
+    "This is a one-off cleanup rather than an API migration or collateral evolution."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

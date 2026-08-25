@@ -1,0 +1,16 @@
+{
+  "commit": "08cecc924605b4fb1571d034b707306ddea200a5",
+  "short_commit": "08cecc9246",
+  "subject": "MdePkg/IndustryStandard: Fix incorrect macro definition",
+  "suitable": true,
+  "reasons": [
+    "Coccinelle can rewrite `#define NAME body` when the body parses as an expression, so this literal -> BITn macro change in ACPI headers is expressible in SmPL.",
+    "The change repeats identically across 4 parallel ACPI version headers (Acpi50/51/60/61), two #define lines each.",
+    "It is sound only when anchored on the macro NAME: a bare 0x01->BIT0 / 0x02->BIT1 rule matches by value and rewrites ~90 unrelated defines (table revisions, PM-profile enums, byte/word sizes, sibling RASF command codes) in a single Acpi50.h. Anchoring on the RASF_PLATFORM_RAS_CAPABILITY_HARDWARE_BASED_PATROL_SCRUB_SUPPORTED name restores soundness.",
+    "The rewrite is value-preserving (BIT0==1, BIT1==2), so pairing each value with its macro is always correct.",
+    "Scale caveat: the name-anchored rule generalizes to any ACPI version header, but newer headers (Acpi62-66) already use BITn, so beyond these 4 files there are currently no other tree-wide sites to fix.",
+    "A validated semantic patch and manifest exist: cocci-scripts/08cecc9246-acpi-rasf-bit-macros.cocci (tests: cocci-scripts/tests/manifests/08cecc9246.json)."
+  ],
+  "candidate_pattern": "In ACPI RASF 'Platform RAS Capabilities' macro definitions whose name matches _RASF_PLATFORM_RAS_CAPABILITY_HARDWARE_BASED_PATROL_SCRUB_SUPPORTED[_AND_EXPOSED_TO_SOFTWARE], spell the flag value with the BITn macro: `#define ... 0x01` -> `BIT0` and `#define ... 0x02` -> `BIT1`. Anchor on the macro name (not the value) so sibling RASF/patrol-scrub command codes and the other 0x01/0x02 defines in the same header are left unchanged.",
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "636761d3cab451445b6c2b76b0821d2adf0181a5",
+  "short_commit": "636761d3ca",
+  "subject": "ShellPkg/Ls: Lower PrintLsOutputRec() indentation level",
+  "suitable": false,
+  "reasons": [
+    "Control-flow inversion refactor: if (!EFI_ERROR(Status)) block is replaced by early-return on EFI_ERROR, and nested if-condition is inverted to use continue",
+    "While Coccinelle can sometimes handle negation-inversion patterns, this change involves restructuring nested control flow and loop logic that requires case-by-case reasoning",
+    "One-off change in a single function - no repetitive cross-file pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "medium"
+}

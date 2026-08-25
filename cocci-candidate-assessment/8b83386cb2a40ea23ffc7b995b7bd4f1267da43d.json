@@ -1,0 +1,14 @@
+{
+  "commit": "8b83386cb2a40ea23ffc7b995b7bd4f1267da43d",
+  "short_commit": "8b83386cb2",
+  "subject": "DynamicTablesPkg/AmlLib: Fix Notify to use NamePath instead of String",
+  "suitable": false,
+  "reasons": [
+    "One-off bug fix in a single function (AmlCodeGenNotify) in a single file",
+    "The change rewrites internal logic of a function to use a different API path (ConvertAslNameToAmlName instead of AmlCodeGenString), not a structural pattern substitution",
+    "The fix involves renaming a parameter, adding new local variables, and restructuring the switch-case logic - too case-specific for Coccinelle",
+    "No repeated pattern across multiple files or functions"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

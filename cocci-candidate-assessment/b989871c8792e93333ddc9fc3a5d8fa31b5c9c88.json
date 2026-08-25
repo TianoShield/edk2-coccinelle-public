@@ -1,0 +1,14 @@
+{
+  "commit": "b989871c8792e93333ddc9fc3a5d8fa31b5c9c88",
+  "short_commit": "b989871c87",
+  "subject": "NetworkPkg: Reset DHCP Service Binding IO Status on Stop",
+  "suitable": false,
+  "reasons": [
+    "Single-line addition of a field reset in one specific function in one file",
+    "No repeated pattern: this is a targeted bug fix resetting DhcpSb->IoStatus to EFI_NOT_STARTED on stop",
+    "No neighboring commits share a similar pattern of resetting IO status fields",
+    "Case-by-case fix requiring semantic reasoning about DHCP state, not a structural transformation"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

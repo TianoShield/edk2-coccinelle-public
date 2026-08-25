@@ -1,0 +1,13 @@
+{
+  "commit": "51cdb08cdb7241f7521e9cf1c86cdb922f0013b3",
+  "short_commit": "51cdb08cdb",
+  "subject": "ShellPkg/UefiShellDriver1: Return if ShellCommandLineParse() failed",
+  "suitable": false,
+  "reasons": [
+    "Converts 'if (EFI_ERROR(Status)) { handle error; } else { main body; }' to early-return style after ShellCommandLineParse() failure across 11 files",
+    "Although the pattern is repeated across files, it is a one-time cleanup of a single subsystem and the transformation requires verifying that no Package free is needed on the error path (due to ShellCommandLineParse internals)",
+    "The semantic reasoning required (understanding that Package is already freed internally on parse error) makes this unsuitable for a purely mechanical Coccinelle rule"
+  ],
+  "candidate_pattern": null,
+  "confidence": "medium"
+}

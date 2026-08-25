@@ -1,0 +1,13 @@
+{
+  "commit": "ff9bd64b9d59d8e7234fd70f6afe9f5fa35abc11",
+  "short_commit": "ff9bd64b9d",
+  "subject": "OvmfPkg/OvmfXen: Add missing Xen's sched.h include",
+  "suitable": false,
+  "reasons": [
+    "This is a single include-line fix.",
+    "It is a one-off build correctness issue with no repeated before/after pattern.",
+    "Coccinelle is not a good fit for isolated include hygiene changes."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "db1e6caa860abd20d15bba2ecf905f2df13a5355",
+  "short_commit": "db1e6caa86",
+  "subject": "TcgTpmPkg,.pytool,.azurepipelines: introduce TpmLib",
+  "suitable": false,
+  "reasons": [
+    "This is a new package introduction adding entirely new files (library headers, .c, .inf, CI config, .dec, .dsc)",
+    "New code additions are not Coccinelle transformation candidates - there is no before/after pattern to express",
+    "The commit is part of a multi-commit series introducing a TCG TPM library package from scratch",
+    "1645 lines of insertions with no deletions - entirely additive work"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

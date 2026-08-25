@@ -1,0 +1,14 @@
+{
+  "commit": "3d6453f515cdbe829c2a17f0ba95ae352811bc6e",
+  "short_commit": "3d6453f515",
+  "subject": "OvmfPkg/BaseMemEncryptSevLib: DEBUG_VERBOSE -> DEBUG_PAGING",
+  "suitable": true,
+  "reasons": [
+    "Mechanical substitution of DEBUG_VERBOSE with DEBUG_PAGING in 6 DEBUG() macro call sites within PeiDxeVirtualMemory.c",
+    "Part of the same multi-commit series: 939de47d12 adds DEBUG_PAGING, followed by 3d6453f515 (OvmfPkg/BaseMemEncryptSevLib), 5dc31efc42 (UefiCpuPkg/CpuDxe), e7ffbde9ad (UefiCpuPkg/ArmMmuLib), af1ae393d0 (UefiCpuPkg/MpLib)",
+    "All changes in this series follow the identical structural pattern of replacing the debug level argument in DEBUG() calls for paging/memory-encryption related code",
+    "High repetitiveness: 6 instances in this file alone, and the series spans multiple packages"
+  ],
+  "candidate_pattern": "@@\nexpression msg, args;\n@@\nDEBUG((\n- DEBUG_VERBOSE,\n+ DEBUG_PAGING,\n  msg, ##args))",
+  "confidence": "high"
+}

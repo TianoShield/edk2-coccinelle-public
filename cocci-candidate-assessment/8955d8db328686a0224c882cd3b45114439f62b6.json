@@ -1,0 +1,14 @@
+{
+  "commit": "8955d8db328686a0224c882cd3b45114439f62b6",
+  "short_commit": "8955d8db32",
+  "subject": "ArmPkg/Driver: use ArmFfaGetPartitionInfo() in Mmcommunication",
+  "suitable": true,
+  "reasons": [
+    "The same migration appears in both DXE and PEI MM communication files.",
+    "There is a clear before/after pattern: remove manual partition-info retrieval and replace it with the new helper.",
+    "This is classic collateral evolution across multiple call sites.",
+    "The transformation is mechanical enough to be expressed as a semantic patch."
+  ],
+  "candidate_pattern": "Replace manual FF-A partition lookup and buffer-release boilerplate with `ArmFfaGetPartitionInfo()` and direct `PartitionId` access.",
+  "confidence": "high"
+}

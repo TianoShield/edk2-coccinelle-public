@@ -1,0 +1,13 @@
+{
+  "commit": "644e5790cdc59f9234a84ede77de9d8f9aa0327b",
+  "short_commit": "644e5790cd",
+  "subject": "OvmfPkg/VirtMmCommunicationDxe: enable loongarch64",
+  "suitable": false,
+  "reasons": [
+    "One-off platform enablement adding a new architecture (LOONGARCH64) to .inf files and a #elif branch in a preprocessor chain",
+    "The changes are INF file list extensions and a C preprocessor conditional, not a structural code pattern amenable to SmPL match-and-replace",
+    "No repeated before/after pattern across multiple files; each change is a different list item or conditional arm"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

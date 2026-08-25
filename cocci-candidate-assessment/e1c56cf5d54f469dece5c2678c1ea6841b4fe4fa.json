@@ -1,0 +1,14 @@
+{
+  "commit": "e1c56cf5d54f469dece5c2678c1ea6841b4fe4fa",
+  "short_commit": "e1c56cf5d5",
+  "subject": "Revert \"BaseTools/Source/C/Makefile: Update OBJECTS using OS specific SEP\"",
+  "suitable": false,
+  "reasons": [
+    "Touches a makefile, not C source, so it falls outside Coccinelle's primary target language.",
+    "The edit is a one-off revert in a single file with only one changed pattern instance.",
+    "Although the before/after text is clear, there is no repetitive structural C transformation at scale.",
+    "This is build-system rollback work, not API migration or collateral evolution in C code."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

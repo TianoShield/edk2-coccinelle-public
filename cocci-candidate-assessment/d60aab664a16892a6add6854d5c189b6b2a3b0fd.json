@@ -1,0 +1,14 @@
+{
+  "commit": "d60aab664a16892a6add6854d5c189b6b2a3b0fd",
+  "short_commit": "d60aab664a",
+  "subject": "PrmPkg: Update wiki links",
+  "suitable": false,
+  "reasons": [
+    "The commit changes `PrmPkg/Readme.md`, which is documentation rather than C code.",
+    "Coccinelle targets structural transformations in C, so this falls outside its intended domain.",
+    "The edit is a small link update in one Markdown file, not a repetitive before/after code transformation.",
+    "This is effectively documentation maintenance, which matches the criteria's non-C and non-semantic-change exclusions."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

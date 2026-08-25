@@ -1,0 +1,13 @@
+{
+  "commit": "f9076a3a2bae8f184921024a353925b03ed1ed9d",
+  "short_commit": "f9076a3a2b",
+  "subject": "UefiPayloadPkg: Simplify UefiPayloadEntry for X64",
+  "suitable": false,
+  "reasons": [
+    "This is a broad refactor that removes a large body of X64-specific code.",
+    "The edit is highly context dependent and does not present a reusable match-and-replace rule.",
+    "It is a one-off simplification rather than a repeated collateral-evolution pattern."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "3ed3b7a4aeaf12040f33a138af6767403cde0126",
+  "short_commit": "3ed3b7a4ae",
+  "subject": "OvmfPkg/BaseMemEncryptSevLib: IGVM data HOB ranges are prevalidated",
+  "suitable": false,
+  "reasons": [
+    "One-off logic addition in a single file: adds a new loop to check IGVM data HOBs in DetectPreValidatedOverLap()",
+    "The change requires understanding of HOB iteration and IGVM data structures, not a mechanical structural transformation",
+    "No repeated pattern across multiple files; the change is unique to this function",
+    "Neighbors are unrelated commits with no shared pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

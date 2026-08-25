@@ -1,0 +1,13 @@
+{
+  "commit": "1a4c4fb5a76fb15a5a50706685dc4ba36f1c2260",
+  "short_commit": "1a4c4fb5a7",
+  "subject": "ArmPkg, UefiCpuPkg: Fix boot failure on FEAT_LPA-only systems without LPA2",
+  "suitable": false,
+  "reasons": [
+    "The change is a targeted boot-failure fix with architecture-specific branching.",
+    "It does not repeat as a simple before/after pattern across multiple call sites.",
+    "This is case-specific correctness work, not a mechanical transformation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

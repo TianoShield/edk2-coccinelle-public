@@ -1,0 +1,14 @@
+{
+  "commit": "5f2142819ff371cae7ce1ab0e301b03137e0cf8a",
+  "short_commit": "5f2142819f",
+  "subject": "SourceLevelDebugPkg: Replace include guards with #pragma once",
+  "suitable": false,
+  "reasons": [
+    "The transformation replaces #ifndef/#define/#endif preprocessor include guards with #pragma once directives, which are preprocessor constructs, not C AST nodes.",
+    "Coccinelle operates on C source code at the AST level and cannot match or rewrite preprocessor directives like #ifndef, #define, or #endif.",
+    "Although the pattern is highly repetitive (14+ commits in the series across all edk2 packages), the transformation is not expressible as an SmPL rule.",
+    "A sed/awk/Python script would be the appropriate tool for this kind of change."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

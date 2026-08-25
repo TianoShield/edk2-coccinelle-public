@@ -1,0 +1,13 @@
+{
+  "commit": "f9cd283aa1102eef6f1f88c875cc06cdffac2115",
+  "short_commit": "f9cd283aa1",
+  "subject": "OvmfPkg/Microvm: add memory debug log support",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

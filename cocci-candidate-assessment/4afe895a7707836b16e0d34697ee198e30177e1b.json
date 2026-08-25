@@ -1,0 +1,14 @@
+{
+  "commit": "4afe895a7707836b16e0d34697ee198e30177e1b",
+  "short_commit": "4afe895a77",
+  "subject": "ShellPkg/SerMode: Add ValidDataBits() function",
+  "suitable": false,
+  "reasons": [
+    "This is a one-off function extraction within a single file (SerMode.c) with no repeated pattern across other files",
+    "Extracts a validation function for data bits from a larger function; the logic being moved is specific to this one context",
+    "Coccinelle cannot express 'extract a block into a new helper function' in a general way",
+    "No neighboring commits show the same structural change to other files — the surrounding series is all within SerMode.c refactoring"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

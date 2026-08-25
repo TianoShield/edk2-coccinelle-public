@@ -1,0 +1,13 @@
+{
+  "commit": "1184ca8ca38267fdb7a725258b034654340852d2",
+  "short_commit": "1184ca8ca3",
+  "subject": "Global: Clone GCC to CLANGDWARF CI",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

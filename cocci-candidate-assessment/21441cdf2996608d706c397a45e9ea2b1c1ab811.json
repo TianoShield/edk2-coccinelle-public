@@ -1,0 +1,14 @@
+{
+  "commit": "21441cdf2996608d706c397a45e9ea2b1c1ab811",
+  "short_commit": "21441cdf29",
+  "subject": "MdeModulePkg/SmbiosMeasurementDxe: fix gcc 16 warning",
+  "suitable": false,
+  "reasons": [
+    "This is a one-function warning cleanup that removes an unused local and related assignments.",
+    "There is no repeated structural pattern across multiple call sites, files, or functions.",
+    "The change is context-specific to `GetSmbiosStringById`, not an API migration or collateral evolution.",
+    "Coccinelle is a poor fit for a single unused-variable deletion with no reusable before/after rule."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

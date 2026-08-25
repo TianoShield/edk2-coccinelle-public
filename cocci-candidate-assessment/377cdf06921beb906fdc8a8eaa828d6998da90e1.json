@@ -1,0 +1,13 @@
+{
+  "commit": "377cdf06921beb906fdc8a8eaa828d6998da90e1",
+  "short_commit": "377cdf0692",
+  "subject": "StandaloneMmPkg/Core/Page.c: Correct gMemoryMap typo",
+  "suitable": false,
+  "reasons": [
+    "The diff is a one-off typo fix in a local variable name.",
+    "There is no repeated structural pattern or API migration.",
+    "This is plain bug-fix cleanup, not a semantic patch target."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

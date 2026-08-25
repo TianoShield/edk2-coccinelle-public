@@ -1,0 +1,13 @@
+{
+  "commit": "60bfa52f6520bff0aa265c3e89ef9d6f6aeca5e7",
+  "short_commit": "60bfa52f65",
+  "subject": "RedfishPkg/RedfishPlatformConfig: Fix CLANGPDB build failure",
+  "suitable": true,
+  "reasons": [
+    "This is a clear API migration from passing `EDKII_REDFISH_VALUE` by value to passing it by pointer.",
+    "The change repeats across headers, the library wrapper, and the DXE implementation.",
+    "The edit shape is consistent: pointer parameter, null check, and dereference updates at each call site."
+  ],
+  "candidate_pattern": "Convert `RedfishPlatformConfigSetValue` and related protocol declarations from value semantics to pointer semantics, then update dereferences and call sites accordingly.",
+  "confidence": "high"
+}

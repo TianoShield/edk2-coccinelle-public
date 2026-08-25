@@ -1,0 +1,13 @@
+{
+  "commit": "66d18535730b4c83afb4374fb5800358b8c49056",
+  "short_commit": "66d1853573",
+  "subject": "ArmVirtPkg: Add Arm CCA Realm Service Interface Library",
+  "suitable": false,
+  "reasons": [
+    "Pure new code addition: adds a new library with header, implementation, and .inf files from scratch",
+    "No before/after transformation pattern - there is no existing code being changed",
+    "Coccinelle operates on existing code patterns to transform; it cannot generate brand-new libraries"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

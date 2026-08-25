@@ -1,0 +1,13 @@
+{
+  "commit": "8c298e11045e95d9ef40dedc3e6a37eb2625487a",
+  "short_commit": "8c298e1104",
+  "subject": "BaseTools: GenFfs/GenFv/GenSec: Fixing Warning 4319 from MSVC",
+  "suitable": false,
+  "reasons": [
+    "Three instances across GenFfs/GenFv/GenSec but each has a different fix: one adds (UINT32) cast to sizeof, another adds (UINTN) cast to the mask expression - not a uniform single pattern",
+    "The fixes are in C files under BaseTools (not edk2 firmware C), and the specific operand being cast differs per site",
+    "Low repetitiveness within firmware sources; the pattern is compiler-warning-specific and the cast target differs between instances"
+  ],
+  "candidate_pattern": null,
+  "confidence": "medium"
+}

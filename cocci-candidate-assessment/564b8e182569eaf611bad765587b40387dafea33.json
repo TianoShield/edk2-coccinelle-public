@@ -1,0 +1,13 @@
+{
+  "commit": "564b8e182569eaf611bad765587b40387dafea33",
+  "short_commit": "564b8e1825",
+  "subject": "MdeModulePkg/AcpiTableDxe:Created EfiACPIReclaimMemory for ACPIHOB RSDP",
+  "suitable": false,
+  "reasons": [
+    "This is a context-specific ACPI table handling fix with new allocation and copy logic.",
+    "The change is confined to one function and one code path.",
+    "It does not represent a repeated structural transformation across the codebase."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

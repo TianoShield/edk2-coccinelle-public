@@ -1,0 +1,13 @@
+{
+  "commit": "c00e8d0bcddf1a9041f6f37c55db458e40bdb660",
+  "short_commit": "c00e8d0bcd",
+  "subject": "SignedCapsulePkg: Remove package",
+  "suitable": false,
+  "reasons": [
+    "This is a wholesale package deletion — 34 files removed, ~6784 lines deleted",
+    "Coccinelle operates on C source transformations; removing an entire package (including .inf, .dec, .dsc, .uni, .md files) is not a C-code structural transformation",
+    "There is no before/after pattern to express as an SmPL rule — the change is simply deleting all files in a directory tree"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

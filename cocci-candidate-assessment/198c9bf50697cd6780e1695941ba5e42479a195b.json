@@ -1,0 +1,13 @@
+{
+  "commit": "198c9bf50697cd6780e1695941ba5e42479a195b",
+  "short_commit": "198c9bf506",
+  "subject": "EmbeddedPkg: PrePiMemoryAllocationLib: Add AllocateCopyPool",
+  "suitable": false,
+  "reasons": [
+    "The commit adds a new function in a single source file.",
+    "It is feature addition, not a transformation of existing code or a repeated edit pattern.",
+    "Coccinelle is not a strong fit for isolated helper creation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

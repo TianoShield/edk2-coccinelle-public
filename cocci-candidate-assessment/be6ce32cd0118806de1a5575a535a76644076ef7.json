@@ -1,0 +1,13 @@
+{
+  "commit": "be6ce32cd0118806de1a5575a535a76644076ef7",
+  "short_commit": "be6ce32cd0",
+  "subject": "ShellPkg/Ls: Extract PrintLsOutputCurr() function",
+  "suitable": false,
+  "reasons": [
+    "Large-scale function extraction refactor in a single file: a large body of code from PrintLsOutput() is moved into a new PrintLsOutputCurr() function",
+    "Also involves rationalizing logic around a Found parameter and introducing a new IsRecursive variable - case-by-case reasoning required",
+    "Coccinelle cannot generate new function definitions or lift blocks of code into separate helper functions"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

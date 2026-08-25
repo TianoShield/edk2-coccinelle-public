@@ -1,0 +1,13 @@
+{
+  "commit": "a219f8cfc541ca7c93c8bf614998621d97110c03",
+  "short_commit": "a219f8cfc5",
+  "subject": "ShellPkg/Help: Free package on all paths",
+  "suitable": false,
+  "reasons": [
+    "One-off bug fix in a single file (Help.c): moves ShellCommandLineFreeVarList(Package) to a single consolidated location and adds a NULL guard",
+    "The fix is specific to the control flow of ShellCommandRunHelp() and requires reasoning about all exit paths — not a mechanical pattern",
+    "No repetition across files; neighbors are unrelated or different types of refactoring"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

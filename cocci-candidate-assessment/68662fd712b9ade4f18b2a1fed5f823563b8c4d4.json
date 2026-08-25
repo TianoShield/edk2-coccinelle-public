@@ -1,0 +1,13 @@
+{
+  "commit": "68662fd712b9ade4f18b2a1fed5f823563b8c4d4",
+  "short_commit": "68662fd712",
+  "subject": "ShellPkg: Add 'cxl' command",
+  "suitable": false,
+  "reasons": [
+    "New feature addition: introduces a brand new 527-line Cxl.c file implementing a CXL device query shell command",
+    "Purely additive change — no before/after transformation pattern exists",
+    "Coccinelle is for matching and transforming existing code patterns, not for generating new code"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

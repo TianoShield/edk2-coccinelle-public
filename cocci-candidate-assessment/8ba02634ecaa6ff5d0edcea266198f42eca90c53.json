@@ -1,0 +1,14 @@
+{
+  "commit": "8ba02634ecaa6ff5d0edcea266198f42eca90c53",
+  "short_commit": "8ba02634ec",
+  "subject": "OvmfPkg/VirtioRngDxe: protect VirtioRngGetRNG against timer callbacks",
+  "suitable": false,
+  "reasons": [
+    "This is a one-off concurrency fix in a single function.",
+    "The change adds a TPL guard around one RNG path instead of applying a reusable structural rewrite.",
+    "There is no repeated before/after pattern across multiple call sites or files.",
+    "Coccinelle is a poor fit for a localized race fix."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

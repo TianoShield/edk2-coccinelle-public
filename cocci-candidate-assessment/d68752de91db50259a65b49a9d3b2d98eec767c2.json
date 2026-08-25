@@ -1,0 +1,14 @@
+{
+  "commit": "d68752de91db50259a65b49a9d3b2d98eec767c2",
+  "short_commit": "d68752de91",
+  "subject": "MdeModulePkg: Added several mock libraries for google test",
+  "suitable": false,
+  "reasons": [
+    "Pure addition of new mock library files (MockTpmMeasurementLib, MockFirmwareVolumeShadowPpi) for Google Test; 116 insertions",
+    "Adds new C++ header and implementation files — not a transformation of existing C code",
+    "Part of a series (4eb86f009d for MdePkg, e9f03fca28 for CryptoPkg) but all are additive new-file creation, not C code refactoring",
+    "Coccinelle cannot add new files; it transforms existing C code"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

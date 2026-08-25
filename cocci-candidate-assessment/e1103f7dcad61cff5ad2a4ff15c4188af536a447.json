@@ -1,0 +1,14 @@
+{
+  "commit": "e1103f7dcad61cff5ad2a4ff15c4188af536a447",
+  "short_commit": "e1103f7dca",
+  "subject": "NetworkPkg: Ip4Dxe/Ip6Dxe: Set SB notify to NULL after event close",
+  "suitable": true,
+  "reasons": [
+    "Clear before/after pattern: after gBS->CloseEvent(X), set X = NULL to prevent double-close",
+    "Applied consistently in two parallel locations (Ip4Config2Impl.c and Ip6ConfigImpl.c) following the same guard pattern (if (X != NULL) { CloseEvent(X); X = NULL; })",
+    "This is a well-known edk2 idiom fix (NULL-after-close) that likely has analogous instances elsewhere in NetworkPkg or other packages",
+    "Structurally mechanical: Coccinelle can match CloseEvent inside a non-NULL guard and insert the NULL assignment"
+  ],
+  "candidate_pattern": "@@\nexpression E;\n@@\nif (E != NULL) {\n  gBS->CloseEvent(E);\n+ E = NULL;\n}",
+  "confidence": "medium"
+}

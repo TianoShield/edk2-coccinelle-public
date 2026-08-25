@@ -1,0 +1,13 @@
+{
+  "commit": "f5cde4091914f4b88b1ec9cea891c2730e64de31",
+  "short_commit": "f5cde40919",
+  "subject": "EmbeddedPkg/GdbStub/X64: Use X64 system context",
+  "suitable": false,
+  "reasons": [
+    "This is a focused architecture-specific refactor in one file.",
+    "The replacements are all tied to X64 system-context fields rather than a generic structural rule.",
+    "Although there are multiple edits, they are part of one local redesign and not a broad reusable pattern."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

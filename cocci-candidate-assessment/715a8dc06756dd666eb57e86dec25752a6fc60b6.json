@@ -1,0 +1,13 @@
+{
+  "commit": "715a8dc06756dd666eb57e86dec25752a6fc60b6",
+  "short_commit": "715a8dc067",
+  "subject": "SecurityPkg/Library/SecureBootVariableLib/UnitTest: Cmocka use issues",
+  "suitable": true,
+  "reasons": [
+    "The unit test file repeats the same mock-API migration pattern many times.",
+    "It replaces `expect_value` with `expect_memory` for GUID-like parameters and adjusts pointer/scalar expectations consistently.",
+    "The `will_return()` pointer values are also updated in a uniform way, which is a good semantic-patch fit."
+  ],
+  "candidate_pattern": "Replace `expect_value` with the appropriate memory or pointer expectation helper, and cast pointer `will_return()` values to `UINTN` in the mocked SecureBootVariableLib tests.",
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "2c8ab5c4cfd11320b7447ee19358453e4e26e9ed",
+  "short_commit": "2c8ab5c4cf",
+  "subject": "MdePkg: Add AMD CPUID Extended Topology definition",
+  "suitable": false,
+  "reasons": [
+    "Pure addition of 117 new lines of struct/macro definitions to a header file",
+    "No existing code is being transformed; this is new API surface being defined, not a migration or replacement of existing patterns",
+    "Coccinelle transforms existing code; it cannot generate new header definitions"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

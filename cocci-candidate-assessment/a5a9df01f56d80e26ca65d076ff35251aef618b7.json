@@ -1,0 +1,13 @@
+{
+  "commit": "a5a9df01f56d80e26ca65d076ff35251aef618b7",
+  "short_commit": "a5a9df01f5",
+  "subject": "EmulatorPkg/Win/Host: Fix Receive() parameter type",
+  "suitable": false,
+  "reasons": [
+    "This is a single local type fix in one function.",
+    "The change does not repeat across multiple files or call sites.",
+    "It is too specific for Coccinelle to add much value."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "b5d168944729e54cdd2fa45d9e83c14cacb36473",
+  "short_commit": "b5d1689447",
+  "subject": "OvmfPkg/RiscVVirt/PlatformPei: Do not set PcdTpmBaseAddress to garbage",
+  "suitable": false,
+  "reasons": [
+    "Single-location bug fix: initializes TpmBaseSize to 0 and changes the sentinel check from if(TpmBase) to if(TpmBaseSize > 0)",
+    "One-off fix specific to this function's logic; requires reasoning about which variable correctly indicates TPM presence",
+    "No repeated pattern across files; no collateral evolution series"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

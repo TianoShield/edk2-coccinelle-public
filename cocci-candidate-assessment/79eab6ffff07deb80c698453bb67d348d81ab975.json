@@ -1,0 +1,13 @@
+{
+  "commit": "79eab6ffff07deb80c698453bb67d348d81ab975",
+  "short_commit": "79eab6ffff",
+  "subject": "StandaloneMmPkg: Avoid updating attributes on 0 length sections",
+  "suitable": false,
+  "reasons": [
+    "This is a one-function control-flow fix around a zero-length edge case.",
+    "The behavior is specific to this PE/COFF action path and is not repeated at scale.",
+    "It is better classified as a targeted correctness fix than a semantic-patch candidate."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

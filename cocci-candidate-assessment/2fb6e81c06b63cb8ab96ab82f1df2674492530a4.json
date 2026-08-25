@@ -1,0 +1,14 @@
+{
+  "commit": "2fb6e81c06b63cb8ab96ab82f1df2674492530a4",
+  "short_commit": "2fb6e81c06",
+  "subject": "RedfishPkg/ConfigHandler: Remove [Depex] section from INF file",
+  "suitable": false,
+  "reasons": [
+    "Multifaceted change: removes a [Depex] section from an INF file, changes function signatures, and moves protocol location logic from driver init into event callbacks",
+    "Each aspect of the change requires case-by-case reasoning about driver architecture and cannot be expressed as a single structural pattern",
+    "No repeated pattern across multiple files or siblings in a series",
+    "The INF [Depex] removal is a build-system config change, not a C code transformation Coccinelle can handle"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

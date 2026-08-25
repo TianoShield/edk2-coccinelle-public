@@ -1,0 +1,13 @@
+{
+  "commit": "3f81a4902a985f09050289669233fca3ffa44572",
+  "short_commit": "3f81a4902a",
+  "subject": "BaseTools/VfrCompile: Add #pragma once support",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "4e90b65e7b7bf0c090d3bc5142a684acac56345f",
+  "short_commit": "4e90b65e7b",
+  "subject": "OvmfPkg/PlatformInitLib: Add SoftReserved memory type support",
+  "suitable": false,
+  "reasons": [
+    "Feature addition: introduces a new enum value and a new case branch in a switch/if chain",
+    "No transformation of existing code; the new handling is specific to a new memory type (E820 SoftReserved)",
+    "Requires understanding of memory type semantics; not expressible as a structural match-and-replace rule"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

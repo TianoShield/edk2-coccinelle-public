@@ -1,0 +1,13 @@
+{
+  "commit": "78b550f43d2fa6c5b9439f985a67f572752b3a3c",
+  "short_commit": "78b550f43d",
+  "subject": "ShellPkg/Ls: Hard-code number of files if none found",
+  "suitable": false,
+  "reasons": [
+    "Single-line change: PrintNonSfoFooter(FileCount, FileSize, DirCount) replaced with PrintNonSfoFooter(0, 0, 0) in one location",
+    "One-off fix at a single call site - no repetitive pattern across files or within the file",
+    "While structurally simple, the change encodes domain-specific semantic knowledge (when !Found, counts must be zero) rather than a mechanical transformation"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

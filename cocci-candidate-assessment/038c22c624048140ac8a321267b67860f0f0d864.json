@@ -1,0 +1,13 @@
+{
+  "commit": "038c22c624048140ac8a321267b67860f0f0d864",
+  "short_commit": "038c22c624",
+  "subject": "EmbeddedPkg/Library/VirtualRealTimeClockLib: Fix type mismatch",
+  "suitable": false,
+  "reasons": [
+    "The change is a pair of local casts in one library.",
+    "The repeated shape is too small to justify a semantic patch.",
+    "This is a one-off type mismatch fix, not a reusable collateral evolution pattern."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

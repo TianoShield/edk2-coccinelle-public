@@ -1,0 +1,15 @@
+{
+  "commit": "f17ce026f67c9c5e2f868267126ea3db83f547b5",
+  "short_commit": "f17ce026f6",
+  "subject": "MdePkg/IndustryStandard: Fix typos in macro and struct",
+  "suitable": false,
+  "reasons": [
+    "The changes are identifier renames fixing typos (SUPPOTED -> SUPPORTED, VERISON -> VERSION) in header files",
+    "Coccinelle cannot rename macro names or struct type names - it operates on C expressions and statements, not preprocessor definitions or typedef names",
+    "The macro renames in Acpi50-61 change the identifier string itself, not its value or usage in code",
+    "The struct typedef renames in Acpi64/65/66 are not matchable with SmPL syntax",
+    "This is a pure identifier-spelling correction, not a code transformation pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "b55b3ae351b23ade11fe4518b7f0d1ebe4ddac29",
+  "short_commit": "b55b3ae351",
+  "subject": "EmbeddedPkg/AndroidBootImgLib: Fix typo in Buffer parameter description",
+  "suitable": false,
+  "reasons": [
+    "The commit only changes a documentation comment.",
+    "It is a one-off typo fix with no mechanical code transformation.",
+    "Coccinelle does not add value for pure text cleanup."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "81b1ec18a5924fa0be64a4226901911f8c0af274",
+  "short_commit": "81b1ec18a5",
+  "subject": "OvmfPkg/CcExitLib: Initialize XCr0 in else-path to fix build error",
+  "suitable": false,
+  "reasons": [
+    "One-off bug fix in a single location: adds a single else-branch setting XCr0 = 0 in CcExitVcHandler.c to resolve a GCC uninitialized variable warning",
+    "No repeated pattern across multiple files or call sites; the change is local to one if/else block",
+    "Requires understanding the specific control flow context (CPUID_EXTENDED_STATE check) to determine the correct initialization value; not a mechanical structural transformation",
+    "No neighboring commits share a related pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

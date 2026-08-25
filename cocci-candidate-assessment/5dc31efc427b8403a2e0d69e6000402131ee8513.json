@@ -1,0 +1,14 @@
+{
+  "commit": "5dc31efc427b8403a2e0d69e6000402131ee8513",
+  "short_commit": "5dc31efc42",
+  "subject": "UefiCpuPkg/CpuDxe: DEBUG_VERBOSE -> DEBUG_PAGING",
+  "suitable": true,
+  "reasons": [
+    "Mechanical substitution of DEBUG_VERBOSE with DEBUG_PAGING in 8 DEBUG() macro call sites within CpuPageTable.c",
+    "Part of a clearly identified multi-commit series introducing DEBUG_PAGING (939de47d12) and applying it across OvmfPkg (3d6453f515), UefiCpuPkg/CpuDxe (5dc31efc42), UefiCpuPkg/ArmMmuLib (e7ffbde9ad), and UefiCpuPkg/MpLib (af1ae393d0)",
+    "The substitution is purely structural with no per-instance reasoning required; every DEBUG_VERBOSE call in paging-related code becomes DEBUG_PAGING",
+    "High repetitiveness within this file (8 instances) and across the series (multiple files, multiple packages)"
+  ],
+  "candidate_pattern": "@@\nexpression msg, args;\n@@\nDEBUG((\n- DEBUG_VERBOSE,\n+ DEBUG_PAGING,\n  msg, ##args))",
+  "confidence": "high"
+}

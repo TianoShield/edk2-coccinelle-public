@@ -1,0 +1,14 @@
+{
+  "commit": "ade5fdb8e3cb5d74e4c48d8351d162547bc358e8",
+  "short_commit": "ade5fdb8e3",
+  "subject": "Maintainers.txt: Highlight maintainer opportunities",
+  "suitable": false,
+  "reasons": [
+    "The commit changes `Maintainers.txt`, not C source code.",
+    "There is no code transformation, before/after C pattern, or AST-level rewrite to express in Coccinelle.",
+    "This is a one-off documentation update rather than a repetitive structural migration.",
+    "The criteria explicitly rule out non-C changes and pure text/style-oriented edits."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

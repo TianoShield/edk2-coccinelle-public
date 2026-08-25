@@ -1,0 +1,13 @@
+{
+  "commit": "5e2bea1a7453dddeaa83840a4b974bb94d3e4f9c",
+  "short_commit": "5e2bea1a74",
+  "subject": "BaseTools: Add missing machine types while dumping Option Rom",
+  "suitable": false,
+  "reasons": [
+    "Adds two new entries to a static string lookup table in a header file; purely additive, not a transformation of existing code",
+    "Only one file changed with two line additions; no repeated pattern to mechanically apply across files",
+    "Coccinelle operates on C code transformations, not table entry additions in a definition list"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

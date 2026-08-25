@@ -1,0 +1,13 @@
+{
+  "commit": "673842aefc751296fd08a15ead329f90b1f95204",
+  "short_commit": "673842aefc",
+  "subject": "SecurityPkg: Check for Tpm2GetCapabilitySupportedAndActivePcrs()",
+  "suitable": false,
+  "reasons": [
+    "One-off: replaces a bare ASSERT_EFI_ERROR with a proper if (EFI_ERROR) + DEBUG + ASSERT + return in a single location",
+    "While this ASSERT-to-runtime-check pattern could recur, this commit touches only one call site in one file",
+    "No neighboring commits sharing the same transformation pattern; not part of a systematic collateral evolution"
+  ],
+  "candidate_pattern": null,
+  "confidence": "medium"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "2afee514d74ef9cee31737e8edbbf4a900fc20ec",
+  "short_commit": "2afee514d7",
+  "subject": "BaseTools: Remove GCC5 support from LinuxGccToolChain.py",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

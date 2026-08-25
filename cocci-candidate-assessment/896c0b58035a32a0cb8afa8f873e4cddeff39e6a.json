@@ -1,0 +1,13 @@
+{
+  "commit": "896c0b58035a32a0cb8afa8f873e4cddeff39e6a",
+  "short_commit": "896c0b5803",
+  "subject": "ArmVirtPkg: ArmCcaRsiLib: Add an interface to make a RSI Host Call",
+  "suitable": false,
+  "reasons": [
+    "Adds new RsiHostCall() function plus HOST_CALL_ARGS struct definition; purely additive new code",
+    "Part of ArmCcaRsiLib series, but each commit introduces a distinct new RSI interface with unique semantics",
+    "No existing code is transformed; the addition is a new API not a refactoring of existing calls"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

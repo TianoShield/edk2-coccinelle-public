@@ -1,0 +1,13 @@
+{
+  "commit": "74a04882d6cfd80c7e1d9d003080436fe303d753",
+  "short_commit": "74a04882d6",
+  "subject": "ArmVirtPkg: ArmCcaRsiLib: Add interfaces to get/extend REMs",
+  "suitable": false,
+  "reasons": [
+    "Adds new RsiGetRem() and RsiExtendRem() functions to ArmCcaRsiLib; entirely new code (144 lines additive)",
+    "Part of the ArmCcaRsiLib series adding distinct RSI interfaces; each function has unique measurement semantics",
+    "No transformation of existing code patterns; Coccinelle cannot be used to generate novel function bodies"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

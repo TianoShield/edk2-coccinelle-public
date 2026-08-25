@@ -1,0 +1,13 @@
+{
+  "commit": "1ae23a7acd137290212ce32c1ebc58610dc442cd",
+  "short_commit": "1ae23a7acd",
+  "subject": "ArmVirtPkg: Add Null instance of ArmCcaLib",
+  "suitable": false,
+  "reasons": [
+    "This commit creates new NULL stub library files (ArmCcaLibNull) and adds a DSC entry. It is entirely new code, not a transformation of existing code.",
+    "Coccinelle cannot express the creation of new files or new library stubs.",
+    "The change is part of the ArmVirtPkg CCA series adding infrastructure, not refactoring or migrating existing call patterns."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

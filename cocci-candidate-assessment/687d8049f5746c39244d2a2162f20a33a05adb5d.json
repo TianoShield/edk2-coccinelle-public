@@ -1,0 +1,13 @@
+{
+  "commit": "687d8049f5746c39244d2a2162f20a33a05adb5d",
+  "short_commit": "687d8049f5",
+  "subject": "ShellPkg/Shell: Remove duplicate Guid in INF file",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "680ee2e3e9b1ed0b5a8d8c3262f355ea65a2175c",
+  "short_commit": "680ee2e3e9",
+  "subject": "ShellPkg/Cls: Factorize color parsing",
+  "suitable": false,
+  "reasons": [
+    "Refactoring in a single file (Cls.c): introduces GetClsColorIndex() helper and lookup tables to replace two large switch statements for color mapping",
+    "Replacing a switch statement with a table lookup + helper function call is not expressible as a general SmPL transformation, especially when the switch has many unique cases",
+    "One-off structural change specific to this command's color-handling logic; no similar pattern in neighboring commits or across the codebase"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

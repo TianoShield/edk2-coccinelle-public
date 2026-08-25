@@ -1,0 +1,13 @@
+{
+  "commit": "f4f781831ff311aa4b19c003d1ef1dac43bfc077",
+  "short_commit": "f4f781831f",
+  "subject": "Maintainers.txt: Add RiscV folder as well",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "23eaf2d5292dc7ad2f4c0a3f967124877e5fdf3e",
+  "short_commit": "23eaf2d529",
+  "subject": "UefiCpuPkg/SmmCpuFeaturesLib: Add Standalone MM file for AMD family",
+  "suitable": false,
+  "reasons": [
+    "This commit adds a new source file (AmdStandaloneMmCpuFeaturesLib.c) and updates an INF — purely additive.",
+    "No existing code pattern is transformed; there is nothing to match and replace.",
+    "The INF change updates a source file name and removes a FixedPcd reference, but this is a one-off restructuring specific to one library variant.",
+    "Not suitable for Coccinelle: no repetitive structural transformation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "15cf308276505a58ae4a3055a97db07c98b40481",
+  "short_commit": "15cf308276",
+  "subject": "ArmVirtPkg: Add library for Arm CCA initialisation in PEI",
+  "suitable": false,
+  "reasons": [
+    "This commit adds a brand new library (ArmCcaInitPeiLib) with new header and implementation files. It is a new code addition, not a transformation of existing code.",
+    "There is no existing pattern being matched and replaced; Coccinelle cannot express 'add new files containing new functions'.",
+    "The change consists of entirely new C and INF files with no analogous structural change to existing call sites."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

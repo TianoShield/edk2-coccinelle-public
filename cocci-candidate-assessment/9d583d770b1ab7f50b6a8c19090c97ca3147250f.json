@@ -1,0 +1,13 @@
+{
+  "commit": "9d583d770b1ab7f50b6a8c19090c97ca3147250f",
+  "short_commit": "9d583d770b",
+  "subject": "StandaloneMmPkg/Core: Print discovered drivers that weren't dispatched",
+  "suitable": false,
+  "reasons": [
+    "Single-location change: uncomments a function call by wrapping it in DEBUG_CODE_BEGIN/END guards",
+    "No adjacent commits apply the same DEBUG_CODE_BEGIN/END wrapping to other commented-out calls",
+    "One-off enablement of debug code rather than a systematic pattern transformation"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

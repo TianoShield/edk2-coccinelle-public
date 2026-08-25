@@ -1,0 +1,13 @@
+{
+  "commit": "780a9c2dfccb75937bc9b8f6b00cc10d2257e1c1",
+  "short_commit": "780a9c2dfc",
+  "subject": "MdePkg: Add Data Object Exchange interface",
+  "suitable": false,
+  "reasons": [
+    "Pure addition of new register definitions and struct fields to existing header files — no code is being transformed or rewritten",
+    "Adding new macros/structs to headers is not a Coccinelle transformation task; Coccinelle rewrites existing patterns",
+    "No repetitive before/after pattern to express as SmPL"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

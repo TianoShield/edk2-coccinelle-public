@@ -1,0 +1,13 @@
+{
+  "commit": "e2e8dbe0186000122bf78eeb4d2cc65e73c329de",
+  "short_commit": "e2e8dbe018",
+  "subject": "TcgTpmPkg: add Readme.md file",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

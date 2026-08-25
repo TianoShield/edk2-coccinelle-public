@@ -1,0 +1,168 @@
+{
+  "id": "94a50ef5",
+  "cocciFile": "cocci-scripts/94a50ef5-is-aligned.cocci",
+  "cases": [
+    {
+      "name": "fixture-basexapiclib",
+      "beforeSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67^:UefiCpuPkg/Library/BaseXApicLib/BaseXApicLib.c",
+        "ranges": [
+          {
+            "startLine": 94,
+            "endLine": 117
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67:UefiCpuPkg/Library/BaseXApicLib/BaseXApicLib.c",
+        "ranges": [
+          {
+            "startLine": 94,
+            "endLine": 117
+          }
+        ]
+      }
+    },
+    {
+      "name": "fixture-basexapicx2apiclib",
+      "beforeSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67^:UefiCpuPkg/Library/BaseXApicX2ApicLib/BaseXApicX2ApicLib.c",
+        "ranges": [
+          {
+            "startLine": 239,
+            "endLine": 262
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67:UefiCpuPkg/Library/BaseXApicX2ApicLib/BaseXApicX2ApicLib.c",
+        "ranges": [
+          {
+            "startLine": 239,
+            "endLine": 262
+          }
+        ]
+      }
+    },
+    {
+      "name": "replay-cpupagetablemap",
+      "beforeSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67^:UefiCpuPkg/Library/CpuPageTableLib/CpuPageTableMap.c"
+      },
+      "afterSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67:UefiCpuPkg/Library/CpuPageTableLib/CpuPageTableMap.c"
+      }
+    },
+    {
+      "name": "fixture-cpudxe-cpupagetable",
+      "beforeSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67^:UefiCpuPkg/CpuDxe/CpuPageTable.c",
+        "ranges": [
+          {
+            "startLine": 718,
+            "endLine": 879
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67:UefiCpuPkg/CpuDxe/CpuPageTable.c",
+        "ranges": [
+          {
+            "startLine": 718,
+            "endLine": 879
+          }
+        ]
+      }
+    },
+    {
+      "name": "fixture-nonmmrammapdxesmm",
+      "beforeSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67^:UefiCpuPkg/PiSmmCpuDxeSmm/NonMmramMapDxeSmm.c",
+        "ranges": [
+          {
+            "startLine": 608,
+            "endLine": 675
+          }
+        ]
+      },
+      "afterSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67:UefiCpuPkg/PiSmmCpuDxeSmm/NonMmramMapDxeSmm.c",
+        "ranges": [
+          {
+            "startLine": 608,
+            "endLine": 675
+          }
+        ]
+      }
+    },
+    {
+      "name": "replay-smmcpumemorymanagement",
+      "beforeSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67^:UefiCpuPkg/PiSmmCpuDxeSmm/SmmCpuMemoryManagement.c"
+      },
+      "afterSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67:UefiCpuPkg/PiSmmCpuDxeSmm/SmmCpuMemoryManagement.c"
+      }
+    },
+    {
+      "name": "noop-pismmcpucommon",
+      "beforeSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67^:UefiCpuPkg/PiSmmCpuDxeSmm/PiSmmCpuCommon.c"
+      },
+      "afterSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67^:UefiCpuPkg/PiSmmCpuDxeSmm/PiSmmCpuCommon.c"
+      }
+    },
+    {
+      "name": "noop-nonmmrammapstandalonemm",
+      "beforeSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67^:UefiCpuPkg/PiSmmCpuDxeSmm/NonMmramMapStandaloneMm.c"
+      },
+      "afterSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67^:UefiCpuPkg/PiSmmCpuDxeSmm/NonMmramMapStandaloneMm.c"
+      }
+    },
+    {
+      "name": "noop-pismmcpustandalonemm",
+      "beforeSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67^:UefiCpuPkg/PiSmmCpuDxeSmm/PiSmmCpuStandaloneMm.c"
+      },
+      "afterSource": {
+        "gitRevision": "94a50ef550b9523a871b9742501995cba0920e67^:UefiCpuPkg/PiSmmCpuDxeSmm/PiSmmCpuStandaloneMm.c"
+      }
+    },
+    {
+      "name": "fixture-smmprofile",
+      "beforeSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:UefiCpuPkg/PiSmmCpuDxeSmm/SmmProfile.c",
+        "ranges": [
+          {
+            "startLine": 419,
+            "endLine": 590
+          }
+        ]
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5/SmmProfile.after.c"
+      }
+    },
+    {
+      "name": "fixture-noop-power-of-two-check",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5/PowerOfTwoCheck.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5/PowerOfTwoCheck.after.c"
+      }
+    },
+    {
+      "name": "fixture-noop-non-power-of-two-modulo",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5/NonPowerOfTwoModulo.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/94a50ef5/NonPowerOfTwoModulo.after.c"
+      }
+    }
+  ]
+}

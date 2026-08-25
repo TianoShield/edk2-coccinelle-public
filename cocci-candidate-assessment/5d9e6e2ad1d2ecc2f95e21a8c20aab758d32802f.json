@@ -1,0 +1,13 @@
+{
+  "commit": "5d9e6e2ad1d2ecc2f95e21a8c20aab758d32802f",
+  "short_commit": "5d9e6e2ad1",
+  "subject": "ArmPlatformPkg: PeilessSec: Support PE Targets",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

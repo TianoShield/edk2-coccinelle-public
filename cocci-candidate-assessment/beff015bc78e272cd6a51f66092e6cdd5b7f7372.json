@@ -1,0 +1,13 @@
+{
+  "commit": "beff015bc78e272cd6a51f66092e6cdd5b7f7372",
+  "short_commit": "beff015bc7",
+  "subject": "ArmPkg: Fix incorrect bit width mask for SP_EL0",
+  "suitable": false,
+  "reasons": [
+    "Single-location fix: changes ~0xFUL to ~0xFULL in one expression in one file",
+    "No repeated pattern across files; the fix is specific to this one alignment mask",
+    "One-off type-suffix correction that requires understanding of the AArch64 register context"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "83271a185ad8bc610158b57680578eb55523f4c6",
+  "short_commit": "83271a185a",
+  "subject": "EmbeddedPkg: Replace non-ASCII characters with ASCII",
+  "suitable": false,
+  "reasons": [
+    "The edit is a repeated text-only cleanup of comments and one doc string across several files.",
+    "It replaces non-ASCII punctuation with ASCII apostrophes, which is a style/encoding fix rather than a semantic C transformation.",
+    "Coccinelle is not a good fit for pure formatting or documentation-only changes, even when they repeat in multiple locations."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

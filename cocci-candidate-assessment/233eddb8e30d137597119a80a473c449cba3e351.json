@@ -1,0 +1,13 @@
+{
+  "commit": "233eddb8e30d137597119a80a473c449cba3e351",
+  "short_commit": "233eddb8e3",
+  "subject": "BaseTools/Plugin: Add lcov error tolerance for vendored source trees",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

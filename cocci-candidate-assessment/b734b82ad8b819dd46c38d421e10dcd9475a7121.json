@@ -1,0 +1,13 @@
+{
+  "commit": "b734b82ad8b819dd46c38d421e10dcd9475a7121",
+  "short_commit": "b734b82ad8",
+  "subject": "RedfishPkg/PrivateLibrary/RedfishLib/edk2libredfish: Uninit var",
+  "suitable": false,
+  "reasons": [
+    "This is a one-line uninitialized-variable cleanup in a single function.",
+    "There is no repeated before/after pattern across call sites or files.",
+    "The change is context-specific bug fixing, not a reusable structural transformation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

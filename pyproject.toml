@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "run-spatch"
+version = "0.1.0"
+requires-python = ">=3.10"
+description = "Utilities for running Coccinelle semantic patches"
+
+[project.optional-dependencies]
+test = [
+    "jsonschema>=4",
+]
+
+[tool.setuptools]
+packages = ["run_spatch"]

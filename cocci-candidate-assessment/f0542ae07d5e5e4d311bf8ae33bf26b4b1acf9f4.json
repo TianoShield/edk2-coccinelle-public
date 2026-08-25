@@ -1,0 +1,13 @@
+{
+  "commit": "f0542ae07d5e5e4d311bf8ae33bf26b4b1acf9f4",
+  "short_commit": "f0542ae07d",
+  "subject": "BaseTools/Source/C/Makefile: Update OBJECTS using OS specific SEP",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

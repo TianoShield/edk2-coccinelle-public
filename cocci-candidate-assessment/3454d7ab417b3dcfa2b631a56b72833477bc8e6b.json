@@ -1,0 +1,13 @@
+{
+  "commit": "3454d7ab417b3dcfa2b631a56b72833477bc8e6b",
+  "short_commit": "3454d7ab41",
+  "subject": "UefiCpuPkg: Set up 256 IDT Descs in SEC/PEI/SMM",
+  "suitable": true,
+  "reasons": [
+    "Core commit of a series that systematically replaces local CPU_INTERRUPT_NUM=256, CPU_EXCEPTION_NUM=32, and SEC_IDT_ENTRY_COUNT=34 magic-number defines with X86_CPU_INTERRUPT_NUM across 17 files in UefiCpuPkg",
+    "Pattern is mechanically uniform: every occurrence of these local defines in array sizes, sizeof(), loop bounds, and IDT limit calculations is replaced with X86_CPU_INTERRUPT_NUM",
+    "High repetitiveness: 17 files changed, same textual substitution applied throughout"
+  ],
+  "candidate_pattern": "Replace CPU_INTERRUPT_NUM, CPU_EXCEPTION_NUM, SEC_IDT_ENTRY_COUNT integer literals with X86_CPU_INTERRUPT_NUM in array declarations, sizeof expressions, loop bounds, and IDT limit expressions",
+  "confidence": "high"
+}

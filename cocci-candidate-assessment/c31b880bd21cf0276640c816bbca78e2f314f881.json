@@ -1,0 +1,14 @@
+{
+  "commit": "c31b880bd21cf0276640c816bbca78e2f314f881",
+  "short_commit": "c31b880bd2",
+  "subject": "MdeModulePkg/NetworkCommon: Add PCD for USB network periodic timer",
+  "suitable": false,
+  "reasons": [
+    "This commit replaces a single hardcoded constant NETWORK_COMMON_POLLING_INTERVAL with a PCD PcdUsbNetworkPeriodicTimerInterval in one call site.",
+    "The change touches only one call to UsbEthInterrupt and involves adding a new PCD declaration — primarily additive infrastructure work.",
+    "Too narrow (single call site) and PCD introduction is not a structural C pattern Coccinelle can express meaningfully.",
+    "No repetitive transformation across multiple files or functions."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

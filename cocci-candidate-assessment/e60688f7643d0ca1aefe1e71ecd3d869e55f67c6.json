@@ -1,0 +1,13 @@
+{
+  "commit": "e60688f7643d0ca1aefe1e71ecd3d869e55f67c6",
+  "short_commit": "e60688f764",
+  "subject": "MdePkg/ArmLib: Remove unused AArch32-only declarations",
+  "suitable": false,
+  "reasons": [
+    "Removes 39 lines of declarations (enum, function prototypes) from a single header file",
+    "This is a dead code cleanup of AArch32-only API surface; no transformation of call sites or code patterns",
+    "Coccinelle is not useful for removing unused declarations from header files without corresponding call-site changes"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "3971a4dba93f08a1e4b8d7b947343722d6b1abf1",
+  "short_commit": "3971a4dba9",
+  "subject": "MdeModulePkg/NvmExpressDxe: Clear NSID to 0 for sanitize command",
+  "suitable": false,
+  "reasons": [
+    "Single targeted fix in one function: removes assignment of NamespaceId from Device->NamespaceId and reassigns it to 0 specifically before the Sanitize NVMe command.",
+    "This is a spec compliance fix at one specific call site — the change requires understanding which NVMe commands use NSID and which do not.",
+    "No repetitive pattern across multiple files or functions; other NVMe commands legitimately use the namespace ID.",
+    "Case-by-case reasoning is required to determine which commands need NSID cleared — not suitable for Coccinelle."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

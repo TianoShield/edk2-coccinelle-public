@@ -1,0 +1,13 @@
+{
+  "commit": "81bab969df1baf1926a8c4567bf0528f61626572",
+  "short_commit": "81bab969df",
+  "subject": "Global: Remove CLANGDWARF from PR gates",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

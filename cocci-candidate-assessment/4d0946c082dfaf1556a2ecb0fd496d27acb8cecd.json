@@ -1,0 +1,13 @@
+{
+  "commit": "4d0946c082dfaf1556a2ecb0fd496d27acb8cecd",
+  "short_commit": "4d0946c082",
+  "subject": "MdeModulePkg/PeiDxeDebugLibReportStatusCode: Fix comma parsing",
+  "suitable": true,
+  "reasons": [
+    "Paired with adjacent commit a7c119589f applying the identical fix to a parallel DebugLib implementation (PeiDebugLibDebugPpi/DebugLib.c)",
+    "Both commits add || (*Format == ',') to the same format-flag parsing condition in mirrored debug library files",
+    "Well-defined before/after pattern: extend an existing if-condition in the format-string parser loop to include the comma character"
+  ],
+  "candidate_pattern": "Match: if ((*Format == '.') || (*Format == '-') || (*Format == '+') || (*Format == ' ')) in format parsing loops across DebugLib implementations, and add || (*Format == ',') to the condition.",
+  "confidence": "medium"
+}

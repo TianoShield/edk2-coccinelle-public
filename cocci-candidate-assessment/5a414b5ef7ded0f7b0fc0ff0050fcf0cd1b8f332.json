@@ -1,0 +1,14 @@
+{
+  "commit": "5a414b5ef7ded0f7b0fc0ff0050fcf0cd1b8f332",
+  "short_commit": "5a414b5ef7",
+  "subject": "MdeModulePkg/SetupBrowserDxe: Fix code issue in ParseOpCodes()",
+  "suitable": false,
+  "reasons": [
+    "This is a one-line correctness fix in a single function, not a repeated structural transformation.",
+    "The change replaces the wrong variable in one conditional; there is no scale or repetition across files or call sites.",
+    "The before/after shape is context-specific and would not generalize into a useful match-and-replace rule.",
+    "This is a local bug fix, which fits the criteria's one-off fix exclusion."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

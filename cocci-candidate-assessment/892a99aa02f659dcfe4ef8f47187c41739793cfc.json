@@ -1,0 +1,13 @@
+{
+  "commit": "892a99aa02f659dcfe4ef8f47187c41739793cfc",
+  "short_commit": "892a99aa02",
+  "subject": "EmulatorPkg/Win/Host: Fix CLANG windows include issues",
+  "suitable": false,
+  "reasons": [
+    "This is a narrow include-path/build-configuration fix.",
+    "There is no reusable before/after C pattern across call sites.",
+    "Coccinelle is not useful for this kind of host-toolchain-specific maintenance."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

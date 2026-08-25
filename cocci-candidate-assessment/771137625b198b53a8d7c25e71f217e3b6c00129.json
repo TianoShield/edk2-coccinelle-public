@@ -1,0 +1,13 @@
+{
+  "commit": "771137625b198b53a8d7c25e71f217e3b6c00129",
+  "short_commit": "771137625b",
+  "subject": "EmulatorPkg/Win/Host: Fix main() return type and error paths",
+  "suitable": false,
+  "reasons": [
+    "The patch is a focused host-program correctness fix.",
+    "It changes one entry point and a few error paths, not a repeated structural pattern.",
+    "This is case-by-case cleanup rather than a generalizable source transformation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

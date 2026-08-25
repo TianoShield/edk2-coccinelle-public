@@ -1,0 +1,14 @@
+{
+  "commit": "e9f03fca2859a821af277356eeb757a3efd1f1f7",
+  "short_commit": "e9f03fca28",
+  "subject": "CryptoPkg: Added MockBaseCryptLib for google test",
+  "suitable": false,
+  "reasons": [
+    "Pure addition of a new mock library (MockBaseCryptLib) for Google Test; 1968 insertions across 5 new files",
+    "Adds new C++ header and implementation files — not a transformation of existing C code",
+    "Part of a series with 4eb86f009d (MdePkg) and d68752de91 (MdeModulePkg), but all are additive new-file creation",
+    "Coccinelle cannot create new files; it applies transformations to existing C source"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

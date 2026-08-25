@@ -1,0 +1,13 @@
+{
+  "commit": "9171edd4d44629dc233d63f017b4d9d5b5c8993d",
+  "short_commit": "9171edd4d4",
+  "subject": "ShellPkg/Ls: Move FileMetaArg closing logic",
+  "suitable": false,
+  "reasons": [
+    "Code motion refactor: ShellCloseFileMetaArg() calls are moved earlier (before the shared final call is removed) to ensure they run at the earliest point where the resource is no longer needed",
+    "One-off change in a single function; requires understanding resource lifetime and control flow - case-by-case reasoning",
+    "No repetitive structural pattern that Coccinelle could match across files or even within the file"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

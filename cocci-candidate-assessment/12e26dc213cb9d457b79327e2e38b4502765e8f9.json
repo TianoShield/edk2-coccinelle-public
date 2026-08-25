@@ -1,0 +1,13 @@
+{
+  "commit": "12e26dc213cb9d457b79327e2e38b4502765e8f9",
+  "short_commit": "12e26dc213",
+  "subject": "ShellPkg/TimeDate: Extract GetTimeZoneFromString() helper",
+  "suitable": false,
+  "reasons": [
+    "One-off function extraction refactor in a single file (TimeDate.c) - the inline timezone-parsing block is replaced by a single call site",
+    "The change involves creating a new function and replacing a unique, complex, multi-branch block with a single call; Coccinelle cannot generate helper functions",
+    "No repetitive pattern: the extracted code block appears in only one place and each instance requires holistic reasoning about control flow"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

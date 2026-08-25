@@ -1,0 +1,13 @@
+{
+  "commit": "c14647a48331392e71966970c211e099bfcd8850",
+  "short_commit": "c14647a483",
+  "subject": "ShellPkg/UefiShellDriver1: Flatten some functions",
+  "suitable": false,
+  "reasons": [
+    "Code flattening/inversion of conditionals for readability; changes 'if (!err) { body }' to 'if (err) { return; } body' across three specific functions",
+    "Although the pattern (invert-if-and-early-return) is mechanically expressible, the flattening applies to only 3 named functions; the transformation is part of a larger refactoring series",
+    "Each instance requires verifying that the early return is semantically equivalent, which requires case-by-case reasoning"
+  ],
+  "candidate_pattern": null,
+  "confidence": "medium"
+}

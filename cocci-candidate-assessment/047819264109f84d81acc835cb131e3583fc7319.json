@@ -1,0 +1,13 @@
+{
+  "commit": "047819264109f84d81acc835cb131e3583fc7319",
+  "short_commit": "0478192641",
+  "subject": "ArmPkg: ArmExceptionLib: Drop ExceptionHandlersEnd",
+  "suitable": false,
+  "reasons": [
+    "This drops a symbol and related handlers in a narrow exception-library cleanup.",
+    "The change is localized to one AArch64 exception implementation and is not repeated elsewhere.",
+    "It is a one-off cleanup rather than a repetitive structural transformation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "f3f585bd42a0c89a50f4f7bde9c2c865535033b4",
+  "short_commit": "f3f585bd42",
+  "subject": "ArmPkg/ArmStandaloneMmCoreEntryPoint: Ensure section length alignment",
+  "suitable": true,
+  "reasons": [
+    "Neighboring commit a631987420 (StandaloneMmPkg) applies the exact same pattern: replacing raw SectionHeader.Misc.VirtualSize with ALIGN_VALUE(SectionHeader.Misc.VirtualSize, SectionAlignment) in permission updater calls",
+    "Same author, same commit message, same fix applied to a different package - clear collateral evolution series",
+    "Structural, well-defined before/after pattern that Coccinelle can express as a match on function calls using VirtualSize and replace with the aligned version"
+  ],
+  "candidate_pattern": "Replace permission updater calls using raw VirtualSize with ALIGN_VALUE(SectionHeader.Misc.VirtualSize, SectionAlignment) where SectionAlignment is the ImageContext->SectionAlignment",
+  "confidence": "medium"
+}

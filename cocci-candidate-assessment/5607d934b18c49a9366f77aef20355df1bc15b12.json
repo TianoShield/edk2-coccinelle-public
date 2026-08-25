@@ -1,0 +1,13 @@
+{
+  "commit": "5607d934b18c49a9366f77aef20355df1bc15b12",
+  "short_commit": "5607d934b1",
+  "subject": "OvmfPkg/XenPvBlkDxe: Advertise the correct IO alignment",
+  "suitable": false,
+  "reasons": [
+    "Adds 2 lines in a single file to set the correct IO alignment value in a block device media struct",
+    "One-off bug fix specific to XenPvBlkDxe's sector size handling; no repeated pattern across other drivers",
+    "No structural pattern to express in SmPL"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "a4a7346cf4502a36ed4181cf45cf2eea1eb66b8f",
+  "short_commit": "a4a7346cf4",
+  "subject": "StandaloneMmPkg Core: Check PE section finding status",
+  "suitable": false,
+  "reasons": [
+    "One-off logic fix in a single function (MmCoreFfsFindMmDriver): changes the condition from checking DepexStatus to checking Status (PE section status)",
+    "The fix involves semantic reasoning about which status variable is appropriate — not a mechanical structural transformation",
+    "Only two files changed with distinct, non-repetitive logic adjustments; no repeating pattern across the codebase"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "41b32312c47e2b8fdc5b0dacb4d7c1a4d159fcf0",
+  "short_commit": "41b32312c4",
+  "subject": "MdeModulePkg: Fix PreferMode selection for same-width text modes",
+  "suitable": false,
+  "reasons": [
+    "Targeted one-off logic fix changing strict '>' to '>=' in a single conditional expression in one file",
+    "Case-by-case fix requiring domain reasoning about mode selection semantics; not a systematic API or pattern change",
+    "No adjacent commits apply the same operator change to other files"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

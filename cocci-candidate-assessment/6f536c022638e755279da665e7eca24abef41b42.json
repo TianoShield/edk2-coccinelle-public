@@ -1,0 +1,13 @@
+{
+  "commit": "6f536c022638e755279da665e7eca24abef41b42",
+  "short_commit": "6f536c0226",
+  "subject": "UefiPayloadPkg: Add PCD to control PCI DMA memory above 4GB",
+  "suitable": false,
+  "reasons": [
+    "The commit is a configuration feature addition with one code change and a few PCD declarations.",
+    "It is not a repeated before/after pattern across multiple call sites.",
+    "This is closer to adding a new knob than to a mechanical C transformation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

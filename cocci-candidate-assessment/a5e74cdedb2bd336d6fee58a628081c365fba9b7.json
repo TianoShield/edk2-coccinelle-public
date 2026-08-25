@@ -1,0 +1,14 @@
+{
+  "commit": "a5e74cdedb2bd336d6fee58a628081c365fba9b7",
+  "short_commit": "a5e74cdedb",
+  "subject": "ShellPkg/SerMode: Add GetParityType() function",
+  "suitable": false,
+  "reasons": [
+    "Single-file function extraction within SerMode.c: extracts parity type conversion logic from existing code into a new GetParityType() helper",
+    "No cross-file repetition; the same structural change is not applied to other files",
+    "Coccinelle cannot express function extraction refactoring",
+    "Part of a tightly scoped SerMode.c cleanup series; each commit in the series touches a different aspect of the same file without a shared mechanical pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

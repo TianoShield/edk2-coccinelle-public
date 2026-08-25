@@ -1,0 +1,13 @@
+{
+  "commit": "cc883371e743611f613c912234795a92e5e82c90",
+  "short_commit": "cc883371e7",
+  "subject": "ArmPkg/StandaloneMmCpu: pass ARM_MM_HANDLER_CONTEXT to MmHandler",
+  "suitable": false,
+  "reasons": [
+    "No tree-wide scale: EDKII_PI_MM_CPU_DRIVER_ENTRYPOINT is a single-implementer protocol (PiMmStandaloneMmCpuDriverEntry is its only implementation), and the (IN UINTN EventId, IN UINTN CommBufferAddr) signature appears at only 3 sites -- the same function as typedef, prototype, and definition -- all changed by this one commit, so the signature-migration rule can never match anything else in the tree.",
+    "The other 'plumbing' edits do not generalize soundly: MmiManage(&Guid, NULL, ...) -> MmiManage(&Guid, mMmHandlerContext, ...) keys off a driver-private global and MmiManage(x, NULL, ...) is legitimately NULL throughout edk2, and the CpuDriverEntryPoint((UINTN)ServiceType, ...) -> CpuDriverEntryPoint(&MmHandlerContext, ...) change is a single call site referencing a local.",
+    "The bulk of the diff (the gGuidedEventContextV3 global swap, the DelegatedEventLoop FfaMsgInfo/SpmMmInfo restructuring, and the PiMmStandaloneMmCpuDriverEntry body rewrite) is one-off, case-by-case refactoring; this matches the 'large refactor with only a small Coccinelle-friendly subpattern' exclusion in cocci-candidate-criteria.md."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

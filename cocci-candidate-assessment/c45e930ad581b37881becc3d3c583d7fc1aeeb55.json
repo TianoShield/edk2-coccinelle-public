@@ -1,0 +1,13 @@
+{
+  "commit": "c45e930ad581b37881becc3d3c583d7fc1aeeb55",
+  "short_commit": "c45e930ad5",
+  "subject": "ShellPkg/Ls: Extract UpdateFileLocalTime() function",
+  "suitable": false,
+  "reasons": [
+    "Function extraction: gRT->GetTime() + three FileTimeToLocalTime() conditional blocks are factored out of PrintLsOutput() into a new UpdateFileLocalTime() helper",
+    "Coccinelle cannot generate new function definitions or lift blocks into separate helper functions",
+    "One-off refactor in a single file with no cross-file repetitive pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

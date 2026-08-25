@@ -1,0 +1,13 @@
+{
+  "commit": "2ee24e6c4e760baf0368cc12ced8adefbd8d004e",
+  "short_commit": "2ee24e6c4e",
+  "subject": "ArmPkg/Library: add ArmMmHandlerContext for MM handler context management",
+  "suitable": false,
+  "reasons": [
+    "This adds a new context header and removes older declarations, rather than transforming existing call sites.",
+    "It is API introduction and struct definition work, not a repeated before/after rewrite.",
+    "Most of the change is new code instead of a generalizable edit pattern."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

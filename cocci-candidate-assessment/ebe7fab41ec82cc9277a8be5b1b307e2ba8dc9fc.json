@@ -1,0 +1,14 @@
+{
+  "commit": "ebe7fab41ec82cc9277a8be5b1b307e2ba8dc9fc",
+  "short_commit": "ebe7fab41e",
+  "subject": "ArmVirtPkg: Kvmtool: Only install IORT if ITS is present",
+  "suitable": false,
+  "reasons": [
+    "One-off guard condition added in a single function in a single file (17 insertions, 1 deletion)",
+    "Adds platform-specific ITS-presence check before installing IORT ACPI table; not a repeated pattern",
+    "Requires semantic understanding of IORT/ITS presence logic — not a mechanical structural transformation",
+    "No similar pattern in neighboring commits or other files"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

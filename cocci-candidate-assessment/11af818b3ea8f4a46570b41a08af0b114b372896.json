@@ -1,0 +1,14 @@
+{
+  "commit": "11af818b3ea8f4a46570b41a08af0b114b372896",
+  "short_commit": "11af818b3e",
+  "subject": "SecurityPkg: Refactor performance to use new PERF_FUNCTION_* measurements",
+  "suitable": true,
+  "reasons": [
+    "Systematic macro migration: replaces PERF_START_EX(handle, token, module, 0, PERF_ID_*) with PERF_FUNCTION_BEGIN() and PERF_END_EX(...) with PERF_FUNCTION_END()",
+    "Applied in two files (Tcg2Dxe.c and Tcg2Pei.c) within SecurityPkg, with matching neighbor commits (03e7c8c44f for MdeModulePkg) doing the same migration — forms an N-commit series",
+    "The PERF_START_EX/PERF_END_EX -> PERF_FUNCTION_BEGIN/PERF_FUNCTION_END pattern is a well-defined collateral evolution across the edk2 codebase",
+    "Coccinelle can match the PERF_START_EX call with its characteristic arguments and replace it, and similarly for PERF_END_EX"
+  ],
+  "candidate_pattern": "@@\nexpression handle, token, module, id;\n@@\n- PERF_START_EX(handle, token, module, 0, id);\n+ PERF_FUNCTION_BEGIN();\n@@\nexpression handle, token, module, id;\n@@\n- PERF_END_EX(handle, token, module, 0, id);\n+ PERF_FUNCTION_END();",
+  "confidence": "medium"
+}

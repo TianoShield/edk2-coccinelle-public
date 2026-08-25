@@ -1,0 +1,14 @@
+{
+  "commit": "b65f97625aaa0d47f779aedcb834a41d6aa67593",
+  "short_commit": "b65f97625a",
+  "subject": "MdePkg: Add PCIe capability structures for DPC and DLF",
+  "suitable": false,
+  "reasons": [
+    "This is a header file addition of new structs and macros, not a transformation of existing code",
+    "Adds new PCIe capability structures (DPC, DLF) across four PCI header files - this is new content, not a migration or rename",
+    "Coccinelle works on transforming existing code patterns; this commit introduces new definitions without changing existing call sites",
+    "No repeated before/after transformation pattern expressible as a SmPL rule"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "4743d8d9925654a3f4d150e3bc502a02979f3892",
+  "short_commit": "4743d8d992",
+  "subject": "MdeModulePkg: StatusCodeHandler Stmm remove assert",
+  "suitable": false,
+  "reasons": [
+    "This removes an assert in a single function.",
+    "It is a local cleanup/warning fix rather than a repeated transformation.",
+    "There is no broader before/after pattern to encode in SmPL."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

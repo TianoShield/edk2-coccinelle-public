@@ -1,0 +1,14 @@
+{
+  "commit": "25462a6ab2496d06690b64f2b9afa909fb15a6c2",
+  "short_commit": "25462a6ab2",
+  "subject": "MdeModulePkg: MmVariablePei: Populate correct v3 header",
+  "suitable": false,
+  "reasons": [
+    "The commit is a substantial refactor of MM communicate buffer setup, not a small mechanical replacement.",
+    "It introduces new helper functions, new allocation flow, and version-specific communication paths rather than one uniform edit pattern.",
+    "The changes are concentrated in a single PEI implementation path, so they are not repetitive across multiple call sites or files.",
+    "Several edits require context-specific reasoning about v1 versus v3 MM communication behavior, which is not a good fit for Coccinelle."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

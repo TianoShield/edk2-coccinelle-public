@@ -1,0 +1,13 @@
+{
+  "commit": "be4fc071eb01c7420707e887c92a3adf3e07ea72",
+  "short_commit": "be4fc071eb",
+  "subject": "BaseTools: Reject Inline Comments in tools_def",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

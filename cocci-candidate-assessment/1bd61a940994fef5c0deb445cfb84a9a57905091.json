@@ -1,0 +1,14 @@
+{
+  "commit": "1bd61a940994fef5c0deb445cfb84a9a57905091",
+  "short_commit": "1bd61a9409",
+  "subject": "MdeModulePkg/SpiNorFlashJedecSfdp: Limit debug output",
+  "suitable": true,
+  "reasons": [
+    "Mechanical substitution of DEBUG_INFO with DEBUG_VERBOSE in 5 DEBUG() macro call sites within a single file",
+    "The pattern is simple and well-defined: replace the debug level argument from DEBUG_INFO to DEBUG_VERBOSE in entry-point debug prints for SPI NOR Flash operations",
+    "While confined to one file in this commit, the pattern (DEBUG_INFO -> DEBUG_VERBOSE for verbose/entry-trace messages) is conceptually repeatable across many drivers",
+    "The change is purely structural with no case-by-case reasoning needed per call site"
+  ],
+  "candidate_pattern": "@@\nexpression msg, args;\n@@\n- DEBUG((DEBUG_INFO, msg, args))\n+ DEBUG((DEBUG_VERBOSE, msg, args))",
+  "confidence": "medium"
+}

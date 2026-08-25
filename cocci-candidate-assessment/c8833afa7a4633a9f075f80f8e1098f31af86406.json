@@ -1,0 +1,13 @@
+{
+  "commit": "c8833afa7a4633a9f075f80f8e1098f31af86406",
+  "short_commit": "c8833afa7a",
+  "subject": "MdeModulePkg/NvmExpressDxe: Mark CDW10/CDW11 valid for Format and Sanitize",
+  "suitable": false,
+  "reasons": [
+    "Two additions in a single file to two different code paths (Format NVM and Sanitize); each sets a different flag value (CDW10_VALID vs CDW10_VALID|CDW11_VALID) so they are not the same pattern",
+    "The fix is targeted at two specific NVMe command construction sites with different CDW validity requirements - requires per-case reasoning",
+    "Low repetitiveness: only two instances in one file, and the pattern differs between them"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

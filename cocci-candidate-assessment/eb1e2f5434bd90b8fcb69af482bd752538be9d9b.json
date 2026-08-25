@@ -1,0 +1,14 @@
+{
+  "commit": "eb1e2f5434bd90b8fcb69af482bd752538be9d9b",
+  "short_commit": "eb1e2f5434",
+  "subject": "BaseTools: Update wiki links",
+  "suitable": false,
+  "reasons": [
+    "The change is in a Python script (`BaseTools/Scripts/PatchCheck.py`), not C source code.",
+    "It is a one-line URL replacement, not a structural C before/after transformation.",
+    "There is no repetition or scale across multiple call sites or files.",
+    "This is documentation/tooling link maintenance, not API migration or collateral evolution in C."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

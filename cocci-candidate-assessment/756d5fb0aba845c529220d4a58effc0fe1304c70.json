@@ -1,0 +1,15 @@
+{
+  "commit": "756d5fb0aba845c529220d4a58effc0fe1304c70",
+  "short_commit": "756d5fb0ab",
+  "subject": "EmbeddedPkg/PrePiMemoryAllocationLib: Update memory hob page alignment",
+  "suitable": false,
+  "reasons": [
+    "Touches C code, but the change is a one-off fix in a single function rather than a repeated structural transformation.",
+    "Most of the commit introduces new control flow and memory-type-specific alignment logic, which is context-dependent rather than a simple match-and-replace.",
+    "The before/after shape is not repeated across files or even across multiple call sites in the same file.",
+    "The associated comment updates are documentation adjustments, not semantic-patch material.",
+    "This fits the criteria for a context-specific fix more than API migration or collateral evolution."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "4afb3886396a72618269fa549e92a796e4ffcb2b",
+  "short_commit": "4afb388639",
+  "subject": "MdePkg/BaseFdtLib: FdtGetName, FdtGetPath",
+  "suitable": false,
+  "reasons": [
+    "Changes add CONST qualifier to VOID *Fdt parameter in function declarations and definitions for FdtGetName() and FdtGetPath()",
+    "While adding CONST to a parameter is structurally expressible, the change requires per-function semantic reasoning to determine which parameters are logically read-only",
+    "Only 2 functions affected across 3 files (header, implementation, mock); this is a targeted correctness fix rather than a broad mechanical sweep",
+    "Neighboring commits (1574cd37a2) are header style updates rather than more CONST-addition commits, so no extended series"
+  ],
+  "candidate_pattern": null,
+  "confidence": "medium"
+}

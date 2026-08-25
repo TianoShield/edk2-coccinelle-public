@@ -1,0 +1,13 @@
+{
+  "commit": "6ac200557612c12b49b4b391fca72ac9b9be7501",
+  "short_commit": "6ac2005576",
+  "subject": "StandaloneMmPkg/Core: Improve the readability of debug statement",
+  "suitable": false,
+  "reasons": [
+    "Single-location change: updates one DEBUG format string from '%x' to '0x%x' for an address and '%x' to '%d' for a count",
+    "No adjacent commits apply the same format-specifier normalization to other DEBUG statements in other files",
+    "Pure style/readability fix without a systematic pattern across multiple call sites"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

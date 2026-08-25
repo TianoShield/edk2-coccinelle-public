@@ -1,0 +1,13 @@
+{
+  "commit": "f808bc1e60dfdb364976361a6d3f15e35e25386e",
+  "short_commit": "f808bc1e60",
+  "subject": "ArmPkg/Library: introduce FmpDeviceLib using Firmware update ABI",
+  "suitable": false,
+  "reasons": [
+    "This commit introduces a brand new library and implementation files.",
+    "That is new functionality and API creation, not a transformation of existing C call sites.",
+    "There is no repeated before/after pattern across existing code to generalize."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

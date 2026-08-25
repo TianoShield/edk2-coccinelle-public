@@ -1,0 +1,14 @@
+{
+  "commit": "2f3883dd5912c33f8a7eecb353b9cab17c696414",
+  "short_commit": "2f3883dd59",
+  "subject": "NetworkPkg/HttpBootDxe: Add all events to HttpBootHttpCallback()",
+  "suitable": false,
+  "reasons": [
+    "Adds new case labels to an existing switch statement - each case has a unique string and semantic meaning, not a mechanical pattern",
+    "This is a feature addition (expanding event coverage), not an API migration or collateral evolution",
+    "No neighboring commits apply the same extension to other switch statements across files",
+    "The per-case messages are individually authored, not a repeatable structural transformation"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

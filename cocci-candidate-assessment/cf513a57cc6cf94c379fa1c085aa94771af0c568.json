@@ -1,0 +1,14 @@
+{
+  "commit": "cf513a57cc6cf94c379fa1c085aa94771af0c568",
+  "short_commit": "cf513a57cc6c",
+  "subject": "UefiCpuPkg: Update exception vector for LoongArch64",
+  "suitable": false,
+  "reasons": [
+    "The commit is a LoongArch64 exception-path rewrite that spans C and assembly, not a reusable C-only transformation.",
+    "The main change is architecture-specific dispatch logic and a fast path for `SMP_BOOT_CPU`, which is context-dependent rather than a generic match-and-replace pattern.",
+    "The C file mostly loses the old IPI handler flow while the ASM file gains a new vector table and dispatcher, so there is no repeated structural edit across similar call sites.",
+    "This is a one-off control-flow redesign for a specific interrupt model, which fits the criteria's exclusions for case-by-case reasoning and large refactors."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

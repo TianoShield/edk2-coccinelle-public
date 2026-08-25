@@ -1,0 +1,14 @@
+{
+  "commit": "2691afa26994e62d05d356bbaa99343125cbea46",
+  "short_commit": "2691afa269",
+  "subject": "UnitTestFrameworkPkg: Increment handle key outside if block",
+  "suitable": false,
+  "reasons": [
+    "This is a paired fix with 8f28978843 (MdeModulePkg/Core: Increment handle key outside if block) applying the identical structural change to the UnitTest stub",
+    "The change moves two statements (gHandleDatabaseKey++; Handle->Key = gHandleDatabaseKey;) from inside an if-block to outside it",
+    "While the same fix is applied in two places, the change is a logic/control-flow fix that requires understanding of the surrounding code structure - Coccinelle could theoretically express this but it would be fragile given the if/else context",
+    "Low repetitiveness overall: only two locations in the entire codebase needed this fix, making it a low-value Coccinelle candidate"
+  ],
+  "candidate_pattern": null,
+  "confidence": "medium"
+}

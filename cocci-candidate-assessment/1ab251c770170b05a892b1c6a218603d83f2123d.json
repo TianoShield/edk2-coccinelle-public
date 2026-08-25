@@ -1,0 +1,13 @@
+{
+  "commit": "1ab251c770170b05a892b1c6a218603d83f2123d",
+  "short_commit": "1ab251c770",
+  "subject": "ShellPkg/UefiShellDriver1/Drivers: Fix memory leaks",
+  "suitable": false,
+  "reasons": [
+    "Adds SHELL_FREE_NON_NULL() calls before early-return paths in a single file; fixes two specific missing free sites",
+    "Memory leak fixes of this kind require case-by-case analysis of which variables are allocated and which early-return paths are missing the free",
+    "The sibling commit cfcb4eee91 adds ShellCommandLineFreeVarList() in a similar pattern, but the specific resources differ per site"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

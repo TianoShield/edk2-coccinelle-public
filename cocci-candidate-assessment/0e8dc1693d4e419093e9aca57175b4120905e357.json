@@ -1,0 +1,14 @@
+{
+  "commit": "0e8dc1693d4e419093e9aca57175b4120905e357",
+  "short_commit": "0e8dc1693d",
+  "subject": "MdeModulePkg: Code/Comment cleanup",
+  "suitable": false,
+  "reasons": [
+    "Commit is primarily comment, wording, and debug-message cleanup rather than a semantic code transformation.",
+    "Repeated edits are text-level readability changes, not a clear structural before/after pattern over C syntax.",
+    "The only code change is a debug string adjustment, which is not the kind of collateral evolution Coccinelle is designed for.",
+    "Criteria explicitly exclude pure style and formatting style cleanups, which is the dominant shape of this commit."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

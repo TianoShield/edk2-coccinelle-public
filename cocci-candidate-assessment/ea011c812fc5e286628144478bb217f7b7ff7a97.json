@@ -1,0 +1,13 @@
+{
+  "commit": "ea011c812fc5e286628144478bb217f7b7ff7a97",
+  "short_commit": "ea011c812f",
+  "subject": "BaseTools/Plugin/WindowsVsToolChain: Add WindowsSDKLibVersion",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

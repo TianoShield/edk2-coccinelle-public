@@ -1,0 +1,14 @@
+{
+  "commit": "f0eade598462400380cdd191e0b4b5aeade6ec68",
+  "short_commit": "f0eade5984",
+  "subject": "StandaloneMmPkg: StandaloneMmCore: Log MM Entry/Exit Protocol at Verbose",
+  "suitable": false,
+  "reasons": [
+    "The commit changes a single debug-print site in one function, not a repeated C transformation across files or call sites.",
+    "The before/after shape is a context-specific logging tweak, not a reusable match-and-replace rule.",
+    "This is closer to noise-reduction for diagnostics than API migration or collateral evolution.",
+    "The criteria explicitly exclude one-off fixes and pure style or logging adjustments."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

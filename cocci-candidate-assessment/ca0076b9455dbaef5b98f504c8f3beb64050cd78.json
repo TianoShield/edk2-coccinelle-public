@@ -1,0 +1,13 @@
+{
+  "commit": "ca0076b9455dbaef5b98f504c8f3beb64050cd78",
+  "short_commit": "ca0076b945",
+  "subject": "OvmfPkg/OvmfXen: Fix XenHypercallSchedOp call in BaseResetShutdownXen",
+  "suitable": false,
+  "reasons": [
+    "This is a one-line call-site fix in a single function.",
+    "The required change is specific to Xen reset/shutdown handling and is not repeated elsewhere in the commit.",
+    "It does not describe a reusable structural pattern."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

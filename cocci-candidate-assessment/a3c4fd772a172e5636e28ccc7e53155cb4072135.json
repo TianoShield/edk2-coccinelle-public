@@ -1,0 +1,13 @@
+{
+  "commit": "a3c4fd772a172e5636e28ccc7e53155cb4072135",
+  "short_commit": "a3c4fd772a",
+  "subject": ".azurepipelines/templates/pr-gate-build-job.yml: Remove SignedCapsulePkg",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

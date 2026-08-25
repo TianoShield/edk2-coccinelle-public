@@ -1,0 +1,13 @@
+{
+  "commit": "fc13220238df2e35fbb0afa0c1647ea8807168e0",
+  "short_commit": "fc13220238",
+  "subject": "MdeModulePkg/PeiCore: Accept MemoryDiscoveredPpi from SecCore",
+  "suitable": false,
+  "reasons": [
+    "Feature addition in a single function (ProcessPpiListFromSec): inserts new logic to set PeiMemoryInstalled when a specific GUID PPI is installed",
+    "The change is a one-off behavioral addition specific to MemoryDiscoveredPpi semantics, requiring case-by-case reasoning about what the flag means",
+    "No repetitive before/after pattern; only one code site modified with new functionality"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

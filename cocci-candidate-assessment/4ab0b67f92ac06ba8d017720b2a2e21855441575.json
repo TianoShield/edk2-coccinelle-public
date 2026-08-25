@@ -1,0 +1,12 @@
+{
+  "commit": "4ab0b67f92ac06ba8d017720b2a2e21855441575",
+  "short_commit": "4ab0b67f92",
+  "subject": "ArmVirtPkg: Replace include guards with #pragma once",
+  "suitable": false,
+  "reasons": [
+    "Replacing include guards with `#pragma once` requires matching a coordinated `#ifndef`/`#define` pair at the top of a file and its `#endif` at the bottom as a unit \u2014 SmPL has no construct for this.",
+    "Use sed/awk/Python for this kind of whole-file structural preprocessor change."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

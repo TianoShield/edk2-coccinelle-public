@@ -1,0 +1,13 @@
+{
+  "commit": "0bc238d066842101c7f65b2a4b36d26faf7f5e0d",
+  "short_commit": "0bc238d066",
+  "subject": "MdePkg/AdapterInformation: Add CDAT adapter information type",
+  "suitable": false,
+  "reasons": [
+    "The commit adds 22 new lines of GUID and type definitions in a header and a .dec file.",
+    "This is a pure additive change with no existing pattern to match and transform.",
+    "Coccinelle cannot express 'add new definitions'; it needs a before/after structural transformation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

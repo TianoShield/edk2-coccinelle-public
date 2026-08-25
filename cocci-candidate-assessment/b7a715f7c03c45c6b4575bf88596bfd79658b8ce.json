@@ -1,0 +1,14 @@
+{
+  "commit": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce",
+  "short_commit": "b7a715f7c0",
+  "subject": "MdeModulePkg: Add Unmap Callback",
+  "suitable": false,
+  "reasons": [
+    "Touches C code, but the commit is adding a new callback hook and per-library implementations rather than applying one uniform replacement pattern.",
+    "The required edits vary by phase: PEI and SEC invalidate a HOB, while DXE and StandaloneMm add no-op callbacks.",
+    "Although the call to `UnmapCallback();` is a simple repeated insertion, the overall change depends on context-specific implementation logic in each library variant.",
+    "This is closer to API introduction with per-instance customization than a high-scale, mechanical collateral evolution."
+  ],
+  "candidate_pattern": "A narrow subpattern could insert `UnmapCallback();` before successful returns in `ArmFfaLibRxTxUnmap()`, but that would not capture the commit's varied callback implementations.",
+  "confidence": "high"
+}

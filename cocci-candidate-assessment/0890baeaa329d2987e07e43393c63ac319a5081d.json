@@ -1,0 +1,13 @@
+{
+  "commit": "0890baeaa329d2987e07e43393c63ac319a5081d",
+  "short_commit": "0890baeaa3",
+  "subject": "EmulatorPkg/Win/Host: Fix WinNtBlockIoError() parameter type",
+  "suitable": false,
+  "reasons": [
+    "This is a local parameter-type correction in one function.",
+    "It does not represent a repeated structural change.",
+    "The edit is too context-specific for a semantic patch."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "11dafad5eda2411ef04cc142e191fd277467ac67",
+  "short_commit": "11dafad5ed",
+  "subject": "EmulatorPkg: Add NO_PLATFORM_BOOT_DELAYS for faster boot",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

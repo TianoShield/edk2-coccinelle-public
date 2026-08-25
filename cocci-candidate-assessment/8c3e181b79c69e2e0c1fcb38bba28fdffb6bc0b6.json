@@ -1,0 +1,13 @@
+{
+  "commit": "8c3e181b79c69e2e0c1fcb38bba28fdffb6bc0b6",
+  "short_commit": "8c3e181b79",
+  "subject": "MdeModulePkg/PciBusDxe: Fix typo in Buffer parameter description",
+  "suitable": false,
+  "reasons": [
+    "The change is a typo correction in comments across a header and source file.",
+    "It is repetitive text cleanup, not a structural C transformation.",
+    "Coccinelle is not a strong fit for documentation-only maintenance."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

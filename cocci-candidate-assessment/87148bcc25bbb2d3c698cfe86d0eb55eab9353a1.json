@@ -1,0 +1,14 @@
+{
+  "commit": "87148bcc25bbb2d3c698cfe86d0eb55eab9353a1",
+  "short_commit": "87148bcc25",
+  "subject": "Global: Move ArmLib to MdePkg",
+  "suitable": false,
+  "reasons": [
+    "The C/asm source files are simply renamed (moved) with no code changes — Coccinelle cannot express file renames.",
+    "The DSC file changes are highly repetitive (replacing 'ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf' with 'ArmLib|MdePkg/Library/ArmLib/ArmBaseLib.inf' across ~12 DSC files), but DSC files are not C code and Coccinelle only handles C.",
+    "The one C-level change is just removing an #include of ArmPkg.dec from the INF — again a build descriptor, not C code.",
+    "While the string substitution is very regular, it targets build system files outside Coccinelle's domain."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "c4cdc1794a511c868aa079be0f041337ef581fa2",
+  "short_commit": "c4cdc1794a",
+  "subject": "OvmfPkg/XenHypercallLib: Remove unused HobLib",
+  "suitable": false,
+  "reasons": [
+    "Single-location cleanup: removes unused HobLib from one INF file and updates one comment in one header",
+    "No repeated pattern across multiple files; this is a one-off dependency cleanup following a prior refactor",
+    "Changes to INF and header comment are not transformations of C code patterns"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

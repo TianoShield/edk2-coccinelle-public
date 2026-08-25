@@ -1,0 +1,13 @@
+{
+  "commit": "97a81fd05c47d338261a8e4c627303cbd6b1fbce",
+  "short_commit": "97a81fd05c",
+  "subject": "RedfishPkg/RedfishPlatformConfigDxe: reduce false alarm",
+  "suitable": false,
+  "reasons": [
+    "This is a narrow local fix intended to silence a false alarm.",
+    "The change does not repeat across multiple files or call sites.",
+    "It is context-specific maintenance rather than a reusable structural transformation."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

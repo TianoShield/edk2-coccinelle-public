@@ -1,0 +1,13 @@
+{
+  "commit": "35102d932fef59eb9268c68eaab21df3ade0cb7a",
+  "short_commit": "35102d932f",
+  "subject": "IntelFsp2WrapperPkg: Remove duplicate library class in INF file",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

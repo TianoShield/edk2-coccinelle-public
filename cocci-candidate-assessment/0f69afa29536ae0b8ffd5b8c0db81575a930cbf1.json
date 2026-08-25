@@ -1,0 +1,13 @@
+{
+  "commit": "0f69afa29536ae0b8ffd5b8c0db81575a930cbf1",
+  "short_commit": "0f69afa295",
+  "subject": "ShellPkg/TimeDate: Extract GetCurrentTime() helper",
+  "suitable": false,
+  "reasons": [
+    "Function extraction: the pattern gRT->GetTime() + error-print + return is replaced by a call to a new GetCurrentTime() helper at 6 sites within one file",
+    "The repetitive call sites (6 occurrences) could theoretically be identified by Coccinelle, but the transformation requires introducing a new helper function which is beyond Coccinelle's transformation model",
+    "Coccinelle can match and rewrite call patterns but cannot introduce new function definitions or lift out shared error-handling into a new abstraction"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

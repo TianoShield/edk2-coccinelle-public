@@ -1,0 +1,14 @@
+{
+  "commit": "3c61d7e081e2fa690db13751ba0c37e039569b95",
+  "short_commit": "3c61d7e081",
+  "subject": "UefiCpuPkg/BaseRiscV64CpuTimerLib: Fix incorrect performance counter range",
+  "suitable": false,
+  "reasons": [
+    "One-off value correction: changing `32 - 1` to `MAX_UINT64` in a single location",
+    "Single file, single location change with no repeated pattern",
+    "The fix is architecture-specific to this one timer library, not a widespread pattern",
+    "Coccinelle is not well-suited for one-off literal value corrections at a single site"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

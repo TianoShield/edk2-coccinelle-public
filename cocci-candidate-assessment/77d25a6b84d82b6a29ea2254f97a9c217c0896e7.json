@@ -1,0 +1,13 @@
+{
+  "commit": "77d25a6b84d82b6a29ea2254f97a9c217c0896e7",
+  "short_commit": "77d25a6b84",
+  "subject": "MdePkg: fix mdlint issues",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

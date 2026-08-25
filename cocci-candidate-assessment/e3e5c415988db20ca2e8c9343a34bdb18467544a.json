@@ -1,0 +1,13 @@
+{
+  "commit": "e3e5c415988db20ca2e8c9343a34bdb18467544a",
+  "short_commit": "e3e5c41598",
+  "subject": "OvmfPkg/IgvmSecureBootDxe: enable CustomMode only if needed",
+  "suitable": false,
+  "reasons": [
+    "Conditional logic change in a single file: wraps CustomMode activation in a PCD check and adds inf dependency",
+    "Logic is specific to the IGVM secure boot DXE driver and its interaction with PcdRequireSelfSignedPk; not a repeatable pattern",
+    "Part of a series of OvmfPkg CustomMode changes (with f5c6c98d89, 75ea215310, 0a7ed7ed34) but each commit does something distinct"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

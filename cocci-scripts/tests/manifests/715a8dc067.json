@@ -1,0 +1,36 @@
+{
+  "id": "715a8dc067",
+  "cocciFile": "cocci-scripts/715a8dc067-cmocka-use-issues.cocci",
+  "spatchOptions": [
+    "--smpl-spacing"
+  ],
+  "cases": [
+    {
+      "name": "replay-securebootvariablelib-unittest",
+      "beforeSource": {
+        "gitRevision": "715a8dc06756dd666eb57e86dec25752a6fc60b6^:SecurityPkg/Library/SecureBootVariableLib/UnitTest/SecureBootVariableLibUnitTest.c"
+      },
+      "afterSource": {
+        "gitRevision": "715a8dc06756dd666eb57e86dec25752a6fc60b6:SecurityPkg/Library/SecureBootVariableLib/UnitTest/SecureBootVariableLibUnitTest.c"
+      }
+    },
+    {
+      "name": "fixture-cmocka-general",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/715a8dc067/CmockaGeneral.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/715a8dc067/CmockaGeneral.after.c"
+      }
+    },
+    {
+      "name": "fixture-cmocka-noop",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/715a8dc067/CmockaNoop.before.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/715a8dc067/CmockaNoop.after.c"
+      }
+    }
+  ]
+}

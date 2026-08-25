@@ -1,0 +1,13 @@
+{
+  "commit": "d97d93bba8a89566065437e6cd9b7771dfda7b98",
+  "short_commit": "d97d93bba8",
+  "subject": "UnitTestFrameworkPkg: Add MINGW CLANG Support",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "ad44b8d5524e41c2b1f5b6386075fdff383e01b4",
+  "short_commit": "ad44b8d552",
+  "subject": "ShellPkg: align UNI file headers with UNI Spec standard",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "e2951626adcb621e06b0562fe1de356d34d9fd9f",
+  "short_commit": "e2951626ad",
+  "subject": "Revert \"UefiCpuPkg/BaseRiscV64CpuTimerLib: Add constructor to initialize..\"",
+  "suitable": false,
+  "reasons": [
+    "This is a revert commit that undoes a previous change - not a systematic transformation pattern",
+    "Reverts are by nature one-off operations targeting a single previous commit",
+    "The resulting code change is the inverse of the original addition, still in a single file",
+    "No generalizable pattern suitable for Coccinelle"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

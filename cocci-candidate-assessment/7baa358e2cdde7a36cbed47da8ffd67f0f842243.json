@@ -1,0 +1,14 @@
+{
+  "commit": "7baa358e2cdde7a36cbed47da8ffd67f0f842243",
+  "short_commit": "7baa358e2c",
+  "subject": "ArmPlatformPkg/PL011UartLib : Fix incorrect control bit validation",
+  "suitable": false,
+  "reasons": [
+    "Touches C code, but the change is a one-off fix in a single constant definition.",
+    "There is no repeated before/after transformation across multiple call sites, functions, or files.",
+    "The edit depends on domain-specific selection of which control-bit flags belong in `mAllowedControlBits`, not a generic structural rewrite.",
+    "This is a context-specific correctness fix rather than an API migration or broad collateral evolution."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

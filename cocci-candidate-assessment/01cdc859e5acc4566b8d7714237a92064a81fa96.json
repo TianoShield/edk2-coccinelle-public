@@ -1,0 +1,13 @@
+{
+  "commit": "01cdc859e5acc4566b8d7714237a92064a81fa96",
+  "short_commit": "01cdc859e5",
+  "subject": "MdePkg/LoadFile2: Fix typo in Buffer parameter description",
+  "suitable": false,
+  "reasons": [
+    "The change is a comment-only typo fix in a protocol header.",
+    "It does not alter code structure or behavior.",
+    "This is pure documentation cleanup, which is outside Coccinelle's target use cases."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

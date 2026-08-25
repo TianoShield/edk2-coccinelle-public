@@ -1,0 +1,13 @@
+{
+  "commit": "842720ed0943cc031cdc8547a8e5bfc041010f90",
+  "short_commit": "842720ed09",
+  "subject": ".azurepipelines: Move post-merge to a daily build",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "ce61d5f327d54f34e3937ffe0c75efefdd5d9195",
+  "short_commit": "ce61d5f327",
+  "subject": "MdeModulePkg: DxeReportStatusCodeLib: Do not query protocol",
+  "suitable": false,
+  "reasons": [
+    "This is a library refactor that adds constructor, destructor, and notification event handling.",
+    "The commit is not a repetitive C transformation; it is a behavior change in one component.",
+    "There is no clean before/after pattern across multiple instances.",
+    "The code shape is too context-specific for a semantic patch."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

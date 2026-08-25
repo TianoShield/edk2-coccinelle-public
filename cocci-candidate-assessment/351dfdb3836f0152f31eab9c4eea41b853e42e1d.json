@@ -1,0 +1,13 @@
+{
+  "commit": "351dfdb3836f0152f31eab9c4eea41b853e42e1d",
+  "short_commit": "351dfdb383",
+  "subject": "MdeModulePkg: Remove duplicate procotols guid in INF files",
+  "suitable": false,
+  "reasons": [
+    "Precheck with `check-commit-touches-c.sh` reported `touches_c=false`.",
+    "The commit does not touch any `.c` or `.h` files, so it is outside the C-focused scope in `cocci-candidate-criteria.md`.",
+    "No subagent was launched because non-C commits are not Coccinelle candidates under the requested workflow."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "23d5ddfe2d48e654d5e1e25bcfd554f06e428888",
+  "short_commit": "23d5ddfe2d",
+  "subject": "MdePkg: Replace non-ASCII characters with ASCII",
+  "suitable": false,
+  "reasons": [
+    "The changes are comment and documentation text replacements, not semantic C transformations.",
+    "The edits replace curly apostrophes with ASCII apostrophes in prose, which is pure text cleanup.",
+    "There is no repetitive before/after code pattern across multiple call sites or files that Coccinelle could generalize.",
+    "This fits the excluded category of style and formatting changes rather than API migration or collateral evolution."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

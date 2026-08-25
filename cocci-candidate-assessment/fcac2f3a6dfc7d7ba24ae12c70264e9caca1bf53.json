@@ -1,0 +1,13 @@
+{
+  "commit": "fcac2f3a6dfc7d7ba24ae12c70264e9caca1bf53",
+  "short_commit": "fcac2f3a6d",
+  "subject": "MdePkg: Add macros for ARM Processor Error Section in Cper.h",
+  "suitable": false,
+  "reasons": [
+    "Purely additive change: 507 new lines of macro and struct definitions added to Cper.h",
+    "No existing code is transformed; Coccinelle requires a before/after code pattern to match and replace",
+    "New CPER definitions from a spec are unique declarations, not a repetitive transformation of existing patterns"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "11d04a2975e4702fb69cba7aa87d6f502cb422e9",
+  "short_commit": "11d04a2975",
+  "subject": "StandaloneMmPkg: StandaloneMmIplPei: MM Communicate v3 header check fix",
+  "suitable": false,
+  "reasons": [
+    "The change is a single logic correction in one function, not a repeated structural transformation.",
+    "It inverts one `CompareGuid` check; there is no broader before/after pattern to generalize across files or call sites.",
+    "This is a one-off correctness fix rather than API migration or collateral evolution.",
+    "The edit needs case-specific reasoning about the intended boolean condition, which is outside Coccinelle's best-fit patterns."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

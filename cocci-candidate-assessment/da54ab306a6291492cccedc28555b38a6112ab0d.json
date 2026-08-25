@@ -1,0 +1,13 @@
+{
+  "commit": "da54ab306a6291492cccedc28555b38a6112ab0d",
+  "short_commit": "da54ab306a",
+  "subject": "ShellPkg/Ls: Extract PrintLsOutputRec() function",
+  "suitable": false,
+  "reasons": [
+    "Function extraction: a chunk of recursive logic from PrintLsOutput() is split into a new PrintLsOutputRec() function, with a forward declaration added",
+    "Coccinelle cannot introduce new function definitions, split existing functions, or add forward declarations",
+    "One-off structural refactor in a single file with no repeated pattern"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

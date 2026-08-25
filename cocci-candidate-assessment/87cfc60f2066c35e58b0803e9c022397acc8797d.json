@@ -1,0 +1,13 @@
+{
+  "commit": "87cfc60f2066c35e58b0803e9c022397acc8797d",
+  "short_commit": "87cfc60f20",
+  "subject": "MdeModulePkg/Library: ArmFfaLib: add mapping ARM_FFA_RET_RETRY",
+  "suitable": false,
+  "reasons": [
+    "Adds a single case to each of two switch statements in one file (ArmFfaCommon.c), mapping ARM_FFA_RET_RETRY to EFI_TIMEOUT and vice versa",
+    "Only two insertion points, both in the same file; while the pattern of adding a case to both conversion functions is symmetric, the scope is too narrow (one enum value, one file) to be a meaningful Coccinelle candidate",
+    "No cross-file or cross-package repetition; no evidence of a broader collateral evolution series that would justify automation"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

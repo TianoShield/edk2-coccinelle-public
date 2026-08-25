@@ -1,0 +1,51 @@
+{
+  "id": "08cecc9246",
+  "cocciFile": "cocci-scripts/08cecc9246-acpi-rasf-bit-macros.cocci",
+  "cases": [
+    {
+      "name": "replay-acpi50",
+      "beforeSource": {
+        "gitRevision": "08cecc924605b4fb1571d034b707306ddea200a5^:MdePkg/Include/IndustryStandard/Acpi50.h"
+      },
+      "afterSource": {
+        "gitRevision": "08cecc924605b4fb1571d034b707306ddea200a5:MdePkg/Include/IndustryStandard/Acpi50.h"
+      }
+    },
+    {
+      "name": "replay-acpi51",
+      "beforeSource": {
+        "gitRevision": "08cecc924605b4fb1571d034b707306ddea200a5^:MdePkg/Include/IndustryStandard/Acpi51.h"
+      },
+      "afterSource": {
+        "gitRevision": "08cecc924605b4fb1571d034b707306ddea200a5:MdePkg/Include/IndustryStandard/Acpi51.h"
+      }
+    },
+    {
+      "name": "replay-acpi60",
+      "beforeSource": {
+        "gitRevision": "08cecc924605b4fb1571d034b707306ddea200a5^:MdePkg/Include/IndustryStandard/Acpi60.h"
+      },
+      "afterSource": {
+        "gitRevision": "08cecc924605b4fb1571d034b707306ddea200a5:MdePkg/Include/IndustryStandard/Acpi60.h"
+      }
+    },
+    {
+      "name": "replay-acpi61",
+      "beforeSource": {
+        "gitRevision": "08cecc924605b4fb1571d034b707306ddea200a5^:MdePkg/Include/IndustryStandard/Acpi61.h"
+      },
+      "afterSource": {
+        "gitRevision": "08cecc924605b4fb1571d034b707306ddea200a5:MdePkg/Include/IndustryStandard/Acpi61.h"
+      }
+    },
+    {
+      "name": "fixture-generalize-new-version-and-adversarial-neighbors",
+      "beforeSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/08cecc9246/RasfCapability.before.h"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/08cecc9246/RasfCapability.after.h"
+      }
+    }
+  ]
+}

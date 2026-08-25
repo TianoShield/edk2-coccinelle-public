@@ -1,0 +1,13 @@
+{
+  "commit": "9c05ec80a2853fceacec12583d1d8e54484afa72",
+  "short_commit": "9c05ec80a2",
+  "subject": "ArmVirtPkg: Add a helper function to initialise Arm CCA HOBs",
+  "suitable": false,
+  "reasons": [
+    "This commit adds a new function ArmCcaInitialiseHobs() to both the real and NULL implementations of ArmCcaInitPeiLib. It is new functionality being added, not a structural transformation of existing code.",
+    "The change adds one new function to two C files (library + null stub). While the parallel real/null pattern is common in edk2, the change itself is not a repeatable match-and-replace pattern across a codebase.",
+    "Coccinelle is suited for transforming existing patterns, not for generating new function implementations."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

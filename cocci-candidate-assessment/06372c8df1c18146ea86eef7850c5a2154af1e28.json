@@ -1,0 +1,14 @@
+{
+  "commit": "06372c8df1c18146ea86eef7850c5a2154af1e28",
+  "short_commit": "06372c8df1",
+  "subject": "ShellPkg/SerMode: Add name conversion arrays for parity/stop bits",
+  "suitable": false,
+  "reasons": [
+    "Introduces lookup tables (arrays) to replace switch/if-else chains for name conversion in a single file (SerMode.c)",
+    "The restructuring replaces inline string comparisons with array-based lookups; this is a data-structure change, not a simple pattern substitution",
+    "Single-file change with no repeated instance of the same transformation across other files",
+    "Coccinelle cannot express the conversion of an if/switch chain to a data table lookup"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

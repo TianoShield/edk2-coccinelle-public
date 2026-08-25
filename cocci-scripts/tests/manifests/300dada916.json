@@ -1,0 +1,69 @@
+{
+  "id": "300dada916",
+  "cocciFile": "cocci-scripts/300dada916-alloc-assert-oor.cocci",
+  "cases": [
+    {
+      "name": "replay-commit-ppi",
+      "beforeSource": {
+        "gitRevision": "300dada916aa9492d5fe52693e9d6fd84adccdf3^:MdeModulePkg/Core/Pei/Ppi/Ppi.c"
+      },
+      "afterSource": {
+        "gitRevision": "300dada916aa9492d5fe52693e9d6fd84adccdf3:MdeModulePkg/Core/Pei/Ppi/Ppi.c"
+      }
+    },
+    {
+      "name": "fixture-bootmanager-menu",
+      "beforeSource": {
+        "gitRevision": "b7a715f7c:MdeModulePkg/Application/BootManagerMenuApp/BootManagerMenu.c"
+      },
+      "afterSource": {
+        "fixturePath": "cocci-scripts/tests/fixtures/300dada916/BootManagerMenu.after.c"
+      }
+    },
+    {
+      "name": "noop-spibusdxe",
+      "beforeSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:MdeModulePkg/Bus/Spi/SpiBus/SpiBusDxe.c"
+      },
+      "afterSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:MdeModulePkg/Bus/Spi/SpiBus/SpiBusDxe.c"
+      }
+    },
+    {
+      "name": "noop-spihcdxe",
+      "beforeSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:MdeModulePkg/Bus/Spi/SpiHc/SpiHcDxe.c"
+      },
+      "afterSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:MdeModulePkg/Bus/Spi/SpiHc/SpiHcDxe.c"
+      }
+    },
+    {
+      "name": "noop-spinorflashjedecsfdpdxe",
+      "beforeSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:MdeModulePkg/Bus/Spi/SpiNorFlashJedecSfdp/SpiNorFlashJedecSfdpDxe.c"
+      },
+      "afterSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:MdeModulePkg/Bus/Spi/SpiNorFlashJedecSfdp/SpiNorFlashJedecSfdpDxe.c"
+      }
+    },
+    {
+      "name": "noop-prm-contextbuffer",
+      "beforeSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:PrmPkg/Samples/PrmSampleContextBufferModule/Library/DxeContextBufferModuleConfigLib/DxeContextBufferModuleConfigLib.c"
+      },
+      "afterSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:PrmPkg/Samples/PrmSampleContextBufferModule/Library/DxeContextBufferModuleConfigLib/DxeContextBufferModuleConfigLib.c"
+      }
+    },
+    {
+      "name": "noop-prm-hwaccess",
+      "beforeSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:PrmPkg/Samples/PrmSampleHardwareAccessModule/Library/DxeHardwareAccessModuleConfigLib/DxeHardwareAccessModuleConfigLib.c"
+      },
+      "afterSource": {
+        "gitRevision": "b7a715f7c03c45c6b4575bf88596bfd79658b8ce:PrmPkg/Samples/PrmSampleHardwareAccessModule/Library/DxeHardwareAccessModuleConfigLib/DxeHardwareAccessModuleConfigLib.c"
+      }
+    }
+  ]
+}

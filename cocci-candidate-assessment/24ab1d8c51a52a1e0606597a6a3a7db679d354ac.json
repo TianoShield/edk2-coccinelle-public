@@ -1,0 +1,13 @@
+{
+  "commit": "24ab1d8c51a52a1e0606597a6a3a7db679d354ac",
+  "short_commit": "24ab1d8c51",
+  "subject": "MdePkg: Add AML method argument count limit definition",
+  "suitable": false,
+  "reasons": [
+    "Pure addition of a new macro definition (AML_METHOD_MAX_NARGS) to a header file",
+    "No transformation of existing code; no before/after pattern to match",
+    "Coccinelle is not appropriate for new constant/macro additions"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

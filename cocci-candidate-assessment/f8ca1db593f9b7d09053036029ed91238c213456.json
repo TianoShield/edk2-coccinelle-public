@@ -1,0 +1,13 @@
+{
+  "commit": "f8ca1db593f9b7d09053036029ed91238c213456",
+  "short_commit": "f8ca1db593",
+  "subject": "ArmVirtPkg: Add NULL instance of ArmCcaInitPeiLib",
+  "suitable": false,
+  "reasons": [
+    "This commit creates a new NULL stub library (ArmCcaInitPeiLibNull) with new .c and .inf files plus a DSC entry. It is entirely new code addition, not a transformation of existing code.",
+    "Coccinelle operates on existing C code patterns; it cannot express the creation of new library stub files.",
+    "The change is specific to adding a null fallback for ArmCcaInitPeiLib and has no repeatable match-and-replace structure."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

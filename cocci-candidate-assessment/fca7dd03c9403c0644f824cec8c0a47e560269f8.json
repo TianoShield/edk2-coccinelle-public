@@ -1,0 +1,13 @@
+{
+  "commit": "fca7dd03c9403c0644f824cec8c0a47e560269f8",
+  "short_commit": "fca7dd03c9",
+  "subject": "UefiPayloadPkg: Simplify UefiPayloadEntry for Ia32",
+  "suitable": false,
+  "reasons": [
+    "This is a large Ia32-specific simplification and code removal, not a mechanical structural transformation.",
+    "The resulting shape is specific to this payload entry path and is not repeated across the codebase.",
+    "Coccinelle would only cover a narrow subpattern here, not the commit as a whole."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "268266d8dcbef518221750c0299058b6bfe72f91",
+  "short_commit": "268266d8dc",
+  "subject": "RedfishPkg/PlatformConfig: Delete a few debug messages",
+  "suitable": false,
+  "reasons": [
+    "Pure deletion of DEBUG() calls at specific locations — not a systematic transformation of a pattern",
+    "Only 3 lines removed across 2 files; minimal scope",
+    "The deletions are selective (not all DEBUG_MANAGEABILITY calls are removed), requiring case-by-case judgment",
+    "No generalizable before/after pattern expressible as SmPL"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

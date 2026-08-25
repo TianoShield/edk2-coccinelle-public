@@ -1,0 +1,14 @@
+{
+  "commit": "65288416dfbeddc2ea54da26dfd1636a80f0260e",
+  "short_commit": "65288416df",
+  "subject": "ShellPkg/SerMode: Add GetStopBits() function",
+  "suitable": false,
+  "reasons": [
+    "Single-file code extraction refactoring in SerMode.c with no repeated pattern across multiple files",
+    "Extracts a type-conversion function (StopBits to EFI_STOP_BITS_TYPE) from existing code; this is a one-time restructure",
+    "Coccinelle is not able to express the extraction of an inline if/else chain into a separate function",
+    "Part of a series of isolated SerMode.c refactoring commits; the series itself does not repeat the same structural transformation"
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}

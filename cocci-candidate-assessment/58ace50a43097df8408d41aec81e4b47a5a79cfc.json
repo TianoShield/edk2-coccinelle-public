@@ -1,0 +1,12 @@
+{
+  "commit": "58ace50a43097df8408d41aec81e4b47a5a79cfc",
+  "short_commit": "58ace50a43",
+  "subject": "FmpDevicePkg: Replace include guards with #pragma once",
+  "suitable": false,
+  "reasons": [
+    "Replacing include guards with `#pragma once` requires matching a coordinated `#ifndef`/`#define` pair at the top of a file and its `#endif` at the bottom as a unit \u2014 SmPL has no construct for this.",
+    "Use sed/awk/Python for this kind of whole-file structural preprocessor change."
+  ],
+  "candidate_pattern": null,
+  "confidence": "high"
+}
